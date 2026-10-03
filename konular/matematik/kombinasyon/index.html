@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Kombinasyon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects" class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 17
+            </div>
+
+            <h1>Kombinasyon</h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Kombinasyon mantığını, seçim problemlerini ve
+                kombinasyon formülünü öğrenerek KPSS sorularını çöz.
+            </p>
+
+        </header>
+
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span>Konu İlerlemesi</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">01</div>
+
+                <div class="section-title">
+                    Kombinasyon Nedir?
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Kombinasyon, bir kümenin elemanları arasından
+                    belirli sayıda elemanın seçilmesidir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>En önemli nokta</h3>
+
+                    <p>
+                        Kombinasyonda <strong>sıra önemli değildir.</strong>
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A, B ve C kişilerinden 2 kişi seçelim.
+                    </p>
+
+                    <p>
+                        AB ve BA aynı seçimdir.
+                    </p>
+
+                    <p>
+                        Çünkü seçilen kişiler aynıdır ve sıra önemli değildir.
+                    </p>
+
+                </div>
+
+                <div class="formula">
+                    C(n,r) = n! / [r!(n−r)!]
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Permütasyon ile karıştırma:</strong>
+
+                    <p>
+                        Sıralama yapılıyorsa permütasyon,
+                        sadece seçim yapılıyorsa kombinasyon düşünülür.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">02</div>
+
+                <div class="section-title">
+                    Kombinasyon Formülü
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    n eleman arasından r eleman seçmenin formülü:
+                </p>
+
+                <div class="formula">
+                    C(n,r) = n! / [r!(n−r)!]
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        5 kişiden 2 kişi kaç farklı şekilde seçilebilir?
+                    </p>
+
+                    <div class="formula">
+                        C(5,2) = 5! / (2! × 3!)
+                    </div>
+
+                    <div class="formula">
+                        = 10
+                    </div>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        C(5,2) kaçtır?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        5
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        10
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        20
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">03</div>
+
+                <div class="section-title">
+                    Permütasyon ve Kombinasyon Farkı
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="example-card">
+
+                    <h3>Permütasyon</h3>
+
+                    <p>
+                        5 kişiden 2 kişi seçilip başkan ve başkan yardımcısı
+                        belirleniyor.
+                    </p>
+
+                    <p>
+                        Görevler farklı olduğu için sıra önemlidir.
+                    </p>
+
+                    <div class="formula">
+                        P(5,2) = 5 × 4 = 20
+                    </div>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Kombinasyon</h3>
+
+                    <p>
+                        5 kişiden 2 kişi seçilip bir ekip oluşturuluyor.
+                    </p>
+
+                    <p>
+                        Ekipte görev sırası olmadığı için sıra önemli değildir.
+                    </p>
+
+                    <div class="formula">
+                        C(5,2) = 10
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>KPSS için çok önemli:</strong>
+
+                    <p>
+                        "Seçmek", "ekip oluşturmak", "komite oluşturmak"
+                        gibi ifadelerde genellikle kombinasyon kullanılır.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">04</div>
+
+                <div class="section-title">
+                    Kombinasyonun Temel Özellikleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="formula">
+                    C(n,0) = 1
+                </div>
+
+                <div class="formula">
+                    C(n,n) = 1
+                </div>
+
+                <div class="formula">
+                    C(n,1) = n
+                </div>
+
+                <div class="formula">
+                    C(n,r) = C(n,n−r)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        C(8,2) ile C(8,6) birbirine eşittir.
+                    </p>
+
+                    <div class="formula">
+                        C(8,2) = C(8,6)
+                    </div>
+
+                    <p>
+                        Çünkü 8 elemandan 2 taneyi seçmek,
+                        seçilmeyen 6 elemanı belirlemekle aynı şeydir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">05</div>
+
+                <div class="section-title">
+                    Pascal Üçgeni
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Pascal üçgenindeki sayılar kombinasyon değerleriyle
+                    ilişkilidir.
+                </p>
+
+                <div class="formula">
+                    1
+                </div>
+
+                <div class="formula">
+                    1 &nbsp;&nbsp; 1
+                </div>
+
+                <div class="formula">
+                    1 &nbsp;&nbsp; 2 &nbsp;&nbsp; 1
+                </div>
+
+                <div class="formula">
+                    1 &nbsp;&nbsp; 3 &nbsp;&nbsp; 3 &nbsp;&nbsp; 1
+                </div>
+
+                <div class="formula">
+                    1 &nbsp;&nbsp; 4 &nbsp;&nbsp; 6 &nbsp;&nbsp; 4 &nbsp;&nbsp; 1
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        4. satırdaki değerler:
+                    </p>
+
+                    <div class="formula">
+                        1 - 4 - 6 - 4 - 1
+                    </div>
+
+                    <p>
+                        Buradaki değerler kombinasyonlarla elde edilir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">06</div>
+
+                <div class="section-title">
+                    Seçim Problemleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir grup içinden belirli sayıda kişi veya nesne
+                    seçiliyorsa kombinasyon kullanılabilir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        8 öğrenciden 3 kişilik bir ekip oluşturulacaktır.
+                    </p>
+
+                    <div class="formula">
+                        C(8,3)
+                    </div>
+
+                    <div class="formula">
+                        = 8! / (3! × 5!)
+                    </div>
+
+                    <div class="formula">
+                        = 56
+                    </div>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        6 kişiden 2 kişi kaç farklı şekilde seçilebilir?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        10
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        15
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        20
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">07</div>
+
+                <div class="section-title">
+                    Belirli Bir Elemanın Bulunduğu Seçimler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir kişinin veya nesnenin kesinlikle seçilmesi
+                    isteniyorsa o elemanı sabit kabul edip kalan seçim yapılır.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        6 kişiden 3 kişilik bir ekip oluşturuluyor.
+                        Ali kesinlikle ekipte olacak.
+                    </p>
+
+                    <p>
+                        Ali zaten seçildiği için geriye 5 kişi kalır.
+                    </p>
+
+                    <p>
+                        Bu 5 kişiden 2 kişi daha seçilir.
+                    </p>
+
+                    <div class="formula">
+                        C(5,2) = 10
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Taktik:</strong>
+
+                    <p>
+                        Kesinlikle bulunacak elemanı önce seçilmiş kabul et,
+                        kalan kontenjanı diğer elemanlardan doldur.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">08</div>
+
+                <div class="section-title">
+                    Belirli Bir Elemanın Bulunmadığı Seçimler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir elemanın kesinlikle seçilmemesi isteniyorsa
+                    o elemanı baştan çıkarabiliriz.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        7 kişiden 3 kişilik ekip oluşturulacaktır.
+                        Ali ekipte olmayacaktır.
+                    </p>
+
+                    <p>
+                        Ali çıkarılır ve geriye 6 kişi kalır.
+                    </p>
+
+                    <div class="formula">
+                        C(6,3) = 20
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Alternatif yöntem:</strong>
+
+                    <p>
+                        Toplam seçim sayısından Ali'nin bulunduğu seçimleri
+                        çıkarmak da mümkündür.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">09</div>
+
+                <div class="section-title">
+                    En Az - En Çok Soruları
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    "En az" veya "en çok" ifadelerinde farklı durumları
+                    ayrı ayrı düşünmek gerekir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        5 erkek ve 4 kadın arasından 3 kişilik ekip
+                        oluşturulacaktır.
+                    </p>
+
+                    <p>
+                        En az 1 kadın bulunması isteniyor.
+                    </p>
+
+                    <p>
+                        Bunun için toplam seçimden hiç kadın bulunmayan
+                        seçimleri çıkarabiliriz.
+                    </p>
+
+                    <div class="formula">
+                        C(9,3) − C(5,3)
+                    </div>
+
+                    <div class="formula">
+                        84 − 10 = 74
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Pratik yöntem:</strong>
+
+                    <p>
+                        "En az bir" sorularında çoğu zaman
+                        "1 − hiç yok" mantığı hızlı sonuç verir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">10</div>
+
+                <div class="section-title">
+                    KPSS İçin Hızlı Tekrar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Ezberlenecek Kurallar</h3>
+
+                    <div class="formula">
+                        C(n,r) = n! / [r!(n−r)!]
+                    </div>
+
+                    <div class="formula">
+                        C(n,r) = C(n,n−r)
+                    </div>
+
+                    <div class="formula">
+                        C(n,0) = 1
+                    </div>
+
+                    <div class="formula">
+                        C(n,n) = 1
+                    </div>
+
+                    <div class="formula">
+                        C(n,1) = n
+                    </div>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <h3>En önemli ayrım</h3>
+
+                    <ul>
+
+                        <li>
+                            Sıra önemli → Permütasyon
+                        </li>
+
+                        <li>
+                            Sıra önemsiz → Kombinasyon
+                        </li>
+
+                        <li>
+                            Seçim / ekip / komite → Genellikle kombinasyon
+                        </li>
+
+                        <li>
+                            Başkan, başkan yardımcısı gibi farklı görevler
+                            → Permütasyon
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-section">
+
+            <div class="test-start" id="testStart">
+
+                <h2>📝 5 Soruluk Mini Test</h2>
+
+                <p>
+                    Kombinasyon konusunu ne kadar öğrendiğini test et.
+                </p>
+
+                <button id="startTest">
+                    Teste Başla
+                </button>
+
+            </div>
+
+
+            <div class="test-area" id="testArea">
+
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Soru <span id="questionNumber">1</span> / 5
+                    </div>
+
+                    <h3 id="questionText"></h3>
+
+                    <div id="answers"></div>
+
+                </div>
+
+                <div class="answer-feedback" id="answerFeedback"></div>
+
+                <button class="next-question-button" id="nextQuestion">
+                    Sonraki Soru →
+                </button>
+
+            </div>
+
+
+            <div class="test-result" id="testResult">
+
+                <h2>Test Tamamlandı!</h2>
+
+                <div class="score" id="score"></div>
+
+                <p id="resultMessage"></p>
+
+                <button id="restartTest">
+                    Testi Tekrar Çöz
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <div class="finish-area">
+
+            <button id="finishLesson">
+                ✓ KONU BİTTİ
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

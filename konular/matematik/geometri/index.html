@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPSS | Geometri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+    <div class="neon-light light-one"></div>
+    <div class="neon-light light-two"></div>
+</div>
+
+<div class="lesson-container">
+
+    <a href="../../../index.html?return=subjects" class="back-button">
+        ← Matematik Konularına Dön
+    </a>
+
+    <header class="lesson-header">
+
+        <div class="lesson-number">
+            MATEMATİK / 20
+        </div>
+
+        <h1>Geometri</h1>
+
+        <div class="title-line"></div>
+
+        <p>
+            KPSS'de karşılaşabileceğin temel geometri konularını;
+            açılar, üçgenler, dörtgenler, çokgenler, çember,
+            daire ve alan-hacim bilgileriyle birlikte öğren.
+        </p>
+
+    </header>
+
+    <div class="progress-area">
+
+        <div class="progress-text">
+            <span>Konu İlerlemesi</span>
+            <span id="progressText">%0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+    </div>
+
+
+    <!-- 01 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">01</div>
+            <div class="section-title">Temel Geometrik Kavramlar</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Nokta, Doğru ve Doğru Parçası</h3>
+
+                <p>
+                    <strong>Nokta:</strong> Boyutu olmayan geometrik temel kavramdır.
+                </p>
+
+                <p>
+                    <strong>Doğru:</strong> İki yönde sonsuza kadar uzanır.
+                </p>
+
+                <p>
+                    <strong>Doğru parçası:</strong> İki uç noktası bulunan doğru parçasıdır.
+                </p>
+
+                <p>
+                    <strong>Işın:</strong> Bir başlangıç noktası vardır ve tek yönde sonsuza uzanır.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Temel Açılar</h3>
+
+                <div class="formula">
+                    Dar açı → 0° &lt; α &lt; 90°
+                    <br><br>
+                    Dik açı → α = 90°
+                    <br><br>
+                    Geniş açı → 90° &lt; α &lt; 180°
+                    <br><br>
+                    Doğru açı → α = 180°
+                    <br><br>
+                    Tam açı → α = 360°
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 02 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">02</div>
+            <div class="section-title">Açılar</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Açı İlişkileri</h3>
+
+                <p>
+                    <strong>Tümler açılar:</strong> Toplamları 90° olan açılardır.
+                </p>
+
+                <p>
+                    <strong>Bütünler açılar:</strong> Toplamları 180° olan açılardır.
+                </p>
+
+                <p>
+                    <strong>Ters açılar:</strong> Kesişen iki doğrunun oluşturduğu
+                    karşılıklı açılar birbirine eşittir.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <p>
+                    Bir açı 35° ise tümleri:
+                </p>
+
+                <div class="formula">
+                    90° − 35° = 55°
+                </div>
+
+                <p>
+                    Bütünleri ise:
+                </p>
+
+                <div class="formula">
+                    180° − 35° = 145°
+                </div>
+
+            </div>
+
+            <div class="mini-question">
+
+                <h3>Mini Soru</h3>
+
+                <p>
+                    70°'lik açının tümleri kaç derecedir?
+                </p>
+
+                <button class="answer-button" data-correct="false">
+                    10°
+                </button>
+
+                <button class="answer-button" data-correct="true">
+                    20°
+                </button>
+
+                <button class="answer-button" data-correct="false">
+                    30°
+                </button>
+
+                <div class="mini-result"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 03 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">03</div>
+            <div class="section-title">Üçgenler</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Üçgenin İç Açıları</h3>
+
+                <p>
+                    Her üçgenin iç açıları toplamı:
+                </p>
+
+                <div class="formula">
+                    A + B + C = 180°
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Üçgen Çeşitleri</h3>
+
+                <p>
+                    <strong>Eşkenar üçgen:</strong>
+                    Üç kenarı ve üç açısı eşittir.
+                </p>
+
+                <p>
+                    Her açısı:
+                </p>
+
+                <div class="formula">
+                    60°
+                </div>
+
+                <p>
+                    <strong>İkizkenar üçgen:</strong>
+                    İki kenarı eşittir ve eşit kenarların karşısındaki açılar da eşittir.
+                </p>
+
+                <p>
+                    <strong>Çeşitkenar üçgen:</strong>
+                    Kenar uzunlukları birbirinden farklıdır.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Özel Üçgenler</h3>
+
+                <div class="formula">
+                    3 - 4 - 5
+                    <br><br>
+                    5 - 12 - 13
+                    <br><br>
+                    8 - 15 - 17
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 04 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">04</div>
+            <div class="section-title">Dik Üçgen ve Pisagor</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Pisagor Teoremi</h3>
+
+                <p>
+                    Dik üçgende dik kenarların kareleri toplamı,
+                    hipotenüsün karesine eşittir.
+                </p>
+
+                <div class="formula">
+                    a² + b² = c²
+                </div>
+
+                <p>
+                    Burada <strong>c</strong> hipotenüstür.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <div class="formula">
+                    a = 3
+                    <br>
+                    b = 4
+                    <br><br>
+                    c² = 3² + 4²
+                    <br>
+                    c² = 25
+                    <br>
+                    c = 5
+                </div>
+
+            </div>
+
+            <div class="mini-question">
+
+                <h3>Mini Soru</h3>
+
+                <p>
+                    Dik kenarları 6 ve 8 olan dik üçgenin hipotenüsü kaçtır?
+                </p>
+
+                <button class="answer-button" data-correct="false">
+                    9
+                </button>
+
+                <button class="answer-button" data-correct="true">
+                    10
+                </button>
+
+                <button class="answer-button" data-correct="false">
+                    12
+                </button>
+
+                <div class="mini-result"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 05 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">05</div>
+            <div class="section-title">Üçgende Alan ve Yükseklik</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Üçgen Alanı</h3>
+
+                <div class="formula">
+                    Alan = (Taban × Yükseklik) / 2
+                </div>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <p>
+                    Tabanı 10 cm, yüksekliği 6 cm olan üçgen:
+                </p>
+
+                <div class="formula">
+                    Alan = (10 × 6) / 2
+                    <br>
+                    Alan = 30 cm²
+                </div>
+
+            </div>
+
+            <div class="warning-card">
+
+                <strong>⚠️ Dikkat:</strong>
+
+                <p>
+                    Yükseklik, seçilen tabana dik olan uzaklıktır.
+                    Her zaman üçgenin kenarlarından biri olmak zorunda değildir.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 06 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">06</div>
+            <div class="section-title">Dörtgenler</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Dörtgenlerin İç Açıları</h3>
+
+                <div class="formula">
+                    İç açılar toplamı = 360°
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Kare</h3>
+
+                <p>
+                    Dört kenarı eşit ve bütün açıları 90°'dir.
+                </p>
+
+                <div class="formula">
+                    Alan = a²
+                    <br><br>
+                    Çevre = 4a
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Dikdörtgen</h3>
+
+                <div class="formula">
+                    Alan = a × b
+                    <br><br>
+                    Çevre = 2(a + b)
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Paralelkenar</h3>
+
+                <div class="formula">
+                    Alan = Taban × Yükseklik
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Yamuk</h3>
+
+                <div class="formula">
+                    Alan =
+                    [(Alt Taban + Üst Taban) × Yükseklik] / 2
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 07 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">07</div>
+            <div class="section-title">Çokgenler</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>İç Açılar Toplamı</h3>
+
+                <div class="formula">
+                    (n − 2) × 180°
+                </div>
+
+                <p>
+                    Buradaki <strong>n</strong>, çokgenin kenar sayısıdır.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <p>
+                    Altıgenin iç açıları toplamı:
+                </p>
+
+                <div class="formula">
+                    (6 − 2) × 180°
+                    <br>
+                    = 720°
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Düzgün Çokgen</h3>
+
+                <p>
+                    Tüm kenarları ve tüm iç açıları eşit olan çokgene
+                    düzgün çokgen denir.
+                </p>
+
+                <div class="formula">
+                    Bir iç açı =
+                    [(n − 2) × 180°] / n
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 08 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">08</div>
+            <div class="section-title">Çember ve Daire</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Temel Formüller</h3>
+
+                <div class="formula">
+                    Çemberin Çevresi = 2πr
+                    <br><br>
+                    Dairenin Alanı = πr²
+                    <br><br>
+                    Çap = 2r
+                </div>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <p>
+                    Yarıçapı 5 cm olan dairenin alanı:
+                </p>
+
+                <div class="formula">
+                    A = π × 5²
+                    <br>
+                    A = 25π cm²
+                </div>
+
+            </div>
+
+            <div class="warning-card">
+
+                <strong>⚠️ Önemli:</strong>
+
+                <p>
+                    Çember çevreyi, daire ise iç bölgeyi ifade eder.
+                    Soruda çevre mi alan mı istendiğine dikkat et.
+                </p>
+
+            </div>
+
+            <div class="mini-question">
+
+                <h3>Mini Soru</h3>
+
+                <p>
+                    Yarıçapı 4 cm olan bir dairenin alanı kaç cm²'dir?
+                </p>
+
+                <button class="answer-button" data-correct="false">
+                    8π
+                </button>
+
+                <button class="answer-button" data-correct="true">
+                    16π
+                </button>
+
+                <button class="answer-button" data-correct="false">
+                    32π
+                </button>
+
+                <div class="mini-result"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 09 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">09</div>
+            <div class="section-title">Katı Cisimler ve Hacim</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Küp</h3>
+
+                <div class="formula">
+                    Hacim = a³
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Dikdörtgenler Prizması</h3>
+
+                <div class="formula">
+                    Hacim = a × b × c
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Silindir</h3>
+
+                <div class="formula">
+                    Hacim = πr²h
+                </div>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <p>
+                    Ayrıtı 4 cm olan küpün hacmi:
+                </p>
+
+                <div class="formula">
+                    4³ = 64 cm³
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 10 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">10</div>
+            <div class="section-title">Geometrik Benzerlik ve Oran</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>Benzerlik</h3>
+
+                <p>
+                    Benzer şekillerde karşılıklı açılar eşit,
+                    karşılıklı kenarlar orantılıdır.
+                </p>
+
+                <div class="formula">
+                    Benzerlik Oranı =
+                    Karşılıklı Kenar / Karşılıklı Kenar
+                </div>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <p>
+                    İki benzer üçgende karşılıklı kenarlar
+                    3 cm ve 6 cm ise benzerlik oranı:
+                </p>
+
+                <div class="formula">
+                    3 / 6 = 1 / 2
+                </div>
+
+            </div>
+
+            <div class="warning-card">
+
+                <strong>💡 KPSS İpucu:</strong>
+
+                <p>
+                    Benzerlik sorularında önce karşılıklı kenarları
+                    doğru eşleştir. Ardından tek bir oran kurarak
+                    bilinmeyeni bul.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 11 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">11</div>
+            <div class="section-title">Geometri Sorularında Taktikler</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <h3>1. Şekli Yeniden Çiz</h3>
+
+                <p>
+                    Şekil karmaşıksa verilen bilgileri kullanarak
+                    daha anlaşılır şekilde tekrar çiz.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>2. Bilinen Formülleri Ara</h3>
+
+                <p>
+                    Alan, çevre, Pisagor, açı toplamı ve benzerlik
+                    formüllerinden hangisinin kullanılabileceğini belirle.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>3. Yardımcı Çizgi Kullan</h3>
+
+                <p>
+                    Özellikle üçgen ve dörtgen sorularında
+                    dikme veya köşegen çizmek soruyu kolaylaştırabilir.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>4. Birimleri Kontrol Et</h3>
+
+                <p>
+                    Uzunluk birimi ile alan ve hacim birimlerini karıştırma.
+                </p>
+
+                <div class="formula">
+                    Uzunluk → cm
+                    <br>
+                    Alan → cm²
+                    <br>
+                    Hacim → cm³
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 12 -->
+
+    <section class="lesson-section">
+
+        <div class="section-header">
+            <div class="section-icon">12</div>
+            <div class="section-title">KPSS İçin Hızlı Tekrar</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="summary-card">
+
+                <h3>📌 En Önemli Formüller</h3>
+
+                <div class="formula">
+
+                    Üçgen İç Açılar:
+                    A + B + C = 180°
+
+                    <br><br>
+
+                    Pisagor:
+                    a² + b² = c²
+
+                    <br><br>
+
+                    Üçgen Alanı:
+                    (Taban × Yükseklik) / 2
+
+                    <br><br>
+
+                    Kare Alanı:
+                    a²
+
+                    <br><br>
+
+                    Dikdörtgen Alanı:
+                    a × b
+
+                    <br><br>
+
+                    Daire Alanı:
+                    πr²
+
+                    <br><br>
+
+                    Çember Çevresi:
+                    2πr
+
+                    <br><br>
+
+                    Çokgen İç Açılar:
+                    (n − 2) × 180°
+
+                    <br><br>
+
+                    Dikdörtgenler Prizması:
+                    a × b × c
+
+                    <br><br>
+
+                    Küp:
+                    a³
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TEST -->
+
+    <div class="test-start" id="testStart">
+
+        <h2>🎯 5 Soruluk Mini Test</h2>
+
+        <p>
+            Geometri konusunu ne kadar öğrendiğini test et.
+        </p>
+
+        <button id="startTest">
+            Teste Başla
+        </button>
+
+    </div>
+
+
+    <div class="test-area" id="testArea">
+
+        <div class="question-card">
+
+            <div class="question-number" id="questionNumber">
+                Soru 1 / 5
+            </div>
+
+            <h2 id="questionText"></h2>
+
+            <div id="answers"></div>
+
+            <div class="answer-feedback" id="answerFeedback"></div>
+
+            <button
+                class="next-question-button"
+                id="nextQuestion">
+                Sonraki Soru →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="test-result" id="testResult">
+
+        <h2>Test Tamamlandı 🎉</h2>
+
+        <div class="score" id="score"></div>
+
+        <p id="resultMessage"></p>
+
+        <button id="restartTest">
+            Testi Tekrar Çöz
+        </button>
+
+    </div>
+
+
+    <div class="finish-area">
+
+        <button id="finishButton">
+            ✓ KONU BİTTİ
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

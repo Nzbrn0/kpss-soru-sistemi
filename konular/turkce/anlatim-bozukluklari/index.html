@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Anlatım Bozuklukları</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+
+    <main class="lesson-container">
+
+        <a
+            href="../../../index.html?return=subjects"
+            class="back-button">
+            ← Türkçe Konularına Dön
+        </a>
+
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                TÜRKÇE / 11
+            </div>
+
+            <h1>
+                Anlatım Bozuklukları
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Cümlede anlamın açık, doğru ve anlaşılır
+                olmasını engelleyen anlatım bozukluklarını
+                öğren ve soru çözerken kolayca tespit et.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-text">
+
+                <span>KONU İLERLEMESİ</span>
+
+                <strong id="progressPercent">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="lesson-sections">
+
+
+            <!-- 1 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        01
+                    </span>
+
+                    <span class="section-title">
+
+                        Anlatım Bozukluğu Nedir?
+
+                        <small>
+                            Temel bilgiler
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Bir cümlenin anlam ve dil bilgisi
+                        bakımından doğru, açık ve anlaşılır
+                        olması gerekir.
+                    </p>
+
+                    <p>
+                        Bu özelliklerden birinin bozulması
+                        cümlede <strong>anlatım bozukluğuna</strong>
+                        neden olabilir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                ANLAM BOZUKLUĞU
+                            </strong>
+
+                            <p>
+                                Cümlenin anlam bakımından
+                                yanlış veya belirsiz olmasıdır.
+                            </p>
+
+                            <span>
+                                Bu iki olay arasında karşılıklı
+                                bir ilişki vardır.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                DİL BİLGİSİ BOZUKLUĞU
+                            </strong>
+
+                            <p>
+                                Sözcüklerin veya cümle ögelerinin
+                                dil bilgisi kurallarına aykırı
+                                kullanılmasından kaynaklanır.
+                            </p>
+
+                            <span>
+                                Herkes fikirlerini söylediler.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            KPSS'DE DİKKAT
+                        </strong>
+
+                        <p>
+                            Anlatım bozukluğu sorularında
+                            yalnızca cümlenin kulağa hoş gelip
+                            gelmediğine bakma. Sözcüklerin
+                            görevlerini ve anlam ilişkilerini
+                            de kontrol et.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Anlatım bozuklukları temel olarak
+                            hangi iki başlık altında incelenebilir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Anlam ve dil bilgisi
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Ses ve yazım
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Noktalama ve paragraf
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 2 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        02
+                    </span>
+
+                    <span class="section-title">
+
+                        Gereksiz Sözcük Kullanımı
+
+                        <small>
+                            Anlamca tekrar
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Cümlede aynı anlamı karşılayan birden
+                        fazla sözcüğün gereksiz şekilde
+                        kullanılması anlatım bozukluğuna
+                        yol açar.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Yaklaşık olarak üç saat bekledik.”
+                        </p>
+
+                        <span>
+                            “Yaklaşık” ve “olarak” birlikte
+                            gereksizdir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            DOĞRU
+                        </div>
+
+                        <p>
+                            “Yaklaşık üç saat bekledik.”
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Geri iade etti.”
+                        </p>
+
+                        <span>
+                            “İade etmek” zaten geri vermek
+                            anlamını içerir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            DOĞRU
+                        </div>
+
+                        <p>
+                            “İade etti.”
+                        </p>
+
+                    </div>
+
+
+                    <div class="warning-card">
+
+                        <div class="warning-title">
+                            ⚠ SIK ÇIKAN
+                        </div>
+
+                        <p>
+                            “Tekrar yeniden”, “geri iade”,
+                            “aynen aynı”, “yaklaşık olarak”
+                            gibi kullanımlara dikkat et.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Aşağıdaki cümlelerin hangisinde
+                            gereksiz sözcük kullanılmıştır?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Sabah erkenden yola çıktık.
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Bu olayı tekrar yeniden anlattı.
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Akşam arkadaşlarımla buluştum.
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 3 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        03
+                    </span>
+
+                    <span class="section-title">
+
+                        Yanlış Sözcük Kullanımı
+
+                        <small>
+                            Anlam uyuşmazlığı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Sözcüğün cümledeki anlamına uygun
+                        olmayan başka bir sözcükle
+                        kullanılması anlatım bozukluğuna
+                        neden olabilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Bu olayın gerçekleşme şansı çok yüksek.”
+                        </p>
+
+                        <span>
+                            “Şans” olumlu sonuç beklentisi
+                            taşır. Burada “olasılık” sözcüğü
+                            daha uygundur.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            DOĞRU
+                        </div>
+
+                        <p>
+                            “Bu olayın gerçekleşme olasılığı çok yüksek.”
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Bu davranışı beni etkiledi.”
+                        </p>
+
+                        <span>
+                            Burada anlatılmak istenene göre
+                            sözcüklerin anlam ilişkisi
+                            yeniden kurulmalıdır.
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            KONTROL YÖNTEMİ
+                        </strong>
+
+                        <p>
+                            Cümledeki her sözcüğü tek tek
+                            incele. Sözcüğün cümlede verilmek
+                            istenen anlamla uyuşup uyuşmadığını
+                            kontrol et.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Bu konuda başarılı olma şansımız
+                            oldukça yüksek.” cümlesindeki
+                            “şans” sözcüğü yerine hangisi
+                            kullanılabilir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Engel
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Olasılık
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Sorun
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 4 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        04
+                    </span>
+
+                    <span class="section-title">
+
+                        Özne - Yüklem Uyumsuzluğu
+
+                        <small>
+                            Tekillik ve çoğulluk
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Özne ile yüklemin kişi ve sayı
+                        bakımından uyuşmaması anlatım
+                        bozukluğuna yol açabilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Herkes fikirlerini söylediler.”
+                        </p>
+
+                        <span>
+                            “Herkes” belgisiz zamiri tekil
+                            kabul edildiğinden yüklem tekil
+                            kullanılmalıdır.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            DOĞRU
+                        </div>
+
+                        <p>
+                            “Herkes fikrini söyledi.”
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Çocuklar bahçede oynuyor.”
+                        </p>
+
+                        <span>
+                            Bu kullanım doğrudur. İnsan bildiren
+                            çoğul özneyle yüklem çoğul veya tekil
+                            kullanılabilir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="warning-card">
+
+                        <div class="warning-title">
+                            ⚠ DİKKAT
+                        </div>
+
+                        <p>
+                            İnsan dışındaki çoğul öznelerde
+                            yüklemin tekil olması genellikle
+                            tercih edilir.
+                        </p>
+
+                        <p>
+                            “Ağaçlar çiçek açtı.”
+                            kullanımı doğrudur.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Aşağıdakilerden hangisinde
+                            özne-yüklem uyumsuzluğu vardır?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Herkes yerlerine oturdular.
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Öğrenciler sınıfa girdiler.
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Kuşlar gökyüzünde uçtu.
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 5 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        05
+                    </span>
+
+                    <span class="section-title">
+
+                        Tamlama Yanlışları
+
+                        <small>
+                            Tamlayan ve tamlanan ilişkisi
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        İsim ve sıfat tamlamalarının yanlış
+                        kurulması veya tamlayan-tamlanan
+                        ilişkisinin bozulması anlatım
+                        bozukluğuna neden olabilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Türkiye ve Avrupa'nın ekonomisi
+                            hakkında konuşuldu.”
+                        </p>
+
+                        <span>
+                            Ortak tamlanan kullanılmak isteniyorsa
+                            tamlamaların yapısına dikkat edilmelidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            TEMEL MANTIK
+                        </strong>
+
+                        <p>
+                            Cümlede tamlamaları bul.
+                            Tamlayan ve tamlanan arasında
+                            anlam ve yapı bakımından uygunluk
+                            olup olmadığını kontrol et.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            KONTROL
+                        </div>
+
+                        <p>
+                            “Okulun ve sınıfın duvarları boyandı.”
+                        </p>
+
+                        <span>
+                            Burada iki tamlayan ortak bir
+                            tamlanana bağlanmıştır.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Tamlama yanlışlarını tespit etmek
+                            için öncelikle neye bakılmalıdır?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Tamlayan-tamlanan ilişkisine
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Noktalama işaretlerine
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Ses olaylarına
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 6 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        06
+                    </span>
+
+                    <span class="section-title">
+
+                        Çatı Uyuşmazlığı
+
+                        <small>
+                            Özne-yüklem ilişkisi
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Aynı cümlede birden fazla yüklem
+                        kullanıldığında bu yüklemlerin çatı
+                        özellikleri arasında uyumsuzluk
+                        oluşabilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Toplantıda önemli kararlar alındı
+                            ve herkes bunları uyguladı.”
+                        </p>
+
+                        <span>
+                            Bu örnekte çatı açısından doğal
+                            bir uyumsuzluk yoktur; her iki
+                            yüklem kendi öznesiyle uyumludur.
+                        </span>
+
+                    </div>
+
+
+                    <div class="warning-card">
+
+                        <div class="warning-title">
+                            ⚠ KPSS İPUCU
+                        </div>
+
+                        <p>
+                            Birden fazla yüklem bulunan
+                            cümlelerde her yüklemin öznesini
+                            ve çatısını ayrı ayrı kontrol et.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Birden fazla yüklem bulunan
+                            cümlelerde anlatım bozukluğu
+                            ararken hangisine özellikle
+                            dikkat edilmelidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Sadece noktalama
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Yüklemlerin özne ve çatı ilişkilerine
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Sadece sözcük uzunluklarına
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 7 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        07
+                    </span>
+
+                    <span class="section-title">
+
+                        Öge Eksikliği
+
+                        <small>
+                            Ortak öge kullanımı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Birden fazla yüklem bulunan cümlelerde
+                        ortak kullanılması mümkün olmayan bir
+                        ögenin eksik bırakılması anlatım
+                        bozukluğuna neden olabilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            KONTROL
+                        </div>
+
+                        <p>
+                            “Seni çok seviyor ve güveniyorum.”
+                        </p>
+
+                        <span>
+                            “Sevmek” nesne alabilir:
+                            seni seviyorum.
+                            “Güvenmek” ise farklı bir
+                            tamlayıcı ister:
+                            sana güveniyorum.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            DOĞRU
+                        </div>
+
+                        <p>
+                            “Seni çok seviyor ve sana güveniyorum.”
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            SORU ÇÖZME TAKTİĞİ
+                        </strong>
+
+                        <p>
+                            Cümlede birden fazla yüklem varsa
+                            her yükleme ayrı ayrı soru sor.
+                            Yüklemin istediği öge bulunmuyorsa
+                            öge eksikliği olabilir.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Seni seviyor ve güveniyorum.”
+                            cümlesindeki temel sorun
+                            aşağıdakilerden hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Öge eksikliği
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Gereksiz sözcük
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Tamlama yanlışlığı
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 8 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        08
+                    </span>
+
+                    <span class="section-title">
+
+                        Mantık ve Anlam Çelişkisi
+
+                        <small>
+                            Anlamca çelişen ifadeler
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Cümlede birbiriyle çelişen veya
+                        aynı anda gerçekleşmesi mümkün
+                        olmayan ifadelerin kullanılması
+                        anlatım bozukluğuna neden olabilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            YANLIŞ
+                        </div>
+
+                        <p>
+                            “Kesinlikle belki yarın gelir.”
+                        </p>
+
+                        <span>
+                            “Kesinlikle” kesinlik,
+                            “belki” ise olasılık bildirir.
+                            Bu iki ifade aynı bağlamda
+                            çelişmektedir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            BAŞKA ÖRNEK
+                        </div>
+
+                        <p>
+                            “Bu kararın kesin olarak gerçekleşmesi
+                            ihtimali oldukça yüksek.”
+                        </p>
+
+                        <span>
+                            Kesinlik ve ihtimal ifadeleri
+                            birlikte kullanılırken anlam
+                            ilişkisine dikkat edilmelidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="warning-card">
+
+                        <div class="warning-title">
+                            ⚠ DİKKAT
+                        </div>
+
+                        <p>
+                            “Kesinlikle - belki”, “mutlaka -
+                            olabilir” gibi karşıt anlam
+                            ilişkilerine dikkat et.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Kesinlikle belki bu akşam gelir.”
+                            cümlesindeki bozukluğun temel
+                            nedeni nedir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Anlamca çelişen ifadeler
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Özne eksikliği
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Tamlama yanlışlığı
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 9 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        09
+                    </span>
+
+                    <span class="section-title">
+
+                        Sözcüğün Yanlış Yerde Kullanılması
+
+                        <small>
+                            Anlam karışıklığı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Bir sözcüğün cümlede yanlış yerde
+                        kullanılması anlamın farklı veya
+                        belirsiz anlaşılmasına yol açabilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            “Sadece Ali bugün okula gelmedi.”
+                        </p>
+
+                        <span>
+                            “Sadece” sözcüğünün yeri,
+                            anlatılmak istenen anlama göre
+                            farklı yorumlara neden olabilir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            TEMEL KURAL
+                        </strong>
+
+                        <p>
+                            Vurgulanmak istenen sözcüğün
+                            cümledeki yerini kontrol et.
+                            Sözcüğün yanlış konumu anlamı
+                            değiştirebilir.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Bir sözcüğün cümlede yanlış yerde
+                            kullanılması öncelikle hangi
+                            probleme yol açabilir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Anlam karışıklığına
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Ses olayına
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Noktalama hatasına
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ÖZET -->
+
+        <div class="summary-card">
+
+            <div class="summary-title">
+                KPSS İÇİN KISA ÖZET
+            </div>
+
+            <ul>
+
+                <li>
+                    Gereksiz sözcük kullanımına dikkat et.
+                </li>
+
+                <li>
+                    Sözcüğün cümledeki anlamına uygun
+                    kullanılıp kullanılmadığını kontrol et.
+                </li>
+
+                <li>
+                    Özne ve yüklem arasındaki kişi ve sayı
+                    uyumunu kontrol et.
+                </li>
+
+                <li>
+                    Tamlama yanlışlıklarını tespit et.
+                </li>
+
+                <li>
+                    Birden fazla yüklem varsa her yüklemin
+                    istediği ögeleri kontrol et.
+                </li>
+
+                <li>
+                    Birbirini anlam bakımından bozan
+                    sözcükleri ara.
+                </li>
+
+                <li>
+                    Sözcüğün cümledeki yerine ve oluşturduğu
+                    anlama dikkat et.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DİKKAT -->
+
+        <div class="warning-card">
+
+            <div class="warning-title">
+                ⚠ SINAVDA KULLANILACAK TAKTİK
+            </div>
+
+            <p>
+                Anlatım bozukluğu sorusunda önce cümlenin
+                genel anlamını oku.
+            </p>
+
+            <p>
+                Daha sonra gereksiz sözcük → yanlış sözcük →
+                özne-yüklem → öge → tamlama → anlam çelişkisi
+                sırasıyla kontrol yap.
+            </p>
+
+        </div>
+
+
+        <!-- TEST BAŞLANGIÇ -->
+
+        <div
+            class="test-start"
+            id="testStart">
+
+            <div class="test-icon">
+                ?
+            </div>
+
+            <h2>
+                Hazır mısın?
+            </h2>
+
+            <p>
+                Konuyu tamamladıysan 5 soruluk
+                mini teste geçebilirsin.
+            </p>
+
+            <button
+                class="test-start-button"
+                onclick="startTest()">
+
+                TESTE BAŞLA
+
+            </button>
+
+        </div>
+
+
+        <!-- TEST -->
+
+        <div
+            class="test-area"
+            id="testArea">
+
+            <div class="test-top">
+
+                <div>
+
+                    <span>
+                        ANLATIM BOZUKLUKLARI TESTİ
+                    </span>
+
+                    <strong id="questionNumber">
+                        Soru 1 / 5
+                    </strong>
+
+                </div>
+
+                <div
+                    class="score-display"
+                    id="scoreDisplay">
+
+                    Puan: 0
+
+                </div>
+
+            </div>
+
+
+            <div class="question-progress">
+
+                <div id="questionProgress"></div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div
+                    class="difficulty"
+                    id="difficulty">
+
+                    KOLAY
+
+                </div>
+
+
+                <h2 id="questionText">
+                    Soru yükleniyor...
+                </h2>
+
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+
+                <div
+                    class="answer-feedback"
+                    id="answerFeedback">
+
+                    <strong id="feedbackTitle"></strong>
+
+                    <p id="feedbackText"></p>
+
+                </div>
+
+
+                <button
+                    class="next-question-button"
+                    id="nextButton"
+                    onclick="nextQuestion()">
+
+                    SONRAKİ SORU →
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SONUÇ -->
+
+        <div
+            class="test-result"
+            id="testResult">
+
+            <div class="result-icon">
+                ✓
+            </div>
+
+            <div class="result-label">
+                TEST TAMAMLANDI
+            </div>
+
+            <h2 id="finalScore">
+                0 / 5
+            </h2>
+
+            <p id="resultMessage">
+                Test tamamlandı.
+            </p>
+
+            <button
+                class="retry-button"
+                onclick="restartTest()">
+
+                TEKRAR ÇÖZ
+
+            </button>
+
+        </div>
+
+
+        <!-- KONU BİTTİ -->
+
+        <div class="finish-area">
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+
+                ✓ KONU BİTTİ
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

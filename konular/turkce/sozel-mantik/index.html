@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Sözel Mantık</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+
+    <main class="lesson-container">
+
+        <a
+            href="../../../index.html?return=subjects"
+            class="back-button">
+            ← Türkçe Konularına Dön
+        </a>
+
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                TÜRKÇE / 12
+            </div>
+
+            <h1>
+                Sözel Mantık
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Verilen bilgileri düzenleyerek sıralama,
+                yerleştirme, eşleştirme ve koşul sorularını
+                sistemli şekilde çözmeyi öğren.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-text">
+
+                <span>KONU İLERLEMESİ</span>
+
+                <strong id="progressPercent">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="lesson-sections">
+
+
+            <!-- 1 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        01
+                    </span>
+
+                    <span class="section-title">
+
+                        Sözel Mantık Nedir?
+
+                        <small>
+                            Temel çözüm mantığı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Sözel mantık sorularında verilen
+                        bilgiler belirli kurallar ve koşullar
+                        çerçevesinde düzenlenir.
+                    </p>
+
+                    <p>
+                        Amaç, verilen bilgilerden hareketle
+                        kesin olarak ulaşılabilecek sonucu
+                        bulmaktır.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                SIRALAMA
+                            </strong>
+
+                            <p>
+                                Kişi, olay veya nesnelerin
+                                belirli bir sıraya dizilmesidir.
+                            </p>
+
+                            <span>
+                                A, B'den önce gelir.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                YERLEŞTİRME
+                            </strong>
+
+                            <p>
+                                Kişi veya nesnelerin belirli
+                                yerlere konulmasıdır.
+                            </p>
+
+                            <span>
+                                Ali 3. sıradadır.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                EŞLEŞTİRME
+                            </strong>
+
+                            <p>
+                                İki veya daha fazla grubun
+                                birbirleriyle ilişkilendirilmesidir.
+                            </p>
+
+                            <span>
+                                Ayşe → Matematik
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                KOŞUL
+                            </strong>
+
+                            <p>
+                                Bir durumun başka bir duruma
+                                bağlı olmasıdır.
+                            </p>
+
+                            <span>
+                                A varsa B olamaz.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            ALTIN KURAL
+                        </strong>
+
+                        <p>
+                            Sözel mantık sorularında bilgileri
+                            kafanda tutmaya çalışma. Önce verilen
+                            bilgileri tablo, sıra veya şema
+                            hâline getir.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Sözel mantık sorularında ilk yapılması
+                            gerekenlerden biri aşağıdakilerden
+                            hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Verilen bilgileri düzenlemek
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Şıkları ezberlemek
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Soruyu tahmin ederek çözmek
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 2 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        02
+                    </span>
+
+                    <span class="section-title">
+
+                        Sıralama Soruları
+
+                        <small>
+                            Önce - sonra ilişkisi
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Sıralama sorularında kişi, nesne veya
+                        olayların belirli bir sıraya göre
+                        dizilmesi istenir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            “Ali, Burak'tan önce; Cem'den sonra
+                            gelmiştir.”
+                        </p>
+
+                        <span>
+                            Buna göre sıralama:
+                            Burak → Ali → Cem şeklindedir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            ÇÖZÜM YÖNTEMİ
+                        </strong>
+
+                        <p>
+                            “Önce”, “sonra”, “hemen önce”,
+                            “hemen sonra”, “arasında” gibi
+                            ifadelerin altını çiz.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            İPUCU
+                        </div>
+
+                        <p>
+                            A → B
+                        </p>
+
+                        <span>
+                            A, B'den önce demektir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            İPUCU
+                        </div>
+
+                        <p>
+                            A ← B
+                        </p>
+
+                        <span>
+                            B, A'dan önce demektir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Ali, Mehmet'ten önce; Mehmet de
+                            Can'dan önce gelmektedir.
+                            Hangisi doğrudur?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Ali → Mehmet → Can
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Can → Mehmet → Ali
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Mehmet → Ali → Can
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 3 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        03
+                    </span>
+
+                    <span class="section-title">
+
+                        Yerleştirme Soruları
+
+                        <small>
+                            Konum ve sıra belirleme
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Yerleştirme sorularında kişiler,
+                        nesneler veya olaylar belirli
+                        konumlara yerleştirilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            5 kişilik bir sırada Ali 3. sıradadır.
+                        </p>
+
+                        <span>
+                            Ali'nin konumu kesin olarak
+                            belirlenmiştir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                SABİT KONUM
+                            </strong>
+
+                            <p>
+                                Bir kişinin veya nesnenin
+                                yeri kesin olarak verilir.
+                            </p>
+
+                            <span>
+                                A = 3
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                KOMŞULUK
+                            </strong>
+
+                            <p>
+                                İki unsurun yan yana bulunmasıdır.
+                            </p>
+
+                            <span>
+                                A - B
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                ARADA OLMA
+                            </strong>
+
+                            <p>
+                                Bir unsurun iki unsurun
+                                arasında bulunmasıdır.
+                            </p>
+
+                            <span>
+                                A - B - C
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="warning-card">
+
+                        <div class="warning-title">
+                            ⚠ DİKKAT
+                        </div>
+
+                        <p>
+                            “Hemen önce” veya “hemen sonra”
+                            ifadesi varsa araya başka bir
+                            kişi veya nesne giremez.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            A ile B'nin yan yana olması
+                            gerektiği söyleniyorsa hangisi
+                            kesinlikle doğrudur?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) A her zaman ilk sıradadır.
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) A ile B arasında başka bir kişi yoktur.
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) B her zaman son sıradadır.
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 4 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        04
+                    </span>
+
+                    <span class="section-title">
+
+                        Eşleştirme Soruları
+
+                        <small>
+                            Kişi - görev - gün
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Eşleştirme sorularında farklı
+                        gruplardaki unsurların hangi
+                        özelliklerle eşleştiği bulunur.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Ali, matematik dersini;
+                            Ayşe, Türkçe dersini seçmiştir.
+                        </p>
+
+                        <span>
+                            Kişiler ile dersler arasında
+                            eşleştirme yapılmıştır.
+                        </span>
+
+                    </div>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                KİŞİ
+                            </strong>
+
+                            <span>
+                                Ali
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                GÜN
+                            </strong>
+
+                            <span>
+                                Pazartesi
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                DERS
+                            </strong>
+
+                            <span>
+                                Matematik
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            TABLO YÖNTEMİ
+                        </strong>
+
+                        <p>
+                            Kişileri satırlara, özellikleri
+                            sütunlara yazarak tablo oluştur.
+                            Kesin olan bilgileri işaretle.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Eşleştirme sorularında tablo
+                            oluşturmanın temel amacı nedir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Verilen ilişkileri düzenli görmek
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Soruyu uzatmak
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Şıkları ezberlemek
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 5 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        05
+                    </span>
+
+                    <span class="section-title">
+
+                        Koşullu Bilgiler
+
+                        <small>
+                            Eğer - ise - yalnızca
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Sözel mantık sorularında bazı bilgiler
+                        koşula bağlı olarak verilir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                EĞER A İSE B
+                            </strong>
+
+                            <p>
+                                A gerçekleştiğinde B'nin
+                                gerçekleşmesi gerekir.
+                            </p>
+
+                            <span>
+                                A → B
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                A İSE B OLAMAZ
+                            </strong>
+
+                            <p>
+                                A ve B aynı anda gerçekleşemez.
+                            </p>
+
+                            <span>
+                                A → !B
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                YALNIZCA A
+                            </strong>
+
+                            <p>
+                                İfadenin kapsamına dikkat
+                                edilmelidir.
+                            </p>
+
+                            <span>
+                                Yalnızca A
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            “Ali toplantıya katılırsa
+                            Burak katılamaz.”
+                        </p>
+
+                        <span>
+                            Ali'nin katıldığı durumda
+                            Burak'ın katılması mümkün değildir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="warning-card">
+
+                        <div class="warning-title">
+                            ⚠ ÇOK ÖNEMLİ
+                        </div>
+
+                        <p>
+                            Koşul cümlelerinde verilen ilişkinin
+                            yönünü değiştirme.
+                        </p>
+
+                        <p>
+                            “A olursa B” bilgisi doğrudan
+                            “B olursa A” anlamına gelmez.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Ali gelirse Burak gelmez.”
+                            bilgisine göre Ali gelmişse
+                            ne söylenebilir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Burak gelmez.
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Burak kesinlikle gelir.
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Ali de gelmez.
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 6 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        06
+                    </span>
+
+                    <span class="section-title">
+
+                        Kesinlikle Doğru - Kesinlikle Yanlış
+
+                        <small>
+                            Mantıksal çıkarım
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Sözel mantık sorularında en önemli
+                        noktalardan biri, verilen bilgilerden
+                        hangisinin kesin olarak çıkarılabileceğini
+                        belirlemektir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                KESİN DOĞRU
+                            </strong>
+
+                            <p>
+                                Verilen bütün koşullarda
+                                doğru olmak zorundadır.
+                            </p>
+
+                            <span>
+                                Her durumda gerçekleşir.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                KESİN YANLIŞ
+                            </strong>
+
+                            <p>
+                                Verilen koşullar nedeniyle
+                                gerçekleşmesi mümkün değildir.
+                            </p>
+
+                            <span>
+                                Hiçbir durumda gerçekleşmez.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                OLASILIK
+                            </strong>
+
+                            <p>
+                                Bazı durumlarda mümkün,
+                                bazı durumlarda mümkün olmayabilir.
+                            </p>
+
+                            <span>
+                                Kesinlik yoktur.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            SORU KÖKÜNE DİKKAT
+                        </strong>
+
+                        <p>
+                            “Kesinlikle doğrudur” deniyorsa
+                            yalnızca tüm olasılıklarda geçerli
+                            olan bilgiyi seç.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Kesinlikle doğrudur” sorusunda
+                            hangi bilgi aranır?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Tüm olasılıklarda doğru olan
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Sadece bir durumda doğru olan
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Tahmin edilen
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 7 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        07
+                    </span>
+
+                    <span class="section-title">
+
+                        Tablo ve Şema Kullanımı
+
+                        <small>
+                            Soruyu görselleştirme
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Uzun sözel mantık sorularında verilen
+                        bilgileri tabloya veya şemaya dönüştürmek
+                        çözümü kolaylaştırır.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK TABLO
+                        </div>
+
+                        <p>
+                            4 kişi → 4 gün
+                        </p>
+
+                        <span>
+                            Ali → ?
+                            <br>
+                            Burak → ?
+                            <br>
+                            Can → ?
+                            <br>
+                            Deniz → ?
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            İŞARETLEME SİSTEMİ
+                        </strong>
+
+                        <p>
+                            Kesin bilgiler için ✓,
+                            mümkün olmayan durumlar için
+                            X kullanabilirsin.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Ali = Pazartesi ✓
+                        </p>
+
+                        <span>
+                            Ali'nin başka bir günde olması
+                            mümkün değilse diğer günlere X
+                            koyabilirsin.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Sözel mantık sorularında tablo
+                            kullanmanın en önemli avantajı
+                            nedir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Bilgileri düzenli ve görünür hâle getirmek
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Soruyu değiştirmek
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Şıkları azaltmak
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 8 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        08
+                    </span>
+
+                    <span class="section-title">
+
+                        Sözel Mantık Çözüm Taktikleri
+
+                        <small>
+                            KPSS için hızlı çözüm
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Sözel mantık sorularında amaç bütün
+                        ihtimalleri kafadan denemek değildir.
+                        Verilen koşulları sistemli şekilde
+                        kullanmaktır.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                1
+                            </strong>
+
+                            <p>
+                                Önce soru kökünü oku.
+                            </p>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                2
+                            </strong>
+
+                            <p>
+                                Verilen kesin bilgileri
+                                işaretle.
+                            </p>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                3
+                            </strong>
+
+                            <p>
+                                Tablo veya sıra oluştur.
+                            </p>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                4
+                            </strong>
+
+                            <p>
+                                Koşulları tek tek uygula.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="warning-card">
+
+                        <div class="warning-title">
+                            ⚠ EN ÖNEMLİ TAKTİK
+                        </div>
+
+                        <p>
+                            Sorunun tamamını zihninde tutmaya
+                            çalışma. Bilgileri kâğıda veya
+                            oluşturduğun tabloya aktar.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            Sözel mantık sorularında en güvenli
+                            yaklaşım hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Her şeyi ezberlemek
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Bilgileri tablo ve şemalarla düzenlemek
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Şıkları rastgele işaretlemek
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ÖZET -->
+
+        <div class="summary-card">
+
+            <div class="summary-title">
+                KPSS İÇİN KISA ÖZET
+            </div>
+
+            <ul>
+
+                <li>
+                    Önce soru kökünü dikkatlice oku.
+                </li>
+
+                <li>
+                    Verilen kesin bilgileri belirle.
+                </li>
+
+                <li>
+                    Sıralama sorularında önce-sonra
+                    ilişkilerini göster.
+                </li>
+
+                <li>
+                    Yerleştirme sorularında sabit
+                    konumları işaretle.
+                </li>
+
+                <li>
+                    Eşleştirme sorularında tablo oluştur.
+                </li>
+
+                <li>
+                    Koşulların yönünü değiştirme.
+                </li>
+
+                <li>
+                    “Kesinlikle” ifadelerinde bütün
+                    olasılıkları kontrol et.
+                </li>
+
+                <li>
+                    Uzun sorularda bilgileri şemaya dönüştür.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DİKKAT -->
+
+        <div class="warning-card">
+
+            <div class="warning-title">
+                ⚠ SINAVDA UNUTMA
+            </div>
+
+            <p>
+                Sözel mantık soruları bilgi ezberinden
+                çok verilen bilgileri doğru organize
+                etmeye dayanır.
+            </p>
+
+            <p>
+                Bir bilgiyi tabloya aktardığında,
+                diğer bilgilerin sonuçlarını da
+                adım adım çıkarabilirsin.
+            </p>
+
+        </div>
+
+
+        <!-- TEST BAŞLANGIÇ -->
+
+        <div
+            class="test-start"
+            id="testStart">
+
+            <div class="test-icon">
+                ?
+            </div>
+
+            <h2>
+                Hazır mısın?
+            </h2>
+
+            <p>
+                Konuyu tamamladıysan 5 soruluk
+                mini teste geçebilirsin.
+            </p>
+
+            <button
+                class="test-start-button"
+                onclick="startTest()">
+
+                TESTE BAŞLA
+
+            </button>
+
+        </div>
+
+
+        <!-- TEST -->
+
+        <div
+            class="test-area"
+            id="testArea">
+
+            <div class="test-top">
+
+                <div>
+
+                    <span>
+                        SÖZEL MANTIK TESTİ
+                    </span>
+
+                    <strong id="questionNumber">
+                        Soru 1 / 5
+                    </strong>
+
+                </div>
+
+                <div
+                    class="score-display"
+                    id="scoreDisplay">
+
+                    Puan: 0
+
+                </div>
+
+            </div>
+
+
+            <div class="question-progress">
+
+                <div id="questionProgress"></div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div
+                    class="difficulty"
+                    id="difficulty">
+
+                    KOLAY
+
+                </div>
+
+
+                <h2 id="questionText">
+                    Soru yükleniyor...
+                </h2>
+
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+
+                <div
+                    class="answer-feedback"
+                    id="answerFeedback">
+
+                    <strong id="feedbackTitle"></strong>
+
+                    <p id="feedbackText"></p>
+
+                </div>
+
+
+                <button
+                    class="next-question-button"
+                    id="nextButton"
+                    onclick="nextQuestion()">
+
+                    SONRAKİ SORU →
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SONUÇ -->
+
+        <div
+            class="test-result"
+            id="testResult">
+
+            <div class="result-icon">
+                ✓
+            </div>
+
+            <div class="result-label">
+                TEST TAMAMLANDI
+            </div>
+
+            <h2 id="finalScore">
+                0 / 5
+            </h2>
+
+            <p id="resultMessage">
+                Test tamamlandı.
+            </p>
+
+            <button
+                class="retry-button"
+                onclick="restartTest()">
+
+                TEKRAR ÇÖZ
+
+            </button>
+
+        </div>
+
+
+        <!-- KONU BİTTİ -->
+
+        <div class="finish-area">
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+
+                ✓ KONU BİTTİ
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

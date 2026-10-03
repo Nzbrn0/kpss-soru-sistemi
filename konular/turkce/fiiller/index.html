@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Fiiller</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+
+    <main class="lesson-container">
+
+        <a
+            href="../../../index.html?return=subjects"
+            class="back-button">
+
+            ← Türkçe Konularına Dön
+
+        </a>
+
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                TÜRKÇE / 08
+            </div>
+
+            <h1>
+                Fiiller
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Fiillerin özelliklerini, anlamlarına göre
+                türlerini, yapılarını ve kiplerini öğren.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-text">
+
+                <span>
+                    KONU İLERLEMESİ
+                </span>
+
+                <strong id="progressPercent">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- KONULAR -->
+
+        <div class="lesson-sections">
+
+
+            <!-- 1 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        01
+                    </span>
+
+                    <span class="section-title">
+
+                        Fiil Nedir?
+
+                        <small>
+                            İş, oluş ve durum bildiren sözcükler
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Fiiller; bir iş, oluş veya durum
+                        bildiren ve çekimlenebilen
+                        sözcüklerdir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                İŞ
+                            </strong>
+
+                            <p>
+                                Öznenin yaptığı bir işi
+                                bildirir.
+                            </p>
+
+                            <span>
+                                kitabı okudu
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                OLUŞ
+                            </strong>
+
+                            <p>
+                                Kendiliğinden gerçekleşen
+                                değişimi bildirir.
+                            </p>
+
+                            <span>
+                                yaprak sarardı
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                DURUM
+                            </strong>
+
+                            <p>
+                                Bir durum veya hareket
+                                bildirir.
+                            </p>
+
+                            <span>
+                                çocuk uyudu
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Öğrenci kitabı okudu.
+                        </p>
+
+                        <span>
+                            “Okudu” sözcüğü yapılan bir işi
+                            bildirdiği için fiildir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            Aşağıdakilerden hangisi fiildir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Kitap
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Koştu
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Güzel
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 2 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        02
+                    </span>
+
+                    <span class="section-title">
+
+                        İş, Oluş ve Durum Fiilleri
+
+                        <small>
+                            Fiillerin anlam özellikleri
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Fiiller anlamlarına göre iş, oluş ve
+                        durum fiilleri olmak üzere üç grupta
+                        incelenebilir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                İŞ FİİLİ
+                            </strong>
+
+                            <p>
+                                “Neyi?” veya “Kimi?” sorularına
+                                cevap verebilir.
+                            </p>
+
+                            <span>
+                                kitabı okudu
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                OLUŞ FİİLİ
+                            </strong>
+
+                            <p>
+                                Kendiliğinden gerçekleşen
+                                değişimleri anlatır.
+                            </p>
+
+                            <span>
+                                çocuk büyüdü
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                DURUM FİİLİ
+                            </strong>
+
+                            <p>
+                                Bir durum bildirir ve genellikle
+                                nesne almaz.
+                            </p>
+
+                            <span>
+                                çocuk uyudu
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            SINAV İPUCU
+                        </strong>
+
+                        <p>
+                            İş fiilini bulmak için fiile
+                            “neyi?” veya “kimi?” sorusunu
+                            yöneltmeyi deneyebilirsin.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Ali kitabı okudu.
+                        </p>
+
+                        <span>
+                            “Neyi okudu?” → kitabı.
+                            Nesne alabildiği için “okudu”
+                            iş fiilidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Yapraklar sonbaharda sarardı.”
+                            cümlesindeki fiilin türü nedir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) İş fiili
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Oluş fiili
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Durum fiili
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 3 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        03
+                    </span>
+
+                    <span class="section-title">
+
+                        Fiillerde Kip
+
+                        <small>
+                            Zaman ve dilek anlamı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Fiillerin zaman, dilek veya tasarı
+                        anlamı kazanmasını sağlayan ekler
+                        kip ekleridir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                HABER KİPLERİ
+                            </strong>
+
+                            <p>
+                                Zaman anlamı taşıyan kiplerdir.
+                            </p>
+
+                            <span>
+                                geldi, geliyor, gelecek
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                DİLEK KİPLERİ
+                            </strong>
+
+                            <p>
+                                Dilek, şart, gereklilik veya
+                                emir anlamı verebilir.
+                            </p>
+
+                            <span>
+                                gelmeli, gelse
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                KİŞİ EKİ
+                            </strong>
+
+                            <p>
+                                Fiili yapan kişiyi bildirir.
+                            </p>
+
+                            <span>
+                                geldim, geldin
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            HABER KİPLERİ
+                        </strong>
+
+                        <p>
+                            Görülen geçmiş zaman (-di),
+                            öğrenilen geçmiş zaman (-miş),
+                            şimdiki zaman (-yor), gelecek
+                            zaman (-ecek) ve geniş zaman
+                            (-r) temel haber kipleridir.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Yarın sınava gireceğim.
+                        </p>
+
+                        <span>
+                            “-ecek” gelecek zaman ekidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Geliyorum” fiilinde hangi kip
+                            kullanılmıştır?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Şimdiki zaman
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Gelecek zaman
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Görülen geçmiş zaman
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 4 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        04
+                    </span>
+
+                    <span class="section-title">
+
+                        Haber Kipleri
+
+                        <small>
+                            Zaman bildiren fiil çekimleri
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Haber kipleri fiilin gerçekleşme
+                        zamanını bildirir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                GEÇMİŞ ZAMAN
+                            </strong>
+
+                            <p>
+                                Görülen geçmiş zaman
+                                “-di” ekiyle yapılır.
+                            </p>
+
+                            <span>
+                                geldi
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                ŞİMDİKİ ZAMAN
+                            </strong>
+
+                            <p>
+                                “-yor” ekiyle yapılır.
+                            </p>
+
+                            <span>
+                                geliyor
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                GELECEK ZAMAN
+                            </strong>
+
+                            <p>
+                                “-ecek / -acak” ekiyle yapılır.
+                            </p>
+
+                            <span>
+                                gelecek
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            GENİŞ ZAMAN
+                        </div>
+
+                        <p>
+                            Her sabah kitap okurum.
+                        </p>
+
+                        <span>
+                            “-r” geniş zaman ekidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖĞRENİLEN GEÇMİŞ ZAMAN
+                        </div>
+
+                        <p>
+                            Ali gelmiş.
+                        </p>
+
+                        <span>
+                            “-miş” öğrenilen geçmiş zaman
+                            ekidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Yarın Ankara'ya gideceğim.”
+                            cümlesinde hangi zaman vardır?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Geniş zaman
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Gelecek zaman
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Şimdiki zaman
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 5 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        05
+                    </span>
+
+                    <span class="section-title">
+
+                        Dilek Kipleri
+
+                        <small>
+                            Tasarı ve dilek anlamı veren kipler
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Dilek kipleri fiile zaman anlamından
+                        çok dilek, şart, gereklilik veya
+                        emir anlamı kazandırır.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                GEREKLİLİK
+                            </strong>
+
+                            <p>
+                                Yapılması gereken işi bildirir.
+                            </p>
+
+                            <span>
+                                çalışmalıyım
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                ŞART
+                            </strong>
+
+                            <p>
+                                Bir koşula bağlılık bildirir.
+                            </p>
+
+                            <span>
+                                gelirsen
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                İSTEK
+                            </strong>
+
+                            <p>
+                                İstek veya dilek bildirir.
+                            </p>
+
+                            <span>
+                                gidelim
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            DİLEK KİPLERİ
+                        </strong>
+
+                        <p>
+                            Gereklilik: -meli / -malı
+                            <br>
+                            Şart: -se / -sa
+                            <br>
+                            İstek: -e / -a
+                            <br>
+                            Emir: özel çekim
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Ders çalışmalıyım.
+                        </p>
+
+                        <span>
+                            “-malı” eki gereklilik kipini
+                            oluşturmuştur.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Daha çok çalışmalısın.”
+                            cümlesinde hangi kip vardır?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Gereklilik kipi
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Şart kipi
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) İstek kipi
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 6 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        06
+                    </span>
+
+                    <span class="section-title">
+
+                        Fiilde Yapı
+
+                        <small>
+                            Basit, türemiş ve birleşik fiiller
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Fiiller yapı bakımından basit,
+                        türemiş ve birleşik fiiller olarak
+                        incelenebilir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                BASİT FİİL
+                            </strong>
+
+                            <p>
+                                Yapım eki almamış fiillerdir.
+                            </p>
+
+                            <span>
+                                geldi
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                TÜREMİŞ FİİL
+                            </strong>
+
+                            <p>
+                                Yapım eki alarak oluşan
+                                fiillerdir.
+                            </p>
+
+                            <span>
+                                temizle-
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                BİRLEŞİK FİİL
+                            </strong>
+
+                            <p>
+                                Birden fazla sözcüğün
+                                birleşmesiyle oluşur.
+                            </p>
+
+                            <span>
+                                yardım etmek
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            BASİT FİİL
+                        </div>
+
+                        <p>
+                            Çocuk koştu.
+                        </p>
+
+                        <span>
+                            “Koş-” fiili yapım eki almamıştır.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            TÜREMİŞ FİİL
+                        </div>
+
+                        <p>
+                            Ev temizlendi.
+                        </p>
+
+                        <span>
+                            “Temiz” sözcüğünden “-le” yapım
+                            ekiyle “temizle-” fiili oluşmuştur.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            BİRLEŞİK FİİL
+                        </div>
+
+                        <p>
+                            Sana yardım edeceğim.
+                        </p>
+
+                        <span>
+                            “Yardım etmek” birden fazla
+                            sözcüğün oluşturduğu birleşik fiildir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            Aşağıdakilerden hangisi birleşik
+                            fiildir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Geldi
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Temizledi
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            C) Yardım etti
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 7 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        07
+                    </span>
+
+                    <span class="section-title">
+
+                        Fiilde Kişi
+
+                        <small>
+                            Fiili gerçekleştiren kişi
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Fiiller kişi ekleri alarak işi yapan
+                        veya eylemi gerçekleştiren kişiyi
+                        bildirir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                1. TEKİL
+                            </strong>
+
+                            <p>
+                                Konuşan kişiyi bildirir.
+                            </p>
+
+                            <span>
+                                geldim
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                2. TEKİL
+                            </strong>
+
+                            <p>
+                                Dinleyen kişiyi bildirir.
+                            </p>
+
+                            <span>
+                                geldin
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                3. TEKİL
+                            </strong>
+
+                            <p>
+                                Hakkında konuşulan kişiyi
+                                bildirir.
+                            </p>
+
+                            <span>
+                                geldi
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Ders çalışıyorum.
+                        </p>
+
+                        <span>
+                            “-um” kişi eki birinci tekil
+                            kişiyi göstermektedir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            UNUTMA
+                        </strong>
+
+                        <p>
+                            Fiil çekiminde kip eki ve kişi
+                            eki birlikte bulunabilir.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+        <!-- ÖZET -->
+
+        <div class="summary-card">
+
+            <div class="summary-title">
+                KPSS İÇİN KISA ÖZET
+            </div>
+
+            <ul>
+
+                <li>
+                    Fiil → İş, oluş veya durum bildirir.
+                </li>
+
+                <li>
+                    İş fiili → “Neyi?” veya “Kimi?”
+                    sorularına cevap alabilir.
+                </li>
+
+                <li>
+                    Oluş fiili → Kendiliğinden gerçekleşen
+                    değişimi bildirir.
+                </li>
+
+                <li>
+                    Durum fiili → Bir durum bildirir.
+                </li>
+
+                <li>
+                    Haber kipleri → Zaman anlamı verir.
+                </li>
+
+                <li>
+                    Dilek kipleri → Dilek, şart, gereklilik
+                    veya emir anlamı verir.
+                </li>
+
+                <li>
+                    Basit fiil → Yapım eki almamıştır.
+                </li>
+
+                <li>
+                    Türemiş fiil → Yapım eki almıştır.
+                </li>
+
+                <li>
+                    Birleşik fiil → Birden fazla sözcükten
+                    oluşabilir.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DİKKAT -->
+
+        <div class="warning-card">
+
+            <div class="warning-title">
+                ⚠ SINAVDA DİKKAT
+            </div>
+
+            <p>
+                Fiilin türünü belirlerken yalnızca sözcüğün
+                anlamına değil, cümledeki kullanımına bak.
+            </p>
+
+            <p>
+                İş fiilini bulurken “neyi?” ve “kimi?”
+                sorularını kullanmak oldukça işe yarar.
+            </p>
+
+            <p>
+                Haber kipleri zaman bildirirken dilek
+                kipleri dilek veya tasarı anlamı verir.
+            </p>
+
+        </div>
+
+
+        <!-- TEST BAŞLANGIÇ -->
+
+        <div
+            class="test-start"
+            id="testStart">
+
+            <div class="test-icon">
+                ?
+            </div>
+
+            <h2>
+                Hazır mısın?
+            </h2>
+
+            <p>
+                Konuyu tamamladıysan 5 soruluk
+                mini teste geçebilirsin.
+            </p>
+
+            <button
+                class="test-start-button"
+                onclick="startTest()">
+
+                TESTE BAŞLA
+
+            </button>
+
+        </div>
+
+
+        <!-- TEST -->
+
+        <div
+            class="test-area"
+            id="testArea">
+
+            <div class="test-top">
+
+                <div>
+
+                    <span>
+                        FİİLLER TESTİ
+                    </span>
+
+                    <strong id="questionNumber">
+                        Soru 1 / 5
+                    </strong>
+
+                </div>
+
+                <div
+                    class="score-display"
+                    id="scoreDisplay">
+
+                    Puan: 0
+
+                </div>
+
+            </div>
+
+
+            <div class="question-progress">
+
+                <div
+                    id="questionProgress">
+                </div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div
+                    class="difficulty"
+                    id="difficulty">
+
+                    ORTA
+
+                </div>
+
+                <h2 id="questionText">
+                    Soru yükleniyor...
+                </h2>
+
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+
+                <div
+                    class="answer-feedback"
+                    id="answerFeedback">
+
+                    <strong
+                        id="feedbackTitle">
+                    </strong>
+
+                    <p
+                        id="feedbackText">
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="next-question-button"
+                    id="nextButton"
+                    onclick="nextQuestion()">
+
+                    SONRAKİ SORU →
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TEST SONUCU -->
+
+        <div
+            class="test-result"
+            id="testResult">
+
+            <div class="result-icon">
+                ✓
+            </div>
+
+            <div class="result-label">
+                TEST TAMAMLANDI
+            </div>
+
+            <h2 id="finalScore">
+                0 / 5
+            </h2>
+
+            <p id="resultMessage">
+                Test tamamlandı.
+            </p>
+
+            <button
+                class="retry-button"
+                onclick="restartTest()">
+
+                TEKRAR ÇÖZ
+
+            </button>
+
+        </div>
+
+
+        <!-- KONU BİTTİ -->
+
+        <div class="finish-area">
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+
+                ✓ KONU BİTTİ
+
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

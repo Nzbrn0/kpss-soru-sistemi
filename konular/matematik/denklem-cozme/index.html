@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Denklem Çözme | KPSS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects" class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 12
+            </div>
+
+            <h1>Denklem Çözme</h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Denklem çözme, bilinmeyen bir değeri bulmak için
+                eşitliklerden yararlanılan temel matematik konularından biridir.
+                KPSS'de birçok problem ve soru tipinin temelini oluşturur.
+            </p>
+
+        </header>
+
+        <div class="progress-area">
+
+            <div class="progress-text">
+                <span>Konu İlerlemesi</span>
+                <span id="progressText">%0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- 01 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">01</div>
+
+                <div class="section-title">
+                    Denklem Nedir?
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    İçinde bilinmeyen bulunan ve iki tarafı eşit olan
+                    matematiksel ifadelere <strong>denklem</strong> denir.
+                </p>
+
+                <div class="formula">
+                    2x + 5 = 15
+                </div>
+
+                <div class="info-card">
+
+                    <strong>Bilinmeyen:</strong>
+
+                    <p>
+                        Genellikle x, y veya z gibi harflerle gösterilir.
+                        Amaç bilinmeyenin değerini bulmaktır.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        x + 7 = 12 denkleminde x'i bulalım.
+                    </p>
+
+                    <div class="formula">
+                        x + 7 = 12
+                        <br>
+                        x = 12 - 7
+                        <br>
+                        x = 5
+                    </div>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        x + 8 = 15 ise x kaçtır?
+                    </p>
+
+                    <div class="answers">
+
+                        <button class="answer-button" data-correct="false">
+                            5
+                        </button>
+
+                        <button class="answer-button" data-correct="false">
+                            6
+                        </button>
+
+                        <button class="answer-button" data-correct="true">
+                            7
+                        </button>
+
+                        <button class="answer-button" data-correct="false">
+                            8
+                        </button>
+
+                    </div>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">02</div>
+
+                <div class="section-title">
+                    Birinci Dereceden Bir Bilinmeyenli Denklemler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bilinmeyenin birinci dereceden olduğu denklemlere
+                    birinci dereceden bir bilinmeyenli denklem denir.
+                </p>
+
+                <div class="formula">
+                    ax + b = c
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        3x + 4 = 19 denklemini çözelim.
+                    </p>
+
+                    <div class="formula">
+                        3x = 19 - 4
+                        <br>
+                        3x = 15
+                        <br>
+                        x = 5
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">03</div>
+
+                <div class="section-title">
+                    Denklemde Terim Taşıma
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir terim eşitliğin diğer tarafına geçirildiğinde
+                    işlem işareti değişir.
+                </p>
+
+                <div class="formula">
+                    x + 5 = 12
+                    <br><br>
+                    x = 12 - 5
+                </div>
+
+                <div class="info-card">
+
+                    <strong>Unutma:</strong>
+
+                    <p>
+                        Toplama karşı tarafa geçerse çıkarma,
+                        çıkarma karşı tarafa geçerse toplama olur.
+                    </p>
+
+                    <p>
+                        Çarpma karşı tarafa geçerse bölme,
+                        bölme karşı tarafa geçerse çarpma olur.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <div class="formula">
+                        4x - 7 = 21
+                        <br>
+                        4x = 28
+                        <br>
+                        x = 7
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">04</div>
+
+                <div class="section-title">
+                    Parantezli Denklemler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Parantezli denklemlerde öncelikle parantez
+                    dağıtılır ve ardından benzer terimler düzenlenir.
+                </p>
+
+                <div class="formula">
+                    2(x + 3) = 14
+                    <br><br>
+                    2x + 6 = 14
+                    <br>
+                    2x = 8
+                    <br>
+                    x = 4
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat!</strong>
+
+                    <p>
+                        Parantezin önündeki sayı parantez içindeki
+                        bütün terimlerle çarpılır.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        3(x + 2) = 15 ise x kaçtır?
+                    </p>
+
+                    <div class="answers">
+
+                        <button class="answer-button" data-correct="false">
+                            2
+                        </button>
+
+                        <button class="answer-button" data-correct="true">
+                            3
+                        </button>
+
+                        <button class="answer-button" data-correct="false">
+                            4
+                        </button>
+
+                        <button class="answer-button" data-correct="false">
+                            5
+                        </button>
+
+                    </div>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">05</div>
+
+                <div class="section-title">
+                    Kesirli Denklemler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Kesirli denklemlerde amaç paydaları ortadan kaldırarak
+                    işlemi daha kolay hale getirmektir.
+                </p>
+
+                <div class="formula">
+                    x / 3 = 5
+                    <br><br>
+                    x = 15
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        x/4 + 2 = 7
+                    </p>
+
+                    <div class="formula">
+                        x/4 = 5
+                        <br>
+                        x = 20
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>KPSS İpucu:</strong>
+
+                    <p>
+                        Birden fazla kesir varsa ortak payda ile
+                        her iki tarafı çarparak paydaları yok edebilirsin.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">06</div>
+
+                <div class="section-title">
+                    İki Tarafında Bilinmeyen Bulunan Denklemler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bilinmeyen her iki tarafta da bulunuyorsa
+                    bilinmeyenler bir tarafta, sabit sayılar diğer tarafta toplanır.
+                </p>
+
+                <div class="formula">
+                    5x + 3 = 2x + 18
+                    <br><br>
+                    5x - 2x = 18 - 3
+                    <br>
+                    3x = 15
+                    <br>
+                    x = 5
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat!</strong>
+
+                    <p>
+                        Terim karşıya geçirildiğinde işaret değişir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">07</div>
+
+                <div class="section-title">
+                    Denklem Sistemleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    İki veya daha fazla bilinmeyenin bulunduğu
+                    birden fazla denklemin birlikte çözülmesine
+                    denklem sistemi denir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <div class="formula">
+                        x + y = 10
+                        <br>
+                        x - y = 2
+                    </div>
+
+                    <p>
+                        Denklemleri taraf tarafa toplarsak:
+                    </p>
+
+                    <div class="formula">
+                        2x = 12
+                        <br>
+                        x = 6
+                    </div>
+
+                    <p>
+                        x + y = 10 olduğundan:
+                    </p>
+
+                    <div class="formula">
+                        6 + y = 10
+                        <br>
+                        y = 4
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">08</div>
+
+                <div class="section-title">
+                    Denklem Kurma Problemleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Problemlerde verilen bilgiler doğrudan denklem şeklinde
+                    yazılmayabilir. Önce bilinmeyene uygun bir değişken verilmelidir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir sayının 3 katının 5 fazlası 26'dır.
+                        Bu sayı kaçtır?
+                    </p>
+
+                    <div class="formula">
+                        Sayı = x
+                        <br><br>
+                        3x + 5 = 26
+                        <br>
+                        3x = 21
+                        <br>
+                        x = 7
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>Pratik yöntem:</strong>
+
+                    <p>
+                        Önce bilinmeyene x ver.
+                        Sonra problemdeki ifadeleri sırayla matematiğe çevir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">09</div>
+
+                <div class="section-title">
+                    Denklem Çözme Taktikleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <strong>1. Benzer terimleri birleştir.</strong>
+
+                    <p>
+                        3x + 2x = 5x gibi aynı türden terimleri
+                        tek terimde topla.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>2. Bilinmeyenleri aynı tarafta topla.</strong>
+
+                    <p>
+                        x'li ifadeleri bir tarafa,
+                        sabit sayıları diğer tarafa geçir.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>3. İşaret değişimine dikkat et.</strong>
+
+                    <p>
+                        Bir terimi eşitliğin diğer tarafına geçirirken
+                        işlem işaretini değiştir.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>4. Sonucu kontrol et.</strong>
+
+                    <p>
+                        Bulduğun x değerini başlangıç denkleminde yerine
+                        koyarak eşitliğin sağlanıp sağlanmadığını kontrol et.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">10</div>
+
+                <div class="section-title">
+                    KPSS İçin Hızlı Tekrar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Bilmen Gerekenler</h3>
+
+                    <ul>
+
+                        <li>
+                            Denklemde amaç bilinmeyeni bulmaktır.
+                        </li>
+
+                        <li>
+                            Terim karşıya geçerken işaret değiştirir.
+                        </li>
+
+                        <li>
+                            Parantez açarken dağıtma işlemini doğru yap.
+                        </li>
+
+                        <li>
+                            Kesirli denklemlerde paydaları yok etmek işlemi kolaylaştırır.
+                        </li>
+
+                        <li>
+                            Bilinmeyenleri bir tarafta, sabitleri diğer tarafta topla.
+                        </li>
+
+                        <li>
+                            Problem çözümünde önce bilinmeyene x ver.
+                        </li>
+
+                        <li>
+                            Sonucu başlangıç denkleminde kontrol et.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST BAŞLANGIÇ -->
+
+        <section class="test-start">
+
+            <h2>Mini Test</h2>
+
+            <p>
+                Denklem çözme konusunu ne kadar öğrendiğini test et.
+            </p>
+
+            <button onclick="beginTest()">
+                TESTE BAŞLA →
+            </button>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-area" id="testArea">
+
+            <div class="question-card">
+
+                <div class="question-number" id="questionNumber"></div>
+
+                <h2 id="questionText"></h2>
+
+                <div id="testAnswers"></div>
+
+                <div class="answer-feedback" id="answerFeedback"></div>
+
+                <button
+                    class="next-question-button"
+                    id="nextButton"
+                    onclick="nextQuestion()">
+                    SONRAKİ SORU →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SONUÇ -->
+
+        <section class="test-result" id="testResult">
+
+            <h2>Test Tamamlandı!</h2>
+
+            <div class="score" id="scoreText"></div>
+
+            <p id="resultMessage"></p>
+
+        </section>
+
+
+        <!-- BİTİR -->
+
+        <section class="finish-area">
+
+            <button onclick="finishLesson()">
+                ✓ KONU BİTTİ
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

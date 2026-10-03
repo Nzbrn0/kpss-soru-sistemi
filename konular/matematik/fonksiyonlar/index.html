@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Fonksiyonlar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects" class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 15
+            </div>
+
+            <h1>Fonksiyonlar</h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Fonksiyon kavramını, fonksiyon çeşitlerini, bileşke ve ters
+                fonksiyonları öğrenerek KPSS sorularını daha kolay çöz.
+            </p>
+
+        </header>
+
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span>Konu İlerlemesi</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">01</div>
+
+                <div class="section-title">
+                    Fonksiyon Nedir?
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    A kümesindeki her elemanın B kümesinde yalnızca bir
+                    elemana eşleştirilmesine fonksiyon denir.
+                </p>
+
+                <div class="formula">
+                    f : A → B
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A = {1, 2, 3}
+                    </p>
+
+                    <p>
+                        B = {a, b, c}
+                    </p>
+
+                    <p>
+                        f(1) = a
+                    </p>
+
+                    <p>
+                        f(2) = b
+                    </p>
+
+                    <p>
+                        f(3) = c
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Temel kural:</strong>
+
+                    <p>
+                        Tanım kümesindeki her elemanın mutlaka bir görüntüsü
+                        olmalıdır ve bir elemanın iki farklı görüntüsü olamaz.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">02</div>
+
+                <div class="section-title">
+                    Tanım Kümesi ve Değer Kümesi
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Fonksiyonda başlangıç kümesine tanım kümesi,
+                    hedef kümeye ise değer kümesi denir.
+                </p>
+
+                <div class="formula">
+                    f : A → B
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        f : A → B
+                    </p>
+
+                    <p>
+                        A = {1, 2, 3, 4}
+                    </p>
+
+                    <p>
+                        B = {5, 6, 7}
+                    </p>
+
+                    <p>
+                        A → Tanım kümesi
+                    </p>
+
+                    <p>
+                        B → Değer kümesi
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Fonksiyonun aldığı değerler tanım kümesinden,
+                        çıktıları ise değer kümesinden gelir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">03</div>
+
+                <div class="section-title">
+                    Fonksiyon Olma Şartı
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir bağıntının fonksiyon olabilmesi için tanım
+                    kümesindeki her elemanın yalnızca bir görüntüsü
+                    bulunmalıdır.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Fonksiyon Olur</h3>
+
+                    <p>
+                        1 → a
+                    </p>
+
+                    <p>
+                        2 → b
+                    </p>
+
+                    <p>
+                        3 → b
+                    </p>
+
+                    <p>
+                        Farklı elemanlar aynı elemana gidebilir.
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <h3>Fonksiyon Olmaz</h3>
+
+                    <p>
+                        1 → a
+                    </p>
+
+                    <p>
+                        1 → b
+                    </p>
+
+                    <p>
+                        Çünkü 1 elemanının iki farklı görüntüsü vardır.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        A = {1, 2, 3} kümesinden B = {a, b} kümesine
+                        1→a, 2→b, 3→a şeklindeki eşleme fonksiyon mudur?
+                    </p>
+
+                    <button class="answer-button" data-correct="true">
+                        Evet
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        Hayır
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">04</div>
+
+                <div class="section-title">
+                    Fonksiyon Gösterimi
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Fonksiyonlar genellikle f(x), g(x) veya h(x) şeklinde
+                    gösterilir.
+                </p>
+
+                <div class="formula">
+                    f(x) = 2x + 3
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        f(x) = 2x + 3
+                    </p>
+
+                    <p>
+                        f(2) = 2 · 2 + 3
+                    </p>
+
+                    <p>
+                        f(2) = 7
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>KPSS taktiği:</strong>
+
+                    <p>
+                        f(a) soruluyorsa fonksiyonda x gördüğün her yere
+                        a yaz.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        f(x) = 3x + 2 ise f(4) kaçtır?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        10
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        14
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        16
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">05</div>
+
+                <div class="section-title">
+                    Görüntü ve Ön Görüntü
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Tanım kümesindeki bir elemanın fonksiyon sonucunda
+                    eşleştiği elemana görüntü denir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        f(2) = 7
+                    </p>
+
+                    <p>
+                        2 → Ön görüntü
+                    </p>
+
+                    <p>
+                        7 → Görüntü
+                    </p>
+
+                </div>
+
+                <div class="formula">
+                    x → f(x)
+                </div>
+
+                <p>
+                    Tanım kümesindeki elemanların elde ettiği görüntülerin
+                    oluşturduğu kümeye görüntü kümesi denir.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">06</div>
+
+                <div class="section-title">
+                    Fonksiyon Çeşitleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    KPSS'de özellikle sabit, birim, bire bir ve örten
+                    fonksiyon kavramları önemlidir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Sabit Fonksiyon</h3>
+
+                    <p>
+                        Her x değeri için aynı sonucu veren fonksiyondur.
+                    </p>
+
+                    <div class="formula">
+                        f(x) = c
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Birim Fonksiyon</h3>
+
+                    <p>
+                        Her elemanı kendisine gönderen fonksiyondur.
+                    </p>
+
+                    <div class="formula">
+                        f(x) = x
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Bire Bir Fonksiyon</h3>
+
+                    <p>
+                        Farklı elemanların görüntüleri de farklıysa
+                        fonksiyon bire birdir.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Örten Fonksiyon</h3>
+
+                    <p>
+                        Değer kümesindeki her elemanın en az bir ön görüntüsü
+                        varsa fonksiyon örtendir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">07</div>
+
+                <div class="section-title">
+                    Bire Bir ve Örten Fonksiyon
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="example-card">
+
+                    <h3>Bire Bir</h3>
+
+                    <p>
+                        f(a) = f(b) ise a = b olmak zorundaysa fonksiyon
+                        bire birdir.
+                    </p>
+
+                    <div class="formula">
+                        f(a) = f(b) → a = b
+                    </div>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örten</h3>
+
+                    <p>
+                        Değer kümesinde açıkta kalan eleman yoksa fonksiyon
+                        örtendir.
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Önemli:</strong>
+
+                    <p>
+                        Sonlu kümelerde tanım kümesinin eleman sayısı ile
+                        değer kümesinin eleman sayısı eşitse bire bir ve
+                        örten fonksiyonlar aynı zamanda bijeksiyondur.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        f(x) = x fonksiyonu hangi fonksiyon çeşididir?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        Sabit
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        Birim
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        Sıfır
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">08</div>
+
+                <div class="section-title">
+                    Fonksiyonlarda İşlemler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Fonksiyonlar üzerinde toplama, çıkarma, çarpma ve
+                    bölme işlemleri yapılabilir.
+                </p>
+
+                <div class="formula">
+                    (f + g)(x) = f(x) + g(x)
+                </div>
+
+                <div class="formula">
+                    (f − g)(x) = f(x) − g(x)
+                </div>
+
+                <div class="formula">
+                    (f · g)(x) = f(x) · g(x)
+                </div>
+
+                <div class="formula">
+                    (f / g)(x) = f(x) / g(x)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        f(x) = x + 2
+                    </p>
+
+                    <p>
+                        g(x) = 2x
+                    </p>
+
+                    <p>
+                        (f + g)(x) = 3x + 2
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Bölme işleminde payda fonksiyonu sıfır olamaz.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">09</div>
+
+                <div class="section-title">
+                    Bileşke Fonksiyon
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir fonksiyonun çıktısını başka bir fonksiyonun girdisi
+                    olarak kullanmaya bileşke fonksiyon denir.
+                </p>
+
+                <div class="formula">
+                    (f ∘ g)(x) = f(g(x))
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        f(x) = 2x + 1
+                    </p>
+
+                    <p>
+                        g(x) = x + 3
+                    </p>
+
+                    <p>
+                        (f ∘ g)(x)
+                    </p>
+
+                    <p>
+                        = f(x + 3)
+                    </p>
+
+                    <p>
+                        = 2(x + 3) + 1
+                    </p>
+
+                    <p>
+                        = 2x + 7
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Çok önemli:</strong>
+
+                    <p>
+                        Genel olarak f ∘ g ile g ∘ f birbirine eşit değildir.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        f(x) = x + 2 ve g(x) = 3x ise (f ∘ g)(2) kaçtır?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        6
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        8
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        10
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">10</div>
+
+                <div class="section-title">
+                    Ters Fonksiyon
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir fonksiyonun giriş ve çıkışlarının yer değiştirmesiyle
+                    elde edilen fonksiyona ters fonksiyon denir.
+                </p>
+
+                <div class="formula">
+                    f⁻¹(x)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        f(x) = 2x + 4
+                    </p>
+
+                    <p>
+                        y = 2x + 4
+                    </p>
+
+                    <p>
+                        x ve y yer değiştirir:
+                    </p>
+
+                    <p>
+                        x = 2y + 4
+                    </p>
+
+                    <p>
+                        y = (x − 4) / 2
+                    </p>
+
+                    <div class="formula">
+                        f⁻¹(x) = (x − 4) / 2
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Bir fonksiyonun tersinin fonksiyon olabilmesi için
+                        uygun koşullarda bire bir olması gerekir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">11</div>
+
+                <div class="section-title">
+                    Fonksiyonlarda Önemli Kurallar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Temel Kurallar</h3>
+
+                    <ul>
+
+                        <li>
+                            f : A → B gösteriminde A tanım kümesidir.
+                        </li>
+
+                        <li>
+                            Tanım kümesindeki her elemanın bir görüntüsü
+                            bulunmalıdır.
+                        </li>
+
+                        <li>
+                            Bir elemanın iki farklı görüntüsü olamaz.
+                        </li>
+
+                        <li>
+                            f(x) = x birim fonksiyondur.
+                        </li>
+
+                        <li>
+                            f(x) = c sabit fonksiyondur.
+                        </li>
+
+                        <li>
+                            (f ∘ g)(x) = f(g(x))
+                        </li>
+
+                        <li>
+                            Ters fonksiyon f⁻¹(x) ile gösterilir.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">12</div>
+
+                <div class="section-title">
+                    KPSS İçin Hızlı Tekrar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Ezberlenecek Formüller</h3>
+
+                    <div class="formula">
+                        f : A → B
+                    </div>
+
+                    <div class="formula">
+                        (f + g)(x) = f(x) + g(x)
+                    </div>
+
+                    <div class="formula">
+                        (f ∘ g)(x) = f(g(x))
+                    </div>
+
+                    <div class="formula">
+                        f⁻¹(f(x)) = x
+                    </div>
+
+                    <p>
+                        Fonksiyon sorularında önce tanım kümesine,
+                        ardından fonksiyonun kuralına dikkat et.
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>KPSS taktiği:</strong>
+
+                    <p>
+                        f(2), f(a), f(x+1) gibi ifadelerde verilen değeri
+                        doğrudan fonksiyonun içindeki x yerine yaz.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-section">
+
+            <div class="test-start" id="testStart">
+
+                <h2>📝 5 Soruluk Mini Test</h2>
+
+                <p>
+                    Fonksiyonlar konusunu ne kadar öğrendiğini test et.
+                </p>
+
+                <button id="startTest">
+                    Teste Başla
+                </button>
+
+            </div>
+
+
+            <div class="test-area" id="testArea">
+
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Soru <span id="questionNumber">1</span> / 5
+                    </div>
+
+                    <h3 id="questionText"></h3>
+
+                    <div id="answers"></div>
+
+                </div>
+
+                <div class="answer-feedback" id="answerFeedback"></div>
+
+                <button class="next-question-button" id="nextQuestion">
+                    Sonraki Soru →
+                </button>
+
+            </div>
+
+
+            <div class="test-result" id="testResult">
+
+                <h2>Test Tamamlandı!</h2>
+
+                <div class="score" id="score"></div>
+
+                <p id="resultMessage"></p>
+
+                <button id="restartTest">
+                    Testi Tekrar Çöz
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <div class="finish-area">
+
+            <button id="finishLesson">
+                ✓ KONU BİTTİ
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

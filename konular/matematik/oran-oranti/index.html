@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oran - Orantı | KPSS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects" class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 11
+            </div>
+
+            <h1>Oran - Orantı</h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Oran ve orantı, iki veya daha fazla çokluğun
+                birbirine göre ilişkisini ifade etmek için kullanılır.
+                KPSS matematikte temel ve sık kullanılan konulardan biridir.
+            </p>
+
+        </header>
+
+        <div class="progress-area">
+
+            <div class="progress-text">
+                <span>Konu İlerlemesi</span>
+                <span id="progressText">%0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">01</div>
+
+                <div class="section-title">
+                    Oran Nedir?
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Aynı türden iki çokluğun birbirine bölünerek
+                    karşılaştırılmasına <strong>oran</strong> denir.
+                </p>
+
+                <div class="formula">
+                    a'nın b'ye oranı = a / b
+                </div>
+
+                <div class="info-card">
+
+                    <strong>Önemli:</strong>
+
+                    <p>
+                        Oranlanan çoklukların aynı birimde olması gerekir.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir sınıfta 12 kız ve 8 erkek öğrenci vardır.
+                        Kızların erkeklere oranı:
+                    </p>
+
+                    <div class="formula">
+                        12 / 8 = 3 / 2
+                    </div>
+
+                    <p>
+                        Yani kızların erkeklere oranı <strong>3/2</strong>'dir.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        15'in 5'e oranı kaçtır?
+                    </p>
+
+                    <div class="answers">
+
+                        <button class="answer-button"
+                            data-correct="false">
+                            2
+                        </button>
+
+                        <button class="answer-button"
+                            data-correct="false">
+                            3
+                        </button>
+
+                        <button class="answer-button"
+                            data-correct="true">
+                            3
+                        </button>
+
+                        <button class="answer-button"
+                            data-correct="false">
+                            5
+                        </button>
+
+                    </div>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">02</div>
+
+                <div class="section-title">
+                    Oranın Özellikleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Oranlarda pay ve payda aynı sayı ile çarpılır
+                    veya bölünürse oran değişmez.
+                </p>
+
+                <div class="formula">
+                    a / b = (a × k) / (b × k)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        4/6 oranını 3 ile genişletelim:
+                    </p>
+
+                    <div class="formula">
+                        4/6 = 12/18
+                    </div>
+
+                    <p>
+                        Her iki oran da aynı değeri ifade eder.
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat!</strong>
+
+                    <p>
+                        Oranın paydası 0 olamaz.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">03</div>
+
+                <div class="section-title">
+                    Orantı Nedir?
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    İki oranın birbirine eşit olmasına
+                    <strong>orantı</strong> denir.
+                </p>
+
+                <div class="formula">
+                    a / b = c / d
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        2/3 ve 8/12 oranlarını inceleyelim.
+                    </p>
+
+                    <div class="formula">
+                        2/3 = 8/12
+                    </div>
+
+                    <p>
+                        İki oran eşit olduğu için bunlar bir orantı oluşturur.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">04</div>
+
+                <div class="section-title">
+                    İçler - Dışlar Çarpımı
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir orantıda içler çarpımı dışlar çarpımına eşittir.
+                </p>
+
+                <div class="formula">
+                    a / b = c / d
+                    <br><br>
+                    a × d = b × c
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        x/5 = 6/10 olduğuna göre x kaçtır?
+                    </p>
+
+                    <div class="formula">
+                        10x = 30
+                        <br>
+                        x = 3
+                    </div>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        x/4 = 6/8 ise x kaçtır?
+                    </p>
+
+                    <div class="answers">
+
+                        <button class="answer-button"
+                            data-correct="false">
+                            2
+                        </button>
+
+                        <button class="answer-button"
+                            data-correct="true">
+                            3
+                        </button>
+
+                        <button class="answer-button"
+                            data-correct="false">
+                            4
+                        </button>
+
+                        <button class="answer-button"
+                            data-correct="false">
+                            6
+                        </button>
+
+                    </div>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">05</div>
+
+                <div class="section-title">
+                    Doğru Orantı
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    İki çokluk aynı oranda artıyor veya aynı oranda
+                    azalıyorsa bu çokluklar <strong>doğru orantılıdır</strong>.
+                </p>
+
+                <div class="formula">
+                    x / y = sabit
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        2 kalem 20 TL ise 5 kalem kaç TL'dir?
+                    </p>
+
+                    <div class="formula">
+                        2 / 20 = 5 / x
+                        <br><br>
+                        2x = 100
+                        <br>
+                        x = 50 TL
+                    </div>
+
+                    <p>
+                        Kalem sayısı arttıkça toplam fiyat da aynı oranda artar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">06</div>
+
+                <div class="section-title">
+                    Ters Orantı
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir çokluk artarken diğer çokluk aynı oranda
+                    azalıyorsa bu çokluklar <strong>ters orantılıdır</strong>.
+                </p>
+
+                <div class="formula">
+                    x × y = sabit
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir işi 4 işçi 12 günde bitiriyor.
+                        Aynı işi 6 işçi kaç günde bitirir?
+                    </p>
+
+                    <div class="formula">
+                        4 × 12 = 6 × x
+                        <br><br>
+                        48 = 6x
+                        <br>
+                        x = 8 gün
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>KPSS İpucu:</strong>
+
+                    <p>
+                        İşçi sayısı ile işin bitme süresi genellikle
+                        ters orantılıdır.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">07</div>
+
+                <div class="section-title">
+                    Birleşik Orantı
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Birden fazla çokluğun aynı problem içerisinde
+                    doğru veya ters orantılı olarak birlikte kullanılmasıdır.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        İşçi sayısı artarsa işin tamamlanma süresi azalır.
+                        Ancak çalışma saati artarsa iş daha kısa sürede tamamlanır.
+                    </p>
+
+                    <p>
+                        Bu tip sorularda her değişkenin doğru mu,
+                        ters mi orantılı olduğunu ayrı ayrı belirlemek gerekir.
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Pratik yöntem:</strong>
+
+                    <p>
+                        Önce başlangıç ve yeni durumları tablo halinde yaz.
+                        Daha sonra değişkenlerin yönünü belirle.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">08</div>
+
+                <div class="section-title">
+                    Orantı Problemleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Oran-orantı problemlerinde önce verilen bilgiler
+                    matematiksel bir ilişkiye dönüştürülür.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Ali'nin parası Veli'nin parasının 3 katıdır.
+                        İkisinin toplam parası 80 TL ise Ali'nin parası kaç TL'dir?
+                    </p>
+
+                    <div class="formula">
+                        Veli = x
+                        <br>
+                        Ali = 3x
+                        <br><br>
+                        x + 3x = 80
+                        <br>
+                        4x = 80
+                        <br>
+                        x = 20
+                    </div>
+
+                    <p>
+                        Ali'nin parası:
+                        <strong>60 TL</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">09</div>
+
+                <div class="section-title">
+                    Oran - Orantıda Hızlı Taktikler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <strong>1. Oranı sadeleştir.</strong>
+
+                    <p>
+                        Büyük sayılarla uğraşmadan önce ortak böleni bul.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>2. Doğru mu ters mi belirle.</strong>
+
+                    <p>
+                        Bir değişken artarken diğeri de artıyorsa
+                        genellikle doğru orantı; biri artarken diğeri
+                        azalıyorsa ters orantı vardır.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>3. Bilinmeyene x ver.</strong>
+
+                    <p>
+                        Özellikle toplam ve fark verilen problemlerde
+                        bilinmeyene x vermek çözümü hızlandırır.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <strong>4. İçler dışlar çarpımını kullan.</strong>
+
+                    <p>
+                        İki oranın eşitliği veriliyorsa hızlıca
+                        içler-dışlar çarpımı yapılabilir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">10</div>
+
+                <div class="section-title">
+                    KPSS İçin Hızlı Tekrar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Bilmen Gerekenler</h3>
+
+                    <ul>
+
+                        <li>
+                            Oran = İki çokluğun karşılaştırılması
+                        </li>
+
+                        <li>
+                            Orantı = İki oranın eşitliği
+                        </li>
+
+                        <li>
+                            a/b = c/d ise a × d = b × c
+                        </li>
+
+                        <li>
+                            Doğru orantıda oran sabittir.
+                        </li>
+
+                        <li>
+                            Ters orantıda çarpım sabittir.
+                        </li>
+
+                        <li>
+                            Problemde önce değişkenlerin ilişkisini belirle.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-start">
+
+            <h2>Mini Test</h2>
+
+            <p>
+                Konuyu ne kadar öğrendiğini test et.
+            </p>
+
+            <button onclick="beginTest()">
+                TESTE BAŞLA →
+            </button>
+
+        </section>
+
+
+        <section class="test-area" id="testArea">
+
+            <div class="question-card">
+
+                <div class="question-number" id="questionNumber"></div>
+
+                <h2 id="questionText"></h2>
+
+                <div id="testAnswers"></div>
+
+                <div class="answer-feedback" id="answerFeedback"></div>
+
+                <button
+                    class="next-question-button"
+                    id="nextButton"
+                    onclick="nextQuestion()">
+                    SONRAKİ SORU →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="test-result" id="testResult">
+
+            <h2>Test Tamamlandı!</h2>
+
+            <div class="score" id="scoreText"></div>
+
+            <p id="resultMessage"></p>
+
+        </section>
+
+
+        <section class="finish-area">
+
+            <button onclick="finishLesson()">
+                ✓ KONU BİTTİ
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

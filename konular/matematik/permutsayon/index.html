@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Permütasyon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects" class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 16
+            </div>
+
+            <h1>Permütasyon</h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Permütasyon mantığını, faktöriyeli, sıralama problemlerini
+                ve dairesel permütasyonu öğrenerek KPSS sorularını çöz.
+            </p>
+
+        </header>
+
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span>Konu İlerlemesi</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">01</div>
+
+                <div class="section-title">
+                    Permütasyon Nedir?
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Permütasyon, elemanların belirli bir sıraya göre
+                    dizilmesidir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>En önemli nokta</h3>
+
+                    <p>
+                        Permütasyonda <strong>sıra önemlidir.</strong>
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A, B ve C harflerini sıralayalım.
+                    </p>
+
+                    <p>
+                        ABC, ACB, BAC, BCA, CAB, CBA
+                    </p>
+
+                    <p>
+                        Toplam 6 farklı sıralama vardır.
+                    </p>
+
+                </div>
+
+                <div class="formula">
+                    3! = 3 × 2 × 1 = 6
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">02</div>
+
+                <div class="section-title">
+                    Faktöriyel
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Faktöriyel, 1'den başlayarak belirli bir sayıya kadar
+                    olan doğal sayıların çarpımını ifade eder.
+                </p>
+
+                <div class="formula">
+                    n! = n × (n−1) × (n−2) × ... × 2 × 1
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnekler</h3>
+
+                    <p>
+                        5! = 5 × 4 × 3 × 2 × 1 = 120
+                    </p>
+
+                    <p>
+                        4! = 4 × 3 × 2 × 1 = 24
+                    </p>
+
+                    <p>
+                        3! = 6
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Çok önemli:</strong>
+
+                    <p>
+                        0! = 1
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        5! kaçtır?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        60
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        120
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        150
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">03</div>
+
+                <div class="section-title">
+                    Permütasyon Formülü
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    n eleman arasından r tanesinin sıralı olarak seçilmesine
+                    permütasyon denir.
+                </p>
+
+                <div class="formula">
+                    P(n,r) = n! / (n−r)!
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        5 elemandan 3 tanesi kaç farklı şekilde sıralanabilir?
+                    </p>
+
+                    <div class="formula">
+                        P(5,3) = 5! / 2!
+                    </div>
+
+                    <div class="formula">
+                        = 5 × 4 × 3 = 60
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Permütasyonda seçilen elemanların sırası önemlidir.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        P(5,2) kaçtır?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        10
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        20
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        25
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">04</div>
+
+                <div class="section-title">
+                    Tekrarlı Permütasyon
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bazı elemanların tekrar ettiği sıralamalarda tekrarlı
+                    permütasyon kullanılır.
+                </p>
+
+                <div class="formula">
+                    n! / (a! · b! · c!)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        AABBC harfleri kaç farklı şekilde sıralanabilir?
+                    </p>
+
+                    <p>
+                        Toplam 5 harf vardır.
+                    </p>
+
+                    <p>
+                        A iki kez, B iki kez tekrar etmektedir.
+                    </p>
+
+                    <div class="formula">
+                        5! / (2! · 2!)
+                    </div>
+
+                    <div class="formula">
+                        120 / 4 = 30
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>KPSS taktiği:</strong>
+
+                    <p>
+                        Tekrar eden elemanları faktöriyelleriyle paydaya
+                        yazmayı unutma.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">05</div>
+
+                <div class="section-title">
+                    Sıralama Problemleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    İnsanların, kitapların, sayıların veya nesnelerin
+                    sıralanması permütasyon sorularının temelini oluşturur.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        4 kişi yan yana kaç farklı şekilde sıralanabilir?
+                    </p>
+
+                    <div class="formula">
+                        4! = 24
+                    </div>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>5 Kişiden 3 Kişi Seçip Sıralama</h3>
+
+                    <div class="formula">
+                        P(5,3) = 5 × 4 × 3 = 60
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Önemli:</strong>
+
+                    <p>
+                        "Kaç farklı şekilde sıralanabilir?" ifadesi
+                        genellikle permütasyon düşünmemizi sağlar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">06</div>
+
+                <div class="section-title">
+                    Belirli Bir Elemanın Sıralanması
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir elemanın belirli bir sırada bulunması isteniyorsa
+                    öncelikle o elemanın konumu belirlenir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        5 kişi yan yana dizilecektir.
+                        Ali'nin başta olması isteniyor.
+                    </p>
+
+                    <p>
+                        Ali sabitlenir.
+                    </p>
+
+                    <div class="formula">
+                        4! = 24
+                    </div>
+
+                    <p>
+                        Diğer 4 kişi kendi aralarında 24 farklı şekilde
+                        sıralanabilir.
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Taktik:</strong>
+
+                    <p>
+                        Sabitlenen elemanı önce yerleştir, kalan elemanları
+                        kendi arasında sırala.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">07</div>
+
+                <div class="section-title">
+                    Yan Yana Olma Problemleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    İki veya daha fazla elemanın yan yana olması isteniyorsa
+                    bu elemanlar tek bir blok gibi düşünülebilir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        5 kişi yan yana sıralanacaktır.
+                        Ali ve Veli'nin yan yana olması isteniyor.
+                    </p>
+
+                    <p>
+                        Ali ve Veli bir blok kabul edilir.
+                    </p>
+
+                    <p>
+                        Böylece toplam 4 birim olur.
+                    </p>
+
+                    <div class="formula">
+                        4! × 2! = 48
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Unutma:</strong>
+
+                    <p>
+                        Blok içindeki elemanların kendi aralarındaki
+                        sıralamaları da ayrıca hesaplanır.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">08</div>
+
+                <div class="section-title">
+                    Dairesel Permütasyon
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Elemanların yuvarlak masa gibi dairesel biçimde
+                    sıralanmasına dairesel permütasyon denir.
+                </p>
+
+                <div class="formula">
+                    (n − 1)!
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        5 kişi yuvarlak masa etrafında kaç farklı şekilde
+                        oturabilir?
+                    </p>
+
+                    <div class="formula">
+                        (5 − 1)! = 4! = 24
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Dairesel permütasyonda bir kişi sabit kabul edilir.
+                        Bu nedenle n! yerine (n−1)! kullanılır.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        6 kişi yuvarlak masa etrafında kaç farklı şekilde
+                        oturabilir?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        120
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        120
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        720
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">09</div>
+
+                <div class="section-title">
+                    Permütasyon Sorularında Taktikler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Hızlı Çözüm Yöntemleri</h3>
+
+                    <ul>
+
+                        <li>
+                            Sıra önemliyse permütasyon düşün.
+                        </li>
+
+                        <li>
+                            Tüm elemanlar sıralanıyorsa n! kullan.
+                        </li>
+
+                        <li>
+                            n elemandan r tanesi sıralanıyorsa
+                            P(n,r) kullan.
+                        </li>
+
+                        <li>
+                            Tekrarlı eleman varsa tekrarların
+                            faktöriyellerini paydaya yaz.
+                        </li>
+
+                        <li>
+                            Yan yana olması gereken elemanları blok düşün.
+                        </li>
+
+                        <li>
+                            Dairesel sıralamada (n−1)! kullan.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">10</div>
+
+                <div class="section-title">
+                    KPSS İçin Hızlı Tekrar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Ezberlenecek Formüller</h3>
+
+                    <div class="formula">
+                        n! = n · (n−1) · ... · 2 · 1
+                    </div>
+
+                    <div class="formula">
+                        0! = 1
+                    </div>
+
+                    <div class="formula">
+                        P(n,r) = n! / (n−r)!
+                    </div>
+
+                    <div class="formula">
+                        Tekrarlı Permütasyon =
+                        n! / (a! · b! · c!)
+                    </div>
+
+                    <div class="formula">
+                        Dairesel Permütasyon = (n−1)!
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>En önemli ayrım:</strong>
+
+                    <p>
+                        Permütasyonda sıra önemlidir.
+                        Sıra önemli değilse konu kombinasyona girer.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-section">
+
+            <div class="test-start" id="testStart">
+
+                <h2>📝 5 Soruluk Mini Test</h2>
+
+                <p>
+                    Permütasyon konusunu ne kadar öğrendiğini test et.
+                </p>
+
+                <button id="startTest">
+                    Teste Başla
+                </button>
+
+            </div>
+
+
+            <div class="test-area" id="testArea">
+
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Soru <span id="questionNumber">1</span> / 5
+                    </div>
+
+                    <h3 id="questionText"></h3>
+
+                    <div id="answers"></div>
+
+                </div>
+
+                <div class="answer-feedback" id="answerFeedback"></div>
+
+                <button class="next-question-button" id="nextQuestion">
+                    Sonraki Soru →
+                </button>
+
+            </div>
+
+
+            <div class="test-result" id="testResult">
+
+                <h2>Test Tamamlandı!</h2>
+
+                <div class="score" id="score"></div>
+
+                <p id="resultMessage"></p>
+
+                <button id="restartTest">
+                    Testi Tekrar Çöz
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <div class="finish-area">
+
+            <button id="finishLesson">
+                ✓ KONU BİTTİ
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2018 KPSS Ortaöğretim</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="exam-app">
+
+    <!-- SOL PANEL -->
+    <aside class="subject-sidebar">
+
+        <a href="../index.html" class="back-link">
+            ← Sınavlara Dön
+        </a>
+
+        <div class="exam-title">
+            <span>KPSS ORTAÖĞRETİM</span>
+            <h1>2018</h1>
+            <p>7 Ekim 2018</p>
+        </div>
+
+        <div class="subject-list">
+
+            <button
+                class="subject-button active"
+                data-subject="turkce"
+                onclick="selectSubject('turkce')">
+
+                <div>
+                    <strong>Türkçe</strong>
+                    <small>30 Soru</small>
+                </div>
+
+                <span>→</span>
+            </button>
+
+            <button
+                class="subject-button"
+                data-subject="matematik"
+                onclick="selectSubject('matematik')">
+
+                <div>
+                    <strong>Matematik</strong>
+                    <small>30 Soru</small>
+                </div>
+
+                <span>→</span>
+            </button>
+
+            <button
+                class="subject-button"
+                data-subject="tarih"
+                onclick="selectSubject('tarih')">
+
+                <div>
+                    <strong>Tarih</strong>
+                    <small>27 Soru</small>
+                </div>
+
+                <span>→</span>
+            </button>
+
+            <button
+                class="subject-button"
+                data-subject="cografya"
+                onclick="selectSubject('cografya')">
+
+                <div>
+                    <strong>Coğrafya</strong>
+                    <small>18 Soru</small>
+                </div>
+
+                <span>→</span>
+            </button>
+
+            <button
+                class="subject-button"
+                data-subject="vatandaslik"
+                onclick="selectSubject('vatandaslik')">
+
+                <div>
+                    <strong>Vatandaşlık</strong>
+                    <small>9 Soru</small>
+                </div>
+
+                <span>→</span>
+            </button>
+
+            <button
+                class="subject-button"
+                data-subject="guncel"
+                onclick="selectSubject('guncel')">
+
+                <div>
+                    <strong>Güncel Bilgiler</strong>
+                    <small>6 Soru</small>
+                </div>
+
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <div class="sidebar-result">
+
+            <span>GENEL DURUM</span>
+
+            <div class="mini-result-row">
+                <small>Doğru</small>
+                <strong id="totalCorrect">0</strong>
+            </div>
+
+            <div class="mini-result-row">
+                <small>Yanlış</small>
+                <strong id="totalWrong">0</strong>
+            </div>
+
+            <div class="mini-result-row">
+                <small>Boş</small>
+                <strong id="totalEmpty">120</strong>
+            </div>
+
+            <div class="mini-result-row net-row">
+                <small>Net</small>
+                <strong id="totalNet">0.00</strong>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- PDF ALANI -->
+    <main class="pdf-section">
+
+        <div class="pdf-toolbar">
+
+            <div class="pdf-title">
+
+                <span id="currentSubjectLabel">
+                    TÜRKÇE
+                </span>
+
+                <strong id="currentQuestionLabel">
+                    Soru 1
+                </strong>
+
+            </div>
+
+            <div class="pdf-controls">
+
+                <button onclick="previousPdfPage()">
+                    ←
+                </button>
+
+                <div class="page-input-wrap">
+
+                    <span>Sayfa</span>
+
+                    <input
+                        id="pdfPageInput"
+                        type="number"
+                        min="1"
+                        max="32"
+                        value="3"
+                        onchange="goToPdfPage()">
+
+                    <span id="pdfPageInfo">
+                        / 32
+                    </span>
+
+                </div>
+
+                <button onclick="nextPdfPage()">
+                    →
+                </button>
+
+                <button
+                    class="fullscreen-button"
+                    onclick="togglePdfFullscreen()">
+                    ⛶
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="pdf-container" id="pdfContainer">
+
+            <iframe
+                id="pdfFrame"
+                src="2018-kpss.pdf#page=3&zoom=page-width">
+            </iframe>
+
+        </div>
+
+    </main>
+
+
+    <!-- SAĞ CEVAP PANELİ -->
+    <aside class="answer-sidebar">
+
+        <div class="mode-area">
+
+            <span>ÇÖZÜM MODU</span>
+
+            <div class="mode-buttons">
+
+                <button
+                    id="studyModeButton"
+                    class="mode-button active"
+                    onclick="setMode('study')">
+                    Çalışma
+                </button>
+
+                <button
+                    id="examModeButton"
+                    class="mode-button"
+                    onclick="setMode('exam')">
+                    Sınav
+                </button>
+
+            </div>
+
+            <p id="modeDescription">
+                Cevabını işaretlediğinde sonucu görürsün.
+            </p>
+
+        </div>
+
+
+        <div class="question-header">
+
+            <span id="subjectQuestionCounter">
+                TÜRKÇE • 1 / 30
+            </span>
+
+            <h2>
+                Soru
+                <span id="currentQuestionNumber">
+                    1
+                </span>
+            </h2>
+
+        </div>
+
+
+        <div class="answer-options">
+
+            <button
+                class="answer-option"
+                data-answer="A"
+                onclick="selectAnswer('A')">
+                A
+            </button>
+
+            <button
+                class="answer-option"
+                data-answer="B"
+                onclick="selectAnswer('B')">
+                B
+            </button>
+
+            <button
+                class="answer-option"
+                data-answer="C"
+                onclick="selectAnswer('C')">
+                C
+            </button>
+
+            <button
+                class="answer-option"
+                data-answer="D"
+                onclick="selectAnswer('D')">
+                D
+            </button>
+
+            <button
+                class="answer-option"
+                data-answer="E"
+                onclick="selectAnswer('E')">
+                E
+            </button>
+
+        </div>
+
+
+        <button
+            class="clear-answer-button"
+            onclick="clearAnswer()">
+            Cevabı Boş Bırak
+        </button>
+
+
+        <div
+            id="answerFeedback"
+            class="answer-feedback">
+        </div>
+
+
+        <div class="question-navigation">
+
+            <button onclick="previousQuestion()">
+                ← Önceki
+            </button>
+
+            <button onclick="nextQuestion()">
+                Sonraki →
+            </button>
+
+        </div>
+
+
+        <div class="question-grid-area">
+
+            <div class="grid-header">
+
+                <span>SORULAR</span>
+
+                <small id="answeredCount">
+                    0 / 30
+                </small>
+
+            </div>
+
+            <div
+                id="questionGrid"
+                class="question-grid">
+            </div>
+
+        </div>
+
+
+        <div class="subject-stats">
+
+            <div>
+                <span>Doğru</span>
+                <strong id="subjectCorrect">0</strong>
+            </div>
+
+            <div>
+                <span>Yanlış</span>
+                <strong id="subjectWrong">0</strong>
+            </div>
+
+            <div>
+                <span>Boş</span>
+                <strong id="subjectEmpty">30</strong>
+            </div>
+
+            <div>
+                <span>Net</span>
+                <strong id="subjectNet">0.00</strong>
+            </div>
+
+        </div>
+
+
+        <div class="action-buttons">
+
+            <button
+                class="first-wrong-button"
+                onclick="goToFirstWrong()">
+                İlk Yanlış
+            </button>
+
+            <button
+                class="first-empty-button"
+                onclick="goToFirstEmpty()">
+                İlk Boş
+            </button>
+
+        </div>
+
+
+        <button
+            class="finish-exam-button"
+            onclick="finishExam()">
+            Sınavı Bitir
+        </button>
+
+
+        <button
+            class="reset-button"
+            onclick="resetAllExam()">
+            Tüm Sınavı Sıfırla
+        </button>
+
+    </aside>
+
+</div>
+
+
+<!-- SONUÇ -->
+
+<div id="resultModal" class="result-modal">
+
+    <div class="result-box">
+
+        <button
+            class="close-result"
+            onclick="closeResult()">
+            ×
+        </button>
+
+        <span class="result-label">
+            2018 KPSS ORTAÖĞRETİM
+        </span>
+
+        <h2>Sınav Sonucu</h2>
+
+        <div class="result-big-net">
+
+            <span>TOPLAM NET</span>
+
+            <strong id="resultTotalNet">
+                0.00
+            </strong>
+
+        </div>
+
+
+        <div
+            id="resultSubjects"
+            class="result-subjects">
+        </div>
+
+
+        <div class="result-summary">
+
+            <div>
+                <span>Doğru</span>
+                <strong id="resultCorrect">0</strong>
+            </div>
+
+            <div>
+                <span>Yanlış</span>
+                <strong id="resultWrong">0</strong>
+            </div>
+
+            <div>
+                <span>Boş</span>
+                <strong id="resultEmpty">120</strong>
+            </div>
+
+        </div>
+
+
+        <button
+            class="result-close-button"
+            onclick="closeResult()">
+            Devam Et
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

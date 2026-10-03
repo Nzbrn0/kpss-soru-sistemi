@@ -1,0 +1,490 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #020303;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    background: #020303;
+}
+
+.neon-light {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(150px);
+    opacity: 0.12;
+}
+
+.light-one {
+    background: #00eaff;
+    top: -250px;
+    left: -200px;
+}
+
+.light-two {
+    background: #0066ff;
+    bottom: -250px;
+    right: -200px;
+}
+
+.lesson-container {
+    width: min(850px, 92%);
+    margin: 0 auto;
+    padding: 35px 0 80px;
+}
+
+.back-button {
+    display: inline-block;
+    color: #00eaff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 35px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    color: #ffffff;
+    text-shadow: 0 0 15px #00eaff;
+}
+
+.lesson-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.lesson-number {
+    color: #00eaff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.lesson-header h1 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin-bottom: 20px;
+}
+
+.title-line {
+    width: 90px;
+    height: 2px;
+    background: #00eaff;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+.lesson-header p {
+    color: #aeb8c2;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.progress-area {
+    margin-bottom: 30px;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    color: #8e9aa5;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background: #101619;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #00eaff;
+    box-shadow: 0 0 12px #00eaff;
+    transition: width 0.4s ease;
+}
+
+.lesson-section {
+    border: 1px solid #172126;
+    border-radius: 12px;
+    background: rgba(5, 9, 11, 0.8);
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.lesson-section:hover {
+    border-color: #17404b;
+}
+
+.section-header {
+    min-height: 70px;
+    display: grid;
+    grid-template-columns: 50px 1fr 35px;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.section-icon {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #00eaff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00eaff;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section-arrow {
+    color: #00eaff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.section-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 25px;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease,
+        padding 0.35s ease;
+}
+
+.section-content.open {
+    max-height: 3000px;
+    opacity: 1;
+    padding: 5px 25px 28px;
+}
+
+.section-content > p {
+    color: #c3ccd2;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.info-card,
+.example-card,
+.warning-card,
+.summary-card {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 1px solid #172a30;
+    background: #080d0f;
+}
+
+.info-card h3,
+.example-card h3,
+.warning-card h3 {
+    margin-bottom: 12px;
+    color: #00eaff;
+    font-size: 16px;
+}
+
+.info-card p,
+.example-card p,
+.warning-card p,
+.summary-card p {
+    color: #c1cbd1;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.warning-card {
+    border-color: #453d1c;
+}
+
+.warning-card h3 {
+    color: #ffd43b;
+}
+
+.important-list {
+    padding-left: 20px;
+    color: #c5cdd2;
+}
+
+.important-list li {
+    margin: 9px 0;
+    line-height: 1.6;
+}
+
+.compare-table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.compare-table table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 500px;
+}
+
+.compare-table th,
+.compare-table td {
+    border: 1px solid #1c3036;
+    padding: 13px;
+    text-align: left;
+}
+
+.compare-table th {
+    background: #09171b;
+    color: #00eaff;
+}
+
+.compare-table td {
+    color: #c6ced3;
+    background: #060a0c;
+}
+
+.mini-question {
+    border: 1px solid #172a30;
+    background: #070c0e;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.mini-question h3 {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.answer-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 13px 15px;
+    margin: 8px 0;
+    border: 1px solid #20353b;
+    border-radius: 7px;
+    background: #0a1113;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.answer-button:hover {
+    border-color: #00eaff;
+}
+
+.answer-button.correct {
+    border-color: #00d084;
+    background: rgba(0, 208, 132, 0.12);
+}
+
+.answer-button.wrong {
+    border-color: #ff4d5a;
+    background: rgba(255, 77, 90, 0.12);
+}
+
+.mini-result {
+    margin-top: 12px;
+    min-height: 20px;
+    font-size: 14px;
+}
+
+.test-start {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.test-start h3 {
+    margin-bottom: 10px;
+}
+
+.test-start p {
+    color: #9da8af;
+    margin-bottom: 20px;
+}
+
+.test-start button,
+.finish-area button,
+.next-question-button {
+    border: 1px solid #00eaff;
+    background: transparent;
+    color: #00eaff;
+    padding: 13px 22px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.test-start button:hover,
+.finish-area button:hover,
+.next-question-button:hover {
+    background: #00eaff;
+    color: #020303;
+    box-shadow: 0 0 20px rgba(0, 234, 255, 0.35);
+}
+
+.test-area {
+    display: none;
+}
+
+.question-number {
+    color: #00eaff;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.question-card {
+    border: 1px solid #172a30;
+    border-radius: 10px;
+    background: #070c0e;
+    padding: 20px;
+}
+
+.question-card h3 {
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.test-answer {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0;
+    text-align: left;
+    border-radius: 7px;
+    border: 1px solid #20353b;
+    background: #0a1113;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.test-answer:hover {
+    border-color: #00eaff;
+}
+
+.test-answer.correct {
+    background: rgba(0, 208, 132, 0.12);
+    border-color: #00d084;
+}
+
+.test-answer.wrong {
+    background: rgba(255, 77, 90, 0.12);
+    border-color: #ff4d5a;
+}
+
+.answer-feedback {
+    min-height: 45px;
+    margin: 15px 0;
+    color: #bfc9ce;
+    line-height: 1.6;
+}
+
+.next-question-button {
+    display: none;
+}
+
+.test-result {
+    display: none;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.test-result h3 {
+    margin-bottom: 15px;
+}
+
+.test-result p {
+    color: #9ca7ad;
+    margin: 10px 0;
+}
+
+.test-result strong {
+    display: block;
+    font-size: 42px;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00eaff;
+    margin: 15px 0;
+}
+
+.quick-section .summary-card {
+    border-color: #11444d;
+}
+
+.summary-card p {
+    margin-bottom: 13px;
+}
+
+.finish-area {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.finish-area button {
+    padding: 15px 30px;
+}
+
+@media (max-width: 600px) {
+
+    .lesson-container {
+        width: 94%;
+        padding-top: 25px;
+    }
+
+    .lesson-header h1 {
+        font-size: 29px;
+    }
+
+    .section-header {
+        grid-template-columns: 40px 1fr 25px;
+        padding: 14px;
+    }
+
+    .section-title {
+        font-size: 14px;
+    }
+
+    .section-content.open {
+        padding: 5px 15px 20px;
+    }
+
+    .compare-table table {
+        min-width: 450px;
+    }
+
+    .info-card,
+    .example-card,
+    .warning-card {
+        padding: 16px;
+    }
+
+}

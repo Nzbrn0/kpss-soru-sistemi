@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 KPSS Ortaöğretim | Soru Çözümü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="exam-app">
+    <aside class="subject-sidebar">
+        <a href="../index.html" class="back-link">← Sınavlara Dön</a>
+
+        <div class="exam-title">
+            <span>KPSS ORTAÖĞRETİM</span>
+            <h1>2024</h1>
+            <p>15 Eylül 2024</p>
+        </div>
+
+        <div id="subjectList" class="subject-list"></div>
+
+        <div class="sidebar-result">
+            <div class="mini-result-row"><span>Doğru</span><b id="totalCorrect">0</b></div>
+            <div class="mini-result-row"><span>Yanlış</span><b id="totalWrong">0</b></div>
+            <div class="mini-result-row"><span>Boş</span><b id="totalEmpty">120</b></div>
+            <div class="mini-result-row net-row"><span>Net</span><b id="totalNet">0.00</b></div>
+        </div>
+    </aside>
+
+    <main class="pdf-section">
+        <div class="pdf-toolbar">
+            <div class="pdf-title">
+                <span id="currentSubjectLabel">GENEL YETENEK</span>
+                <b id="currentSubjectName">Türkçe</b>
+            </div>
+
+            <div class="pdf-controls">
+                <button onclick="changePdfPage(-1)">←</button>
+                <div class="page-input-wrap">
+                    <input id="pdfPageInput" type="number" min="1" max="28" value="1"
+                           onchange="goToPdfPage(this.value)">
+                    <span id="pdfPageInfo">Sayfa 1 / 28</span>
+                </div>
+                <button onclick="changePdfPage(1)">→</button>
+                <button class="fullscreen-button" onclick="togglePdfFullscreen()">⛶</button>
+            </div>
+        </div>
+
+        <div class="pdf-container" id="pdfContainer">
+            <iframe id="pdfFrame" title="2024 KPSS PDF"></iframe>
+        </div>
+    </main>
+
+    <aside class="answer-sidebar">
+        <div class="mode-area">
+            <span>ÇÖZÜM MODU</span>
+            <div class="mode-buttons">
+                <button id="studyModeButton" class="mode-button active" onclick="setMode('study')">Çalışma</button>
+                <button id="examModeButton" class="mode-button" onclick="setMode('exam')">Sınav</button>
+            </div>
+        </div>
+
+        <div class="question-header">
+            <div>
+                <span id="questionTestLabel">GENEL YETENEK</span>
+                <h2><span id="questionNumber">1</span>. Soru</h2>
+            </div>
+            <small id="questionSubjectLabel">Türkçe</small>
+        </div>
+
+        <div class="answer-options" id="answerOptions"></div>
+        <button class="clear-answer-button" onclick="clearCurrentAnswer()">Cevabı Temizle</button>
+        <div class="answer-feedback" id="answerFeedback"></div>
+
+        <div class="question-navigation">
+            <button onclick="changeQuestion(-1)">← Önceki</button>
+            <button onclick="changeQuestion(1)">Sonraki →</button>
+        </div>
+
+        <div class="question-grid-area">
+            <div class="grid-header">
+                <span>SORULAR</span>
+                <small id="gridRange"></small>
+            </div>
+            <div id="questionGrid" class="question-grid"></div>
+        </div>
+
+        <div id="subjectStats" class="subject-stats"></div>
+
+        <div class="action-buttons">
+            <button class="first-wrong-button" onclick="goFirstWrong()">İlk Yanlış</button>
+            <button class="first-empty-button" onclick="goFirstEmpty()">İlk Boş</button>
+            <button class="finish-exam-button" onclick="finishExam()">Sınavı Bitir</button>
+            <button class="reset-button" onclick="resetExam()">Cevapları Sıfırla</button>
+        </div>
+    </aside>
+</div>
+
+<div id="resultModal" class="result-modal">
+    <div class="result-box">
+        <button class="close-result" onclick="closeResult()">×</button>
+        <span class="result-label">2024 KPSS ORTAÖĞRETİM</span>
+        <h2>Sınav Sonucu</h2>
+        <div class="result-big-net"><span>TOPLAM NET</span><b id="modalNet">0.00</b></div>
+        <div id="resultSubjects" class="result-subjects"></div>
+        <div id="resultSummary" class="result-summary"></div>
+        <button class="result-close-button" onclick="closeResult()">Sonuca Dön</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

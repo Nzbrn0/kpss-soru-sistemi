@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #020303;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   ARKA PLAN
+========================= */
+
+.background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.neon-light {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    filter: blur(170px);
+    opacity: 0.12;
+}
+
+.light-one {
+    background: #00eaff;
+    top: -220px;
+    left: -180px;
+}
+
+.light-two {
+    background: #006eff;
+    right: -220px;
+    bottom: -220px;
+}
+
+/* =========================
+   ANA SAYFA
+========================= */
+
+.exam-page {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 0 100px;
+}
+
+/* =========================
+   GERİ BUTONU
+========================= */
+
+.back-button {
+    display: inline-block;
+    color: #737b84;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 70px;
+    transition: 0.25s;
+}
+
+.back-button:hover {
+    color: #00eaff;
+    transform: translateX(-5px);
+}
+
+/* =========================
+   SAYFA BAŞLIĞI
+========================= */
+
+.page-header {
+    margin-bottom: 45px;
+}
+
+.page-header > span {
+    display: block;
+    color: #00eaff;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.page-header h1 {
+    font-size: 46px;
+    letter-spacing: -1px;
+}
+
+.page-header p {
+    color: #737b84;
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+/* =========================
+   SINAV LİSTESİ
+========================= */
+
+.exam-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* =========================
+   SINAV KARTI
+========================= */
+
+.exam-card {
+    width: 100%;
+    min-height: 125px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+
+    padding: 20px 25px;
+
+    background: rgba(255, 255, 255, 0.018);
+
+    color: white;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s,
+        border-color 0.25s,
+        background 0.25s,
+        box-shadow 0.25s;
+}
+
+.exam-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(0, 234, 255, 0.45);
+
+    background: rgba(0, 234, 255, 0.035);
+
+    box-shadow:
+        0 10px 40px rgba(0, 234, 255, 0.05);
+}
+
+/* =========================
+   KART NUMARASI
+========================= */
+
+.exam-number {
+    width: 65px;
+
+    color: rgba(0, 234, 255, 0.45);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+/* =========================
+   KART BİLGİLERİ
+========================= */
+
+.exam-info {
+    flex: 1;
+}
+
+.exam-info > span {
+    display: block;
+
+    color: #00eaff;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+.exam-info h2 {
+    font-size: 24px;
+
+    margin-bottom: 7px;
+}
+
+.exam-info p {
+    color: #68717a;
+
+    font-size: 12px;
+}
+
+/* =========================
+   SAĞ OK
+========================= */
+
+.exam-arrow {
+    color: #00eaff;
+
+    font-size: 24px;
+
+    transition: transform 0.25s;
+}
+
+.exam-card:hover .exam-arrow {
+    transform: translateX(7px);
+}
+
+/* =========================
+   YENİ SINAVLAR
+========================= */
+
+.coming-soon {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.coming-soon span {
+    color: #404850;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+}
+
+.coming-soon p {
+    color: #505861;
+
+    font-size: 12px;
+
+    margin-top: 8px;
+}
+
+/* =========================
+   TELEFON / KÜÇÜK EKRAN
+========================= */
+
+@media (max-width: 600px) {
+
+    .exam-page {
+        width: 92%;
+        padding-top: 30px;
+    }
+
+    .back-button {
+        margin-bottom: 50px;
+    }
+
+    .page-header h1 {
+        font-size: 35px;
+    }
+
+    .exam-card {
+        padding: 18px 15px;
+        min-height: 110px;
+    }
+
+    .exam-number {
+        width: 45px;
+    }
+
+    .exam-info h2 {
+        font-size: 20px;
+    }
+
+    .exam-info p {
+        font-size: 11px;
+    }
+
+    .exam-arrow {
+        font-size: 20px;
+    }
+}

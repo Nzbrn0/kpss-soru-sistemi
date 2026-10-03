@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Kümeler</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects" class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 14
+            </div>
+
+            <h1>Kümeler</h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Kümelerin temel kavramlarını, alt kümeleri ve küme işlemlerini
+                öğrenerek KPSS sorularını daha hızlı çöz.
+            </p>
+
+        </header>
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span>Konu İlerlemesi</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">01</div>
+
+                <div class="section-title">
+                    Kümelerin Temel Kavramları
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Küme, belirli ve birbirinden ayırt edilebilir nesnelerin
+                    oluşturduğu topluluktur.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A = {1, 2, 3, 4, 5}
+                    </p>
+
+                    <p>
+                        Bu kümenin elemanları 1, 2, 3, 4 ve 5'tir.
+                    </p>
+
+                </div>
+
+                <div class="formula">
+                    x ∈ A → x, A kümesinin elemanıdır.
+                </div>
+
+                <div class="formula">
+                    x ∉ A → x, A kümesinin elemanı değildir.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">02</div>
+
+                <div class="section-title">
+                    Küme Gösterimleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Kümeler genellikle büyük harflerle gösterilir.
+                    Elemanlar ise süslü parantez içinde yazılır.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Liste Yöntemi</h3>
+
+                    <p>
+                        A = {2, 4, 6, 8}
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Ortak Özellik Yöntemi</h3>
+
+                    <p>
+                        A = {x | x çift doğal sayı ve x &lt; 10}
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Unutma:</strong>
+
+                    <p>
+                        Kümede elemanların sırası önemli değildir.
+                    </p>
+
+                    <p>
+                        {1, 2, 3} = {3, 1, 2}
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">03</div>
+
+                <div class="section-title">
+                    Eleman ve Eleman Sayısı
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir kümenin içerisinde bulunan her nesne o kümenin
+                    elemanıdır.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A = {a, b, c, d}
+                    </p>
+
+                    <p>
+                        A kümesinin 4 elemanı vardır.
+                    </p>
+
+                </div>
+
+                <div class="formula">
+                    s(A) = 4
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Aynı eleman kümede birden fazla yazılsa bile
+                        bir kez sayılır.
+                    </p>
+
+                    <p>
+                        {1, 1, 2, 2, 3} = {1, 2, 3}
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        A = {1, 2, 2, 3, 3, 3} kümesinin eleman sayısı kaçtır?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        6
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        3
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        4
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">04</div>
+
+                <div class="section-title">
+                    Boş Küme
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Hiç elemanı olmayan kümeye boş küme denir.
+                </p>
+
+                <div class="formula">
+                    ∅
+                </div>
+
+                <p>
+                    Boş küme ayrıca { } şeklinde de gösterilebilir.
+                </p>
+
+                <div class="warning-card">
+
+                    <strong>Çok önemli:</strong>
+
+                    <p>
+                        ∅ ile {∅} aynı şey değildir.
+                    </p>
+
+                    <p>
+                        ∅ → elemanı yoktur.
+                    </p>
+
+                    <p>
+                        {∅} → 1 elemanı vardır.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">05</div>
+
+                <div class="section-title">
+                    Alt Küme
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    A kümesinin bütün elemanları B kümesinde bulunuyorsa
+                    A, B'nin alt kümesidir.
+                </p>
+
+                <div class="formula">
+                    A ⊆ B
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A = {1, 2}
+                    </p>
+
+                    <p>
+                        B = {1, 2, 3, 4}
+                    </p>
+
+                    <p>
+                        A ⊆ B
+                    </p>
+
+                </div>
+
+                <p>
+                    n elemanlı bir kümenin alt küme sayısı:
+                </p>
+
+                <div class="formula">
+                    2ⁿ
+                </div>
+
+                <p>
+                    Öz alt küme sayısı:
+                </p>
+
+                <div class="formula">
+                    2ⁿ − 1
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        4 elemanlı bir kümenin kaç farklı alt kümesi vardır?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        8
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        16
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        12
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">06</div>
+
+                <div class="section-title">
+                    Birleşim Kümesi
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    A ve B kümelerinin tüm elemanlarının bir araya gelmesiyle
+                    oluşan kümeye birleşim kümesi denir.
+                </p>
+
+                <div class="formula">
+                    A ∪ B
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A = {1, 2, 3}
+                    </p>
+
+                    <p>
+                        B = {3, 4, 5}
+                    </p>
+
+                    <p>
+                        A ∪ B = {1, 2, 3, 4, 5}
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Ortak elemanlar birleşimde yalnızca bir kez yazılır.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">07</div>
+
+                <div class="section-title">
+                    Kesişim Kümesi
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    A ve B kümelerinde ortak olarak bulunan elemanlardan
+                    oluşan kümeye kesişim kümesi denir.
+                </p>
+
+                <div class="formula">
+                    A ∩ B
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A = {1, 2, 3, 4}
+                    </p>
+
+                    <p>
+                        B = {3, 4, 5, 6}
+                    </p>
+
+                    <p>
+                        A ∩ B = {3, 4}
+                    </p>
+
+                </div>
+
+                <div class="formula">
+                    s(A ∪ B) = s(A) + s(B) − s(A ∩ B)
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        A = {1, 2, 3, 4} ve B = {3, 4, 5}.
+                        A ∩ B nedir?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        {1, 2}
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        {3, 4}
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        {4, 5}
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">08</div>
+
+                <div class="section-title">
+                    Kümelerde Fark İşlemi
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    A kümesinde olup B kümesinde olmayan elemanların
+                    oluşturduğu kümeye A'nın B'den farkı denir.
+                </p>
+
+                <div class="formula">
+                    A − B
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        A = {1, 2, 3, 4}
+                    </p>
+
+                    <p>
+                        B = {3, 4, 5}
+                    </p>
+
+                    <p>
+                        A − B = {1, 2}
+                    </p>
+
+                    <p>
+                        B − A = {5}
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        A − B ile B − A genellikle birbirine eşit değildir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">09</div>
+
+                <div class="section-title">
+                    Tümleyen Küme
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Evrensel kümede bulunan fakat A kümesinde bulunmayan
+                    elemanlar A'nın tümleyenini oluşturur.
+                </p>
+
+                <div class="formula">
+                    A'
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        E = {1, 2, 3, 4, 5, 6}
+                    </p>
+
+                    <p>
+                        A = {1, 2, 3}
+                    </p>
+
+                    <p>
+                        A' = {4, 5, 6}
+                    </p>
+
+                </div>
+
+                <div class="formula">
+                    A ∪ A' = E
+                </div>
+
+                <div class="formula">
+                    A ∩ A' = ∅
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">10</div>
+
+                <div class="section-title">
+                    Venn Şeması ve Küme Problemleri
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Kümeler arasındaki ilişkileri görsel olarak göstermek
+                    için Venn şemaları kullanılır.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>İki Küme İçin Temel Formül</h3>
+
+                    <div class="formula">
+                        s(A ∪ B) =
+                        s(A) + s(B) − s(A ∩ B)
+                    </div>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir sınıfta 20 öğrenci matematik,
+                        15 öğrenci Türkçe çalışıyor.
+                    </p>
+
+                    <p>
+                        Her iki dersi çalışan 5 öğrenci varsa:
+                    </p>
+
+                    <div class="formula">
+                        20 + 15 − 5 = 30
+                    </div>
+
+                    <p>
+                        En az birini çalışan öğrenci sayısı 30'dur.
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>KPSS taktiği:</strong>
+
+                    <p>
+                        "En az biri" ifadesi genellikle birleşimi,
+                        "ikisini de" ifadesi ise kesişimi düşündürür.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">11</div>
+
+                <div class="section-title">
+                    KPSS İçin Hızlı Tekrar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Ezberlenmesi Gerekenler</h3>
+
+                    <ul>
+                        <li>n elemanlı kümenin alt küme sayısı → 2ⁿ</li>
+                        <li>Öz alt küme sayısı → 2ⁿ − 1</li>
+                        <li>Birleşim → A ∪ B</li>
+                        <li>Kesişim → A ∩ B</li>
+                        <li>Fark → A − B</li>
+                        <li>Tümleyen → A'</li>
+                        <li>Boş küme → ∅</li>
+                        <li>s(A ∪ B) = s(A) + s(B) − s(A ∩ B)</li>
+                    </ul>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>En önemli nokta:</strong>
+
+                    <p>
+                        Birleşim sorularında ortak elemanları iki kez
+                        saymamak için kesişimi çıkarmayı unutma.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-section">
+
+            <div class="test-start" id="testStart">
+
+                <h2>📝 5 Soruluk Mini Test</h2>
+
+                <p>
+                    Konuyu ne kadar öğrendiğini test et.
+                </p>
+
+                <button id="startTest">
+                    Teste Başla
+                </button>
+
+            </div>
+
+
+            <div class="test-area" id="testArea">
+
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Soru <span id="questionNumber">1</span> / 5
+                    </div>
+
+                    <h3 id="questionText"></h3>
+
+                    <div id="answers"></div>
+
+                </div>
+
+                <div class="answer-feedback" id="answerFeedback"></div>
+
+                <button class="next-question-button" id="nextQuestion">
+                    Sonraki Soru →
+                </button>
+
+            </div>
+
+
+            <div class="test-result" id="testResult">
+
+                <h2>Test Tamamlandı!</h2>
+
+                <div class="score" id="score"></div>
+
+                <p id="resultMessage"></p>
+
+                <button id="restartTest">
+                    Testi Tekrar Çöz
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <div class="finish-area">
+
+            <button id="finishLesson">
+                ✓ KONU BİTTİ
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Olasılık</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects" class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 18
+            </div>
+
+            <h1>Olasılık</h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Olasılık mantığını, örnek uzayı, olayları ve
+                olasılık hesaplama yöntemlerini öğrenerek KPSS
+                sorularını çöz.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span>Konu İlerlemesi</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- 01 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">01</div>
+
+                <div class="section-title">
+                    Olasılık Nedir?
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Olasılık, bir olayın gerçekleşme ihtimalini
+                    sayısal olarak ifade eder.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Temel Mantık</h3>
+
+                    <p>
+                        Bir olayın olasılığı 0 ile 1 arasında bir
+                        değerdir.
+                    </p>
+
+                </div>
+
+                <div class="formula">
+                    0 ≤ P(A) ≤ 1
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Adil bir madeni para atıldığında yazı gelme
+                        olasılığı:
+                    </p>
+
+                    <div class="formula">
+                        P(Yazı) = 1 / 2
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Unutma:</strong>
+
+                    <p>
+                        Olasılık 0 ise olay imkânsız,
+                        1 ise olay kesindir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">02</div>
+
+                <div class="section-title">
+                    Örnek Uzay
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir deney sonucunda ortaya çıkabilecek tüm
+                    sonuçların oluşturduğu kümeye örnek uzay denir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Zar Örneği</h3>
+
+                    <p>
+                        Bir zar atıldığında mümkün sonuçlar:
+                    </p>
+
+                    <div class="formula">
+                        S = {1, 2, 3, 4, 5, 6}
+                    </div>
+
+                    <p>
+                        Örnek uzayın eleman sayısı 6'dır.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Madeni Para</h3>
+
+                    <div class="formula">
+                        S = {Yazı, Tura}
+                    </div>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        Bir zar atıldığında örnek uzayın kaç elemanı vardır?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        4
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        6
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        8
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">03</div>
+
+                <div class="section-title">
+                    Temel Olasılık Formülü
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Eş olasılıklı sonuçlarda bir A olayının olasılığı,
+                    A olayının istenen durumlarının sayısının tüm
+                    mümkün durumların sayısına oranıdır.
+                </p>
+
+                <div class="formula">
+                    P(A) = İstenen Durum / Tüm Durumlar
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir zar atılıyor. Çift sayı gelme olasılığı nedir?
+                    </p>
+
+                    <p>
+                        Çift sayılar:
+                    </p>
+
+                    <div class="formula">
+                        {2, 4, 6}
+                    </div>
+
+                    <p>
+                        3 tane istenen durum, 6 tane toplam durum vardır.
+                    </p>
+
+                    <div class="formula">
+                        P(A) = 3 / 6 = 1 / 2
+                    </div>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        Bir zar atılıyor. 5 gelme olasılığı nedir?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        1 / 2
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        1 / 6
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        1 / 3
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">04</div>
+
+                <div class="section-title">
+                    Kesin ve İmkânsız Olay
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>Kesin Olay</h3>
+
+                    <p>
+                        Gerçekleşmesi kesin olan olaydır.
+                    </p>
+
+                    <div class="formula">
+                        P(A) = 1
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>İmkânsız Olay</strong>
+
+                    <p>
+                        Gerçekleşmesi mümkün olmayan olaydır.
+                    </p>
+
+                    <div class="formula">
+                        P(A) = 0
+                    </div>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Standart bir zar atıldığında 1 ile 6 arasında
+                        bir sayı gelmesi kesin olaydır.
+                    </p>
+
+                    <div class="formula">
+                        P(A) = 1
+                    </div>
+
+                    <p>
+                        7 gelmesi ise imkânsız olaydır.
+                    </p>
+
+                    <div class="formula">
+                        P(A) = 0
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">05</div>
+
+                <div class="section-title">
+                    Tümleyen Olay
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir olayın gerçekleşmemesi, o olayın tümleyeni
+                    olarak ifade edilir.
+                </p>
+
+                <div class="formula">
+                    P(A') = 1 − P(A)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir zar atıldığında 6 gelme olasılığı:
+                    </p>
+
+                    <div class="formula">
+                        P(A) = 1 / 6
+                    </div>
+
+                    <p>
+                        6 gelmeme olasılığı:
+                    </p>
+
+                    <div class="formula">
+                        P(A') = 1 − 1/6 = 5/6
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>KPSS Taktiği:</strong>
+
+                    <p>
+                        "En az bir", "olmaması", "hiçbiri" gibi sorularda
+                        tümleyen kullanmak işlemi kolaylaştırabilir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">06</div>
+
+                <div class="section-title">
+                    Birleşim ve Kesişim
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    İki olayın birlikte değerlendirilmesinde birleşim
+                    ve kesişim kavramları kullanılır.
+                </p>
+
+                <div class="formula">
+                    P(A ∪ B) = P(A) + P(B) − P(A ∩ B)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Bağımsız Olaylarda</h3>
+
+                    <p>
+                        İki bağımsız olayın birlikte gerçekleşme olasılığı:
+                    </p>
+
+                    <div class="formula">
+                        P(A ∩ B) = P(A) × P(B)
+                    </div>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir madeni para iki kez atılıyor.
+                        İki atışta da yazı gelme olasılığı:
+                    </p>
+
+                    <div class="formula">
+                        1/2 × 1/2 = 1/4
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">07</div>
+
+                <div class="section-title">
+                    Bağımsız Olaylar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir olayın gerçekleşmesi diğer olayın olasılığını
+                    değiştirmiyorsa bu olaylar bağımsızdır.
+                </p>
+
+                <div class="formula">
+                    P(A ∩ B) = P(A) × P(B)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir zar ve bir madeni para aynı anda deneniyor.
+                    </p>
+
+                    <p>
+                        Zarın 6 gelmesi ve paranın yazı gelmesi:
+                    </p>
+
+                    <div class="formula">
+                        1/6 × 1/2 = 1/12
+                    </div>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        Bir zar atılıyor ve para çevriliyor.
+                        Zarın 4 gelmesi ve paranın tura gelmesi olasılığı nedir?
+                    </p>
+
+                    <button class="answer-button" data-correct="false">
+                        1 / 6
+                    </button>
+
+                    <button class="answer-button" data-correct="true">
+                        1 / 12
+                    </button>
+
+                    <button class="answer-button" data-correct="false">
+                        1 / 8
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">08</div>
+
+                <div class="section-title">
+                    Bağımlı Olaylar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <p>
+                    Bir olayın gerçekleşmesi diğer olayın olasılığını
+                    değiştiriyorsa bu olaylar bağımlıdır.
+                </p>
+
+                <div class="formula">
+                    P(A ∩ B) = P(A) × P(B | A)
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir torbada 3 kırmızı ve 2 mavi top vardır.
+                        Geri koymadan art arda iki top çekiliyor.
+                    </p>
+
+                    <p>
+                        İlk topun kırmızı gelme olasılığı:
+                    </p>
+
+                    <div class="formula">
+                        3 / 5
+                    </div>
+
+                    <p>
+                        İlk top kırmızı geldikten sonra ikinci topun
+                        kırmızı olma olasılığı:
+                    </p>
+
+                    <div class="formula">
+                        2 / 4
+                    </div>
+
+                    <p>
+                        İkisinin de kırmızı olması:
+                    </p>
+
+                    <div class="formula">
+                        3/5 × 2/4 = 3/10
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        "Geri koymadan" ifadesi varsa toplam eleman sayısı
+                        ve istenen eleman sayısı değişebilir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">09</div>
+
+                <div class="section-title">
+                    Olasılık Sorularında Pratik Taktikler
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>KPSS Taktikleri</h3>
+
+                    <ul>
+
+                        <li>
+                            Önce tüm mümkün durumları belirle.
+                        </li>
+
+                        <li>
+                            Sonra istenen durumları say.
+                        </li>
+
+                        <li>
+                            Eş olasılıklı durumlarda
+                            İstenen / Tüm durumlar formülünü kullan.
+                        </li>
+
+                        <li>
+                            "En az bir" sorularında tümleyen düşün.
+                        </li>
+
+                        <li>
+                            "Geri koymadan" ifadesine dikkat et.
+                        </li>
+
+                        <li>
+                            Bağımsız olaylarda olasılıkları çarp.
+                        </li>
+
+                        <li>
+                            Sıralama veya seçim gerekiyorsa
+                            permütasyon ve kombinasyondan yararlan.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <div class="section-header">
+
+                <div class="section-icon">10</div>
+
+                <div class="section-title">
+                    KPSS İçin Hızlı Tekrar
+                </div>
+
+                <div class="section-arrow">+</div>
+
+            </div>
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>Temel Formüller</h3>
+
+                    <div class="formula">
+                        0 ≤ P(A) ≤ 1
+                    </div>
+
+                    <div class="formula">
+                        P(A) = İstenen Durum / Tüm Durumlar
+                    </div>
+
+                    <div class="formula">
+                        P(A') = 1 − P(A)
+                    </div>
+
+                    <div class="formula">
+                        P(A ∪ B) =
+                        P(A) + P(B) − P(A ∩ B)
+                    </div>
+
+                    <div class="formula">
+                        P(A ∩ B) =
+                        P(A) × P(B)
+                    </div>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <h3>Ezberle</h3>
+
+                    <ul>
+
+                        <li>
+                            Olasılık 0 ile 1 arasındadır.
+                        </li>
+
+                        <li>
+                            Kesin olay = 1
+                        </li>
+
+                        <li>
+                            İmkânsız olay = 0
+                        </li>
+
+                        <li>
+                            Tümleyen = 1 − olayın olasılığı
+                        </li>
+
+                        <li>
+                            Bağımsız olaylarda olasılıklar çarpılır.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-section">
+
+            <div class="test-start" id="testStart">
+
+                <h2>📝 5 Soruluk Mini Test</h2>
+
+                <p>
+                    Olasılık konusunu ne kadar öğrendiğini test et.
+                </p>
+
+                <button id="startTest">
+                    Teste Başla
+                </button>
+
+            </div>
+
+
+            <div class="test-area" id="testArea">
+
+                <div class="question-card">
+
+                    <div class="question-number">
+                        Soru <span id="questionNumber">1</span> / 5
+                    </div>
+
+                    <h3 id="questionText"></h3>
+
+                    <div id="answers"></div>
+
+                </div>
+
+                <div class="answer-feedback" id="answerFeedback"></div>
+
+                <button class="next-question-button" id="nextQuestion">
+                    Sonraki Soru →
+                </button>
+
+            </div>
+
+
+            <div class="test-result" id="testResult">
+
+                <h2>Test Tamamlandı!</h2>
+
+                <div class="score" id="score"></div>
+
+                <p id="resultMessage"></p>
+
+                <button id="restartTest">
+                    Testi Tekrar Çöz
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <div class="finish-area">
+
+            <button id="finishLesson">
+                ✓ KONU BİTTİ
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

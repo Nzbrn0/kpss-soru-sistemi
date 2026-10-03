@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Sayı Basamakları</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects"
+           class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 02
+            </div>
+
+            <h1>
+                Sayı Basamakları
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Bir doğal sayının basamaklarını, basamak değerlerini
+                ve sayıların çözümlenmesini öğren. KPSS'de sayı
+                basamakları sorularını daha hızlı çözebilmek için
+                temel kuralları kavra.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span>Konu İlerlemesi</span>
+                <span id="progressPercent">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    01
+                </span>
+
+                <span class="section-title">
+                    Basamak ve Basamak Değeri
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir doğal sayının rakamlarının bulunduğu
+                    konuma basamak denir. Bir rakamın bulunduğu
+                    basamağa göre aldığı değere ise basamak değeri
+                    denir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Örnek: 472</h3>
+
+                    <p>
+                        472 sayısında:
+                    </p>
+
+                    <p>
+                        2 → Birler basamağı
+                    </p>
+
+                    <p>
+                        7 → Onlar basamağı
+                    </p>
+
+                    <p>
+                        4 → Yüzler basamağı
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Basamak Değerleri</h3>
+
+                    <p>
+                        472 sayısındaki 7 rakamının basamak değeri:
+                    </p>
+
+                    <strong>
+                        7 × 10 = 70
+                    </strong>
+
+                    <p>
+                        4 rakamının basamak değeri:
+                    </p>
+
+                    <strong>
+                        4 × 100 = 400
+                    </strong>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        583 sayısındaki 8 rakamının basamak değeri
+                        kaçtır?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        8
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        80
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        800
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        580
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    02
+                </span>
+
+                <span class="section-title">
+                    Rakam ve Sayı Kavramı
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Sayıları oluşturmak için kullanılan sembollere
+                    rakam denir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Rakamlar</h3>
+
+                    <p>
+                        Ondalık sayı sisteminde toplam 10 rakam vardır:
+                    </p>
+
+                    <strong>
+                        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+                    </strong>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Her rakam bir sayıdır ancak her sayı tek
+                        basamaklı olmak zorunda değildir.
+                    </p>
+
+                    <p>
+                        Örneğin 7 hem rakam hem sayıdır. 35 ise
+                        bir sayıdır fakat tek bir rakam değildir.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Önemli Bilgi</h3>
+
+                    <p>
+                        Bir doğal sayının ilk basamağında 0 bulunamaz.
+                    </p>
+
+                    <p>
+                        Örneğin 052 sayısı, üç basamaklı bir sayı
+                        olarak kabul edilmez. Bu ifade 52'ye eşittir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    03
+                </span>
+
+                <span class="section-title">
+                    Sayıların Çözümlenmesi
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir sayıyı basamak değerlerinin toplamı şeklinde
+                    yazmaya sayının çözümlenmesi denir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek: 5834</h3>
+
+                    <p>
+                        5834 sayısını çözümleyelim:
+                    </p>
+
+                    <strong>
+                        5000 + 800 + 30 + 4
+                    </strong>
+
+                    <p>
+                        veya:
+                    </p>
+
+                    <strong>
+                        5 × 1000 + 8 × 100 + 3 × 10 + 4
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Genel Gösterim</h3>
+
+                    <p>
+                        Dört basamaklı ABCD sayısı:
+                    </p>
+
+                    <strong>
+                        1000A + 100B + 10C + D
+                    </strong>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        326 sayısının çözümlenmiş hâli hangisidir?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        300 + 20 + 60
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        300 + 20 + 6
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        30 + 20 + 6
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        300 + 200 + 6
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    04
+                </span>
+
+                <span class="section-title">
+                    Basamak Sayısı
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir doğal sayıda bulunan rakam sayısı,
+                    o sayının basamak sayısını verir.
+                </p>
+
+                <div class="relation-grid">
+
+                    <div class="relation-card">
+
+                        <h3>1 Basamaklı</h3>
+
+                        <p>
+                            0 ile 9 arasındaki doğal sayılar.
+                        </p>
+
+                        <strong>
+                            7
+                        </strong>
+
+                    </div>
+
+                    <div class="relation-card">
+
+                        <h3>2 Basamaklı</h3>
+
+                        <p>
+                            10 ile 99 arasındaki doğal sayılar.
+                        </p>
+
+                        <strong>
+                            42
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Üç Basamaklı Sayılar</h3>
+
+                    <strong>
+                        100 ile 999
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Dört Basamaklı Sayılar</h3>
+
+                    <strong>
+                        1000 ile 9999
+                    </strong>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>KPSS Taktiği:</strong>
+
+                    <p>
+                        n basamaklı en küçük doğal sayı
+                        10<sup>n-1</sup>'dir.
+                    </p>
+
+                    <p>
+                        n basamaklı en büyük doğal sayı
+                        10<sup>n</sup> - 1'dir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    05
+                </span>
+
+                <span class="section-title">
+                    Rakamların Kullanımı ve Koşullar
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Sayı basamakları sorularında rakamların
+                    birbirinden farklı olması, belirli rakamların
+                    kullanılması veya sayıların belirli şartları
+                    sağlaması istenebilir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Rakamları Farklı</h3>
+
+                    <p>
+                        352 sayısında bütün rakamlar birbirinden
+                        farklıdır.
+                    </p>
+
+                    <strong>
+                        3 ≠ 5 ≠ 2
+                    </strong>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        3 basamaklı ABC sayısında A, B ve C
+                        birbirinden farklıysa:
+                    </p>
+
+                    <strong>
+                        A ≠ B, A ≠ C, B ≠ C
+                    </strong>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Sayının ilk basamağı 0 olamaz. Bu nedenle
+                        rakam seçimi yapılırken yüzler basamağı için
+                        0 kullanılamaz.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    06
+                </span>
+
+                <span class="section-title">
+                    Rakamların Toplamı
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir sayının rakamları toplanarak rakamlar toplamı
+                    bulunur. Bu kavram, özellikle bölünebilme
+                    kurallarında sıkça kullanılır.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        4827 sayısının rakamları toplamı:
+                    </p>
+
+                    <strong>
+                        4 + 8 + 2 + 7 = 21
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>9 ile Bölünebilme</h3>
+
+                    <p>
+                        Bir sayının rakamları toplamı 9'un katıysa
+                        sayı 9'a tam bölünür.
+                    </p>
+
+                    <strong>
+                        729 → 7 + 2 + 9 = 18
+                    </strong>
+
+                    <p>
+                        18, 9'un katı olduğu için 729 sayısı
+                        9'a tam bölünür.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        5832 sayısının rakamları toplamı kaçtır?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        16
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        18
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        20
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        22
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    07
+                </span>
+
+                <span class="section-title">
+                    Rakamlarla Sayı Oluşturma
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Verilen rakamlarla belirli şartları sağlayan
+                    sayılar oluşturmak KPSS'de sık karşılaşılan
+                    soru tiplerinden biridir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        2, 5 ve 7 rakamları kullanılarak üç basamaklı
+                        bir sayı oluşturulmak isteniyor.
+                    </p>
+
+                    <p>
+                        Rakamların her biri bir kez kullanılacaksa
+                        oluşabilecek sayılardan bazıları:
+                    </p>
+
+                    <strong>
+                        257, 275, 527, 572, 725, 752
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Önemli</h3>
+
+                    <p>
+                        n farklı rakamın tamamı kullanılarak
+                        oluşturulabilecek n basamaklı sayıların
+                        sayısı:
+                    </p>
+
+                    <strong>
+                        n!
+                    </strong>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>0 İçeren Sorular:</strong>
+
+                    <p>
+                        0, ilk basamakta kullanılamadığı için
+                        sayı oluşturma sorularında ayrıca dikkat
+                        edilmelidir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    08
+                </span>
+
+                <span class="section-title">
+                    Sayı Basamakları Çözüm Taktikleri
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>1. Basamağı Belirle</h3>
+
+                    <p>
+                        Soruda onlar, yüzler veya binler basamağı
+                        soruluyorsa önce ilgili basamağın konumunu
+                        belirle.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>2. Rakam ile Basamak Değerini Karıştırma</h3>
+
+                    <p>
+                        638 sayısındaki 3 rakamdır fakat basamak
+                        değeri 30'dur.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>3. Çözümleme Yap</h3>
+
+                    <p>
+                        Soruyu anlamakta zorlanırsan sayıyı
+                        basamak değerlerine ayır.
+                    </p>
+                    
+                </div>
+
+                <div class="info-card">
+
+                    <h3>4. 0'a Dikkat Et</h3>
+
+                    <p>
+                        Sıfır, bir sayının ilk basamağında
+                        bulunamaz.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÖZET -->
+
+        <div class="summary-card">
+
+            <h2>
+                Konu Özeti
+            </h2>
+
+            <p>
+                • Rakamlar 0'dan 9'a kadar olan sembollerdir.
+            </p>
+
+            <p>
+                • Bir rakamın bulunduğu konuma basamak denir.
+            </p>
+
+            <p>
+                • Rakamın bulunduğu basamağa göre aldığı değere
+                basamak değeri denir.
+            </p>
+
+            <p>
+                • Sayıyı basamak değerleri toplamı şeklinde
+                yazmaya çözümleme denir.
+            </p>
+
+            <p>
+                • Bir sayının ilk basamağı 0 olamaz.
+            </p>
+
+            <p>
+                • n basamaklı en küçük doğal sayı 10<sup>n-1</sup>'dir.
+            </p>
+
+            <p>
+                • n basamaklı en büyük doğal sayı 10<sup>n</sup> - 1'dir.
+            </p>
+
+            <p>
+                • Rakamlar toplamı özellikle 3 ve 9 ile bölünebilme
+                kurallarında kullanılır.
+            </p>
+
+        </div>
+
+
+        <!-- UYARI -->
+
+        <div class="warning-card">
+
+            <h3>
+                KPSS İçin Önemli
+            </h3>
+
+            <p>
+                Sayı basamaklarında en çok yapılan hata rakam ile
+                basamak değerinin karıştırılmasıdır. Soruda
+                özellikle "rakam", "basamak" veya "basamak değeri"
+                ifadelerinin hangisinin istendiğine dikkat et.
+            </p>
+
+        </div>
+
+
+        <!-- TEST BAŞLANGIÇ -->
+
+        <section class="test-start" id="testStart">
+
+            <h2>
+                5 Soruluk Mini Test
+            </h2>
+
+            <p>
+                Sayı basamakları konusunu ne kadar öğrendiğini test et.
+            </p>
+
+            <button
+                class="start-button"
+                onclick="startTest()">
+                TESTE BAŞLA
+            </button>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-area" id="testArea">
+
+            <div class="test-top">
+
+                <span id="questionNumber">
+                    Soru 1 / 5
+                </span>
+
+                <span id="scoreDisplay">
+                    Puan: 0
+                </span>
+
+            </div>
+
+            <div class="question-progress">
+
+                <div id="questionProgress"></div>
+
+            </div>
+
+            <div class="question-card">
+
+                <span
+                    class="difficulty"
+                    id="difficulty">
+                    KOLAY
+                </span>
+
+                <h2 id="questionText"></h2>
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+            </div>
+
+            <div
+                class="answer-feedback"
+                id="answerFeedback">
+
+                <h3 id="feedbackTitle"></h3>
+
+                <p id="feedbackText"></p>
+
+            </div>
+
+            <button
+                class="next-question-button"
+                id="nextButton"
+                onclick="nextQuestion()">
+
+                SONRAKİ SORU →
+
+            </button>
+
+        </section>
+
+
+        <!-- SONUÇ -->
+
+        <section
+            class="test-result"
+            id="testResult">
+
+            <h2>
+                Test Tamamlandı
+            </h2>
+
+            <div
+                class="final-score"
+                id="finalScore">
+                0 / 5
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <button
+                class="retry-button"
+                onclick="restartTest()">
+
+                TEKRAR ÇÖZ
+
+            </button>
+
+        </section>
+
+
+        <!-- BİTİR -->
+
+        <div class="finish-area">
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+
+                ✓ KONU BİTTİ
+
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Temel Kavramlar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects"
+           class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 01
+            </div>
+
+            <h1>
+                Temel Kavramlar
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                KPSS Matematik dersinin temelini oluşturan
+                sayı kümeleri, tek-çift sayılar, pozitif-negatif
+                sayılar ve ardışık sayıları öğren.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span>Konu İlerlemesi</span>
+                <span id="progressPercent">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    01
+                </span>
+
+                <span class="section-title">
+                    Sayı Kümeleri
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Sayılar belirli özelliklerine göre kümelere
+                    ayrılır. KPSS'de temel kavramlar sorularının
+                    çözümünde bu sayı kümelerini bilmek önemlidir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Doğal Sayılar</h3>
+
+                    <p>
+                        0'dan başlayarak sonsuza kadar devam eden
+                        sayılardır.
+                    </p>
+
+                    <strong>
+                        N = {0, 1, 2, 3, 4, ...}
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Tam Sayılar</h3>
+
+                    <p>
+                        Negatif tam sayılar, 0 ve pozitif tam
+                        sayılardan oluşur.
+                    </p>
+
+                    <strong>
+                        Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Rasyonel Sayılar</h3>
+
+                    <p>
+                        İki tam sayının birbirine bölümü şeklinde
+                        yazılabilen sayılardır.
+                    </p>
+
+                    <strong>
+                        a / b &nbsp; (b ≠ 0)
+                    </strong>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        -5, 0, 3, 1/2 ve 2,5 gibi sayılar farklı
+                        sayı kümelerinde bulunabilir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    02
+                </span>
+
+                <span class="section-title">
+                    Pozitif ve Negatif Sayılar
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Sıfırın sağındaki sayılar pozitif,
+                    solundaki sayılar negatif olarak adlandırılır.
+                </p>
+
+                <div class="relation-grid">
+
+                    <div class="relation-card">
+
+                        <h3>Pozitif</h3>
+
+                        <p>
+                            0'dan büyük sayılardır.
+                        </p>
+
+                        <strong>
+                            1, 2, 3, 4, ...
+                        </strong>
+
+                    </div>
+
+                    <div class="relation-card">
+
+                        <h3>Negatif</h3>
+
+                        <p>
+                            0'dan küçük sayılardır.
+                        </p>
+
+                        <strong>
+                            -1, -2, -3, -4, ...
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Önemli:</strong>
+
+                    <p>
+                        0 ne pozitif ne de negatif bir sayıdır.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        Aşağıdakilerden hangisi pozitif bir sayıdır?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        -7
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        0
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        8
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        -2
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    03
+                </span>
+
+                <span class="section-title">
+                    Tek ve Çift Sayılar
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir tam sayının 2'ye bölümünden kalan 0 ise
+                    sayı çift, kalan 1 veya -1 ise sayı tektir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Çift Sayılar</h3>
+
+                    <p>
+                        2'nin tam katı olan sayılardır.
+                    </p>
+
+                    <strong>
+                        ..., -4, -2, 0, 2, 4, 6, ...
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Tek Sayılar</h3>
+
+                    <p>
+                        2'nin tam katı olmayan tam sayılardır.
+                    </p>
+
+                    <strong>
+                        ..., -5, -3, -1, 1, 3, 5, ...
+                    </strong>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Temel Kurallar</h3>
+
+                    <p>
+                        Çift + Çift = Çift
+                    </p>
+
+                    <p>
+                        Tek + Tek = Çift
+                    </p>
+
+                    <p>
+                        Tek + Çift = Tek
+                    </p>
+
+                    <p>
+                        Çift × Çift = Çift
+                    </p>
+
+                    <p>
+                        Tek × Tek = Tek
+                    </p>
+
+                    <p>
+                        Tek × Çift = Çift
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        Tek + Tek işleminin sonucu nasıldır?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        Tek
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        Çift
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        Negatif
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        Pozitif
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    04
+                </span>
+
+                <span class="section-title">
+                    Ardışık Sayılar
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Belirli bir kurala göre art arda gelen sayılara
+                    ardışık sayılar denir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Ardışık Tam Sayılar</h3>
+
+                    <p>
+                        Aralarında 1 fark bulunan sayılardır.
+                    </p>
+
+                    <strong>
+                        4, 5, 6, 7, 8
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Ardışık Çift Sayılar</h3>
+
+                    <p>
+                        Aralarında 2 fark bulunan çift sayılardır.
+                    </p>
+
+                    <strong>
+                        2, 4, 6, 8, 10
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Ardışık Tek Sayılar</h3>
+
+                    <p>
+                        Aralarında 2 fark bulunan tek sayılardır.
+                    </p>
+
+                    <strong>
+                        1, 3, 5, 7, 9
+                    </strong>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Üç ardışık tam sayı:
+                    </p>
+
+                    <strong>
+                        n - 1, n, n + 1
+                    </strong>
+
+                    <p>
+                        Üç ardışık çift sayı:
+                    </p>
+
+                    <strong>
+                        n - 2, n, n + 2
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    05
+                </span>
+
+                <span class="section-title">
+                    Mutlak Değer
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir sayının 0'a olan uzaklığına o sayının
+                    mutlak değeri denir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Gösterim</h3>
+
+                    <p>
+                        Mutlak değer |x| şeklinde gösterilir.
+                    </p>
+
+                    <strong>
+                        |-5| = 5
+                    </strong>
+
+                    <br><br>
+
+                    <strong>
+                        |5| = 5
+                    </strong>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Önemli:</strong>
+
+                    <p>
+                        Mutlak değer sonucu hiçbir zaman negatif
+                        olamaz.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        |-12| işleminin sonucu kaçtır?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        -12
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        12
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        0
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        1
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    06
+                </span>
+
+                <span class="section-title">
+                    Sayıların Karşılaştırılması
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Sayıları karşılaştırırken sayı doğrusundan
+                    yararlanabiliriz. Sayı doğrusunda sağda bulunan
+                    sayı daha büyüktür.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        -2 ile 5'i karşılaştıralım:
+                    </p>
+
+                    <strong>
+                        -2 &lt; 5
+                    </strong>
+
+                    <p>
+                        Çünkü 5 sayı doğrusunda -2'nin sağındadır.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Negatif Sayılarda Dikkat</h3>
+
+                    <p>
+                        Negatif sayılarda sıfıra daha yakın olan sayı
+                        daha büyüktür.
+                    </p>
+
+                    <strong>
+                        -2 &gt; -7
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    07
+                </span>
+
+                <span class="section-title">
+                    Sayıların İşlem Özellikleri
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>Toplamanın Özellikleri</h3>
+
+                    <p>
+                        Değişme özelliği:
+                    </p>
+
+                    <strong>
+                        a + b = b + a
+                    </strong>
+
+                    <p>
+                        Birleşme özelliği:
+                    </p>
+
+                    <strong>
+                        (a + b) + c = a + (b + c)
+                    </strong>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Çarpmanın Özellikleri</h3>
+
+                    <p>
+                        Değişme özelliği:
+                    </p>
+
+                    <strong>
+                        a × b = b × a
+                    </strong>
+
+                    <p>
+                        Birleşme özelliği:
+                    </p>
+
+                    <strong>
+                        (a × b) × c = a × (b × c)
+                    </strong>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Dağılma Özelliği</h3>
+
+                    <p>
+                        Çarpma işlemi toplama üzerine dağılabilir:
+                    </p>
+
+                    <strong>
+                        a(b + c) = ab + ac
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    08
+                </span>
+
+                <span class="section-title">
+                    Temel Kavramlar İçin Çözüm Taktikleri
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>1. İşaretlere Dikkat Et</h3>
+
+                    <p>
+                        Özellikle negatif sayılarla yapılan
+                        işlemlerde + ve - işaretlerini dikkatli
+                        takip et.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>2. Soruyu Sadeleştir</h3>
+
+                    <p>
+                        Uzun ifadelerde önce verilen bilgileri
+                        sembollerle ifade etmek çözümü kolaylaştırır.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>3. Tek-Çift Kurallarını Kullan</h3>
+
+                    <p>
+                        Büyük sayılarla işlem yapmak yerine
+                        sayıların tek veya çift olma özelliklerinden
+                        yararlanabilirsin.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>4. Sayı Doğrusunu Düşün</h3>
+
+                    <p>
+                        Karşılaştırma ve mutlak değer sorularında
+                        sayı doğrusunu zihninde canlandır.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÖZET -->
+
+        <div class="summary-card">
+
+            <h2>
+                Konu Özeti
+            </h2>
+
+            <p>
+                • Doğal sayılar 0'dan başlar.
+            </p>
+
+            <p>
+                • 0 ne pozitif ne negatiftir.
+            </p>
+
+            <p>
+                • Çift sayılar 2'nin tam katlarıdır.
+            </p>
+
+            <p>
+                • Tek + Tek = Çift
+            </p>
+
+            <p>
+                • Tek + Çift = Tek
+            </p>
+
+            <p>
+                • Mutlak değer bir sayının 0'a uzaklığıdır.
+            </p>
+
+            <p>
+                • Mutlak değer sonucu negatif olamaz.
+            </p>
+
+            <p>
+                • Ardışık tam sayılar arasında 1 fark vardır.
+            </p>
+
+            <p>
+                • Ardışık tek ve çift sayılar arasında 2 fark vardır.
+            </p>
+
+        </div>
+
+
+        <!-- UYARI -->
+
+        <div class="warning-card">
+
+            <h3>
+                KPSS İçin Önemli
+            </h3>
+
+            <p>
+                Temel Kavramlar konusu, Matematikte birçok konunun
+                temelini oluşturur. Özellikle tek-çift sayılar,
+                mutlak değer, ardışık sayılar ve sayı kümelerini
+                iyi öğrenmek sonraki konularda işini kolaylaştırır.
+            </p>
+
+        </div>
+
+
+        <!-- TEST -->
+
+        <section class="test-start" id="testStart">
+
+            <h2>
+                5 Soruluk Mini Test
+            </h2>
+
+            <p>
+                Konuyu ne kadar öğrendiğini test et.
+            </p>
+
+            <button
+                class="start-button"
+                onclick="startTest()">
+                TESTE BAŞLA
+            </button>
+
+        </section>
+
+
+        <section class="test-area" id="testArea">
+
+            <div class="test-top">
+
+                <span id="questionNumber">
+                    Soru 1 / 5
+                </span>
+
+                <span id="scoreDisplay">
+                    Puan: 0
+                </span>
+
+            </div>
+
+            <div class="question-progress">
+
+                <div id="questionProgress"></div>
+
+            </div>
+
+            <div class="question-card">
+
+                <span
+                    class="difficulty"
+                    id="difficulty">
+                    KOLAY
+                </span>
+
+                <h2 id="questionText"></h2>
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+            </div>
+
+            <div
+                class="answer-feedback"
+                id="answerFeedback">
+
+                <h3 id="feedbackTitle"></h3>
+
+                <p id="feedbackText"></p>
+
+            </div>
+
+            <button
+                class="next-question-button"
+                id="nextButton"
+                onclick="nextQuestion()">
+
+                SONRAKİ SORU →
+
+            </button>
+
+        </section>
+
+
+        <!-- TEST SONUCU -->
+
+        <section
+            class="test-result"
+            id="testResult">
+
+            <h2>
+                Test Tamamlandı
+            </h2>
+
+            <div
+                class="final-score"
+                id="finalScore">
+                0 / 5
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <button
+                class="retry-button"
+                onclick="restartTest()">
+
+                TEKRAR ÇÖZ
+
+            </button>
+
+        </section>
+
+
+        <!-- BİTİR -->
+
+        <div class="finish-area">
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+
+                ✓ KONU BİTTİ
+
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

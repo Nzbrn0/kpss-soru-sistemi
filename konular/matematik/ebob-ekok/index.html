@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | EBOB - EKOK</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects"
+           class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 04
+            </div>
+
+            <h1>EBOB - EKOK</h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                En büyük ortak bölen ve en küçük ortak kat
+                konusunu öğren.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-text">
+                <span>Konu İlerlemesi</span>
+                <span id="progressText">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 01 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">01</span>
+
+                <span class="section-title">
+                    EBOB Nedir?
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <p>
+                    EBOB, iki veya daha fazla sayının
+                    ortak bölenleri arasındaki en büyük sayıdır.
+                </p>
+
+
+                <div class="info-card">
+
+                    <h3>EBOB</h3>
+
+                    <p>
+                        <strong>En Büyük Ortak Bölen</strong>
+                    </p>
+
+                    <p>
+                        Birden fazla sayıyı kalansız bölen
+                        sayıların en büyüğüne EBOB denir.
+                    </p>
+
+                </div>
+
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        12 ve 18'in EBOB'unu bulalım.
+                    </p>
+
+                    <p>
+                        12'nin bölenleri:
+                        <strong>1, 2, 3, 4, 6, 12</strong>
+                    </p>
+
+                    <p>
+                        18'in bölenleri:
+                        <strong>1, 2, 3, 6, 9, 18</strong>
+                    </p>
+
+                    <p>
+                        Ortak bölenler:
+                        <strong>1, 2, 3, 6</strong>
+                    </p>
+
+                    <div class="formula">
+                        EBOB(12,18) = 6
+                    </div>
+
+                </div>
+
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        8 ve 20 sayılarının EBOB'u kaçtır?
+                    </p>
+
+                    <div class="answers">
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            2
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            4
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            6
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            8
+                        </button>
+
+                    </div>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 02 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">02</span>
+
+                <span class="section-title">
+                    EKOK Nedir?
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <p>
+                    EKOK, iki veya daha fazla sayının
+                    ortak katları arasındaki en küçük pozitif sayıdır.
+                </p>
+
+
+                <div class="info-card">
+
+                    <h3>EKOK</h3>
+
+                    <p>
+                        <strong>En Küçük Ortak Kat</strong>
+                    </p>
+
+                    <p>
+                        Birden fazla sayının ortak katları
+                        içerisindeki en küçük pozitif sayıya
+                        EKOK denir.
+                    </p>
+
+                </div>
+
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        6 ve 8'in EKOK'unu bulalım.
+                    </p>
+
+                    <p>
+                        6'nın katları:
+                        <strong>6, 12, 18, 24...</strong>
+                    </p>
+
+                    <p>
+                        8'in katları:
+                        <strong>8, 16, 24...</strong>
+                    </p>
+
+                    <div class="formula">
+                        EKOK(6,8) = 24
+                    </div>
+
+                </div>
+
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        4 ve 6 sayılarının EKOK'u kaçtır?
+                    </p>
+
+                    <div class="answers">
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            8
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            10
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            12
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            24
+                        </button>
+
+                    </div>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 03 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">03</span>
+
+                <span class="section-title">
+                    Asal Çarpanlarla EBOB - EKOK
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <p>
+                    EBOB ve EKOK bulmanın en kullanışlı
+                    yöntemlerinden biri asal çarpanlara ayırmadır.
+                </p>
+
+
+                <div class="example-card">
+
+                    <h3>Örnek: 12 ve 18</h3>
+
+                    <div class="formula">
+                        12 = 2² × 3
+                    </div>
+
+                    <div class="formula">
+                        18 = 2 × 3²
+                    </div>
+
+                    <p>
+                        EBOB için ortak asal çarpanların
+                        <strong>küçük üsleri</strong> alınır.
+                    </p>
+
+                    <div class="formula">
+                        EBOB = 2 × 3 = 6
+                    </div>
+
+                    <p>
+                        EKOK için tüm asal çarpanların
+                        <strong>büyük üsleri</strong> alınır.
+                    </p>
+
+                    <div class="formula">
+                        EKOK = 2² × 3² = 36
+                    </div>
+
+                </div>
+
+
+                <div class="relation-grid">
+
+                    <div class="relation-card">
+
+                        <h3>EBOB</h3>
+
+                        <p>
+                            Ortak asal çarpanlar
+                        </p>
+
+                        <strong>
+                            Küçük üsler
+                        </strong>
+
+                    </div>
+
+
+                    <div class="relation-card">
+
+                        <h3>EKOK</h3>
+
+                        <p>
+                            Tüm asal çarpanlar
+                        </p>
+
+                        <strong>
+                            Büyük üsler
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 04 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">04</span>
+
+                <span class="section-title">
+                    EBOB × EKOK İlişkisi
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <p>
+                    İki pozitif tam sayı için çok önemli bir bağıntı vardır.
+                </p>
+
+                <div class="formula">
+                    a × b = EBOB(a,b) × EKOK(a,b)
+                </div>
+
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        12 ve 18 için:
+                    </p>
+
+                    <div class="formula">
+                        EBOB = 6
+                    </div>
+
+                    <div class="formula">
+                        EKOK = 36
+                    </div>
+
+                    <p>
+                        Kontrol:
+                    </p>
+
+                    <div class="formula">
+                        12 × 18 = 216
+                    </div>
+
+                    <div class="formula">
+                        6 × 36 = 216
+                    </div>
+
+                </div>
+
+
+                <div class="warning-card">
+
+                    <strong>Dikkat!</strong>
+
+                    <p>
+                        Bu bağıntıyı özellikle EBOB veya EKOK
+                        değerlerinden biri verildiğinde kullanabilirsin.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 05 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">05</span>
+
+                <span class="section-title">
+                    Ortak Bölen ve Ortak Kat
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>Ortak Bölen</h3>
+
+                    <p>
+                        Birden fazla sayıyı kalansız bölen
+                        sayılara ortak bölen denir.
+                    </p>
+
+                    <div class="formula">
+                        En büyük ortak bölen → EBOB
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h3>Ortak Kat</h3>
+
+                    <p>
+                        Birden fazla sayının katı olan
+                        sayılara ortak kat denir.
+                    </p>
+
+                    <div class="formula">
+                        En küçük ortak kat → EKOK
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 06 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">06</span>
+
+                <span class="section-title">
+                    EBOB Problemleri
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <p>
+                    EBOB problemlerinde genellikle
+                    eşit büyüklükte parçalara ayırma mantığı vardır.
+                </p>
+
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        24 cm ve 36 cm uzunluğundaki iki çubuk,
+                        hiç artmayacak şekilde eşit uzunlukta
+                        parçalara ayrılıyor.
+                    </p>
+
+                    <p>
+                        En uzun parçanın uzunluğu kaç cm'dir?
+                    </p>
+
+                    <div class="formula">
+                        EBOB(24,36) = 12
+                    </div>
+
+                    <p>
+                        Cevap: <strong>12 cm</strong>
+                    </p>
+
+                </div>
+
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        18 ve 30 sayılarından oluşturulabilecek
+                        en büyük eş parçanın uzunluğu kaçtır?
+                    </p>
+
+                    <div class="answers">
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            3
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            5
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            6
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            9
+                        </button>
+
+                    </div>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 07 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">07</span>
+
+                <span class="section-title">
+                    EKOK Problemleri
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <p>
+                    EKOK problemlerinde genellikle tekrar eden
+                    olayların aynı anda gerçekleşmesi istenir.
+                </p>
+
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir zil 6 dakikada bir, başka bir zil
+                        8 dakikada bir çalıyor.
+                    </p>
+
+                    <p>
+                        İkisi aynı anda çaldıktan kaç dakika
+                        sonra tekrar birlikte çalar?
+                    </p>
+
+                    <div class="formula">
+                        EKOK(6,8) = 24
+                    </div>
+
+                    <p>
+                        Cevap: <strong>24 dakika</strong>
+                    </p>
+
+                </div>
+
+
+                <div class="mini-question">
+
+                    <h3>Mini Soru</h3>
+
+                    <p>
+                        Bir otobüs 12 dakikada, diğeri 18 dakikada
+                        bir kalkıyor. Kaç dakika sonra tekrar
+                        birlikte kalkarlar?
+                    </p>
+
+                    <div class="answers">
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            24
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            30
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            36
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            48
+                        </button>
+
+                    </div>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 08 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">08</span>
+
+                <span class="section-title">
+                    Özel Durumlar
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>Biri Diğerini Bölüyorsa</h3>
+
+                    <p>
+                        Küçük sayı büyük sayıyı tam bölüyorsa:
+                    </p>
+
+                    <div class="formula">
+                        EBOB = küçük sayı
+                    </div>
+
+                    <div class="formula">
+                        EKOK = büyük sayı
+                    </div>
+
+                </div>
+
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <div class="formula">
+                        EBOB(8,24) = 8
+                    </div>
+
+                    <div class="formula">
+                        EKOK(8,24) = 24
+                    </div>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <h3>Aralarında Asal Sayılar</h3>
+
+                    <p>
+                        İki sayının 1 dışında ortak böleni yoksa
+                        bu sayılar aralarında asaldır.
+                    </p>
+
+                    <div class="formula">
+                        EBOB = 1
+                    </div>
+
+                    <div class="formula">
+                        EKOK = a × b
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 09 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">09</span>
+
+                <span class="section-title">
+                    KPSS İçin Pratik Taktikler
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>EBOB</h3>
+
+                    <p>
+                        Eşit parçalara ayırma
+                    </p>
+
+                    <p>
+                        En büyük eş parça
+                    </p>
+
+                    <p>
+                        Paylaştırma
+                    </p>
+
+                    <p>
+                        Ortak bölen
+                    </p>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3>EKOK</h3>
+
+                    <p>
+                        Tekrar birlikte olma
+                    </p>
+
+                    <p>
+                        İlk ortak zaman
+                    </p>
+
+                    <p>
+                        Ortak kat
+                    </p>
+
+                    <p>
+                        Belirli aralıklarla tekrar
+                    </p>
+
+                </div>
+
+
+                <div class="warning-card">
+
+                    <strong>KPSS İpucu</strong>
+
+                    <p>
+                        "En büyük eş parça", "artmayacak şekilde"
+                        ve "eşit bölme" ifadeleri EBOB'u düşündürür.
+                    </p>
+
+                    <p>
+                        "Tekrar aynı anda", "kaç dakika sonra"
+                        ve "ilk kez birlikte" ifadeleri EKOK'u düşündürür.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <button class="section-header">
+
+                <span class="section-icon">10</span>
+
+                <span class="section-title">
+                    Hızlı Özet
+                </span>
+
+                <span class="section-arrow">+</span>
+
+            </button>
+
+
+            <div class="section-content">
+
+                <div class="summary-card">
+
+                    <h3>EBOB</h3>
+
+                    <p>
+                        En Büyük Ortak Bölen
+                    </p>
+
+                    <div class="formula">
+                        Ortak bölenlerin en büyüğü
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3>EKOK</h3>
+
+                    <p>
+                        En Küçük Ortak Kat
+                    </p>
+
+                    <div class="formula">
+                        Ortak katların en küçüğü
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3>Temel Bağıntı</h3>
+
+                    <div class="formula">
+                        a × b =
+                        EBOB(a,b) × EKOK(a,b)
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card">
+
+                    <h3>Asal Çarpan Yöntemi</h3>
+
+                    <p>
+                        EBOB → ortak çarpanların küçük üsleri
+                    </p>
+
+                    <p>
+                        EKOK → tüm çarpanların büyük üsleri
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-start">
+
+            <h2>Mini Test</h2>
+
+            <p>
+                Konuyu ne kadar öğrendiğini test et.
+            </p>
+
+            <button
+                class="start-button"
+                onclick="startTest()">
+                TESTE BAŞLA
+            </button>
+
+        </section>
+
+
+        <section
+            class="test-area"
+            id="testArea">
+
+            <div
+                class="question-card"
+                id="questionCard">
+            </div>
+
+            <div
+                class="answers"
+                id="testAnswers">
+            </div>
+
+            <div
+                class="answer-feedback"
+                id="answerFeedback">
+            </div>
+
+            <button
+                class="next-question-button"
+                id="nextButton"
+                onclick="nextQuestion()">
+                SONRAKİ SORU →
+            </button>
+
+        </section>
+
+
+        <section
+            class="test-result"
+            id="testResult">
+
+            <h2>Test Tamamlandı</h2>
+
+            <p>Sonucun:</p>
+
+            <strong id="scoreText">
+                0 / 5
+            </strong>
+
+            <button
+                class="retry-button"
+                onclick="startTest()">
+                TEKRAR DENE
+            </button>
+
+        </section>
+
+
+        <!-- BİTİR -->
+
+        <section class="finish-area">
+
+            <h2>
+                EBOB - EKOK konusunu tamamladın.
+            </h2>
+
+            <p>
+                Hazırsan diğer matematik konusuna geçebilirsin.
+            </p>
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+                ✓ KONU BİTTİ
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

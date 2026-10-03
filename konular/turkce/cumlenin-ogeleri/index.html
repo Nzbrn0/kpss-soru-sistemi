@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Cümlenin Ögeleri</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+
+    <main class="lesson-container">
+
+        <a
+            href="../../../index.html?return=subjects"
+            class="back-button">
+
+            ← Türkçe Konularına Dön
+
+        </a>
+
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                TÜRKÇE / 09
+            </div>
+
+            <h1>
+                Cümlenin Ögeleri
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Cümlenin temel ve yardımcı ögelerini,
+                ögelerin nasıl bulunacağını ve sorularını öğren.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-text">
+
+                <span>
+                    KONU İLERLEMESİ
+                </span>
+
+                <strong id="progressPercent">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- KONULAR -->
+
+        <div class="lesson-sections">
+
+
+            <!-- 1 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        01
+                    </span>
+
+                    <span class="section-title">
+
+                        Cümlenin Temel Ögeleri
+
+                        <small>
+                            Özne ve yüklem
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Cümlenin temel ögeleri
+                        <strong>yüklem</strong> ve
+                        <strong>özne</strong>dir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                YÜKLEM
+                            </strong>
+
+                            <p>
+                                Cümlede yargıyı bildiren
+                                temel ögedir.
+                            </p>
+
+                            <span>
+                                Ali kitap okudu.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                ÖZNE
+                            </strong>
+
+                            <p>
+                                Yüklemin bildirdiği işi yapan
+                                veya durumu yaşayan ögedir.
+                            </p>
+
+                            <span>
+                                Ali kitap okudu.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                TEMEL ÖGE
+                            </strong>
+
+                            <p>
+                                Özne ve yüklem cümlenin
+                                temel ögeleridir.
+                            </p>
+
+                            <span>
+                                Ali / okudu.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Öğrenciler sınava çalıştı.
+                        </p>
+
+                        <span>
+                            “Çalıştı” → yüklem
+                            <br>
+                            “Öğrenciler” → özne
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Çocuklar bahçede oynuyor.”
+                            cümlesinin öznesi hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Çocuklar
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Bahçede
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Oynuyor
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 2 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        02
+                    </span>
+
+                    <span class="section-title">
+
+                        Yüklem
+
+                        <small>
+                            Cümlenin yargısı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Yüklem, cümledeki yargıyı bildiren
+                        ögedir. Fiil veya isim soylu bir
+                        sözcük olabilir.
+                    </p>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            YÜKLEMİ BULMA
+                        </strong>
+
+                        <p>
+                            Öncelikle cümlede yargıyı
+                            bildiren sözcük veya sözcük
+                            grubunu bulmalısın.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            FİİL YÜKLEM
+                        </div>
+
+                        <p>
+                            Ahmet eve geldi.
+                        </p>
+
+                        <span>
+                            “Geldi” fiil olduğu için
+                            yüklemdir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            İSİM YÜKLEM
+                        </div>
+
+                        <p>
+                            Hava bugün çok güzel.
+                        </p>
+
+                        <span>
+                            “Güzel” sözcüğü isim soylu
+                            yüklemdir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Bugün hava çok soğuk.”
+                            cümlesinin yüklemi hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Bugün
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Hava
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            C) Çok soğuk
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 3 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        03
+                    </span>
+
+                    <span class="section-title">
+
+                        Özne
+
+                        <small>
+                            İşi yapan veya durumu yaşayan
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Özne, yüklemin bildirdiği işi yapan
+                        veya yüklemin bildirdiği durumda
+                        bulunan ögedir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                GERÇEK ÖZNE
+                            </strong>
+
+                            <p>
+                                Eylemi gerçekten gerçekleştiren
+                                ögedir.
+                            </p>
+
+                            <span>
+                                Ali kitabı okudu.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                GİZLİ ÖZNE
+                            </strong>
+
+                            <p>
+                                Cümlede açıkça yazılmayan,
+                                yüklemden anlaşılan öznedir.
+                            </p>
+
+                            <span>
+                                Eve gittim.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                SÖZDE ÖZNE
+                            </strong>
+
+                            <p>
+                                Edilgen çatılı cümlelerde
+                                nesne özne görünümü kazanabilir.
+                            </p>
+
+                            <span>
+                                Kapı açıldı.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            GİZLİ ÖZNE
+                        </div>
+
+                        <p>
+                            Bugün çok çalıştım.
+                        </p>
+
+                        <span>
+                            Cümlede özne açıkça yazılmamıştır.
+                            “Ben” anlamı yüklemden anlaşılır.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Dün sinemaya gittim.”
+                            cümlesinde hangi tür özne vardır?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Sözde özne
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Gizli özne
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Belirtisiz nesne
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 4 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        04
+                    </span>
+
+                    <span class="section-title">
+
+                        Nesne
+
+                        <small>
+                            Belirtili ve belirtisiz nesne
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Nesne, öznenin yaptığı işten etkilenen
+                        ögedir. Yalnızca geçişli fiiller
+                        nesne alabilir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                BELİRTİLİ NESNE
+                            </strong>
+
+                            <p>
+                                “Neyi?” veya “Kimi?” sorularına
+                                cevap verir.
+                            </p>
+
+                            <span>
+                                Kitabı okudu.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                BELİRTİSİZ NESNE
+                            </strong>
+
+                            <p>
+                                “Ne?” sorusuna cevap verir.
+                            </p>
+
+                            <span>
+                                Kitap okudu.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                ÖNEMLİ
+                            </strong>
+
+                            <p>
+                                Nesne yalnızca geçişli
+                                fiillerde bulunur.
+                            </p>
+
+                            <span>
+                                Neyi? / Kimi?
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            BELİRTİLİ NESNE
+                        </div>
+
+                        <p>
+                            Ayşe kitabı okudu.
+                        </p>
+
+                        <span>
+                            “Neyi okudu?” → kitabı.
+                            Belirtili nesnedir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            BELİRTİSİZ NESNE
+                        </div>
+
+                        <p>
+                            Ayşe kitap okudu.
+                        </p>
+
+                        <span>
+                            “Ne okudu?” → kitap.
+                            Belirtisiz nesnedir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Öğrenci kitabı okudu.”
+                            cümlesindeki “kitabı” hangi ögedir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Özne
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Belirtili nesne
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Dolaylı tümleç
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 5 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        05
+                    </span>
+
+                    <span class="section-title">
+
+                        Dolaylı Tümleç
+
+                        <small>
+                            Yer tamlayıcısı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Dolaylı tümleç, yüklemi yer, yön
+                        veya bulunma-bulunmama bakımından
+                        tamamlayan ögedir.
+                    </p>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            SORULARI
+                        </strong>
+
+                        <p>
+                            “Kime?”, “Neye?”, “Nerede?”,
+                            “Nereye?”, “Nereden?” soruları
+                            dolaylı tümleci buldurabilir.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Kitabı masanın üzerine bıraktı.
+                        </p>
+
+                        <span>
+                            “Nereye bıraktı?” →
+                            masanın üzerine.
+                            Dolaylı tümleçtir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                -E
+                            </strong>
+
+                            <p>
+                                Yönelme anlamı verir.
+                            </p>
+
+                            <span>
+                                okula gitti
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                -DE
+                            </strong>
+
+                            <p>
+                                Bulunma anlamı verir.
+                            </p>
+
+                            <span>
+                                evde kaldı
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                -DEN
+                            </strong>
+
+                            <p>
+                                Ayrılma veya çıkma anlamı verir.
+                            </p>
+
+                            <span>
+                                evden çıktı
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Ali okula gitti.”
+                            cümlesinde “okula” hangi ögedir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Nesne
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Dolaylı tümleç
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Zarf tümleci
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 6 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        06
+                    </span>
+
+                    <span class="section-title">
+
+                        Zarf Tümleci
+
+                        <small>
+                            Zarf tümleci / yer tamlayıcısından farkı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Zarf tümleci; yüklemi durum, zaman,
+                        miktar, sebep veya araç gibi yönlerden
+                        tamamlayan ögedir.
+                    </p>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            SORULARI
+                        </strong>
+
+                        <p>
+                            “Nasıl?”, “Ne zaman?”, “Niçin?”,
+                            “Neden?”, “Ne kadar?” gibi sorular
+                            zarf tümlecini buldurabilir.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Çocuk hızlı koştu.
+                        </p>
+
+                        <span>
+                            “Nasıl koştu?” → hızlı.
+                            Zarf tümlecidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ZAMAN
+                        </div>
+
+                        <p>
+                            Sabah erkenden yola çıktık.
+                        </p>
+
+                        <span>
+                            “Ne zaman çıktık?” →
+                            sabah erkenden.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Çocuk hızlı koştu.”
+                            cümlesinde “hızlı” hangi ögedir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Özne
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Nesne
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            C) Zarf tümleci
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 7 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        07
+                    </span>
+
+                    <span class="section-title">
+
+                        Edat Tümleci
+
+                        <small>
+                            Edatlarla kurulan yardımcı öge
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Edat tümleci, “ile”, “için”, “gibi”,
+                        “kadar” gibi edatlarla oluşturulan
+                        söz gruplarının cümlede üstlendiği
+                        görevdir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            Senin için buraya geldim.
+                        </p>
+
+                        <span>
+                            “Senin için” grubu cümlede
+                            edat tümleci görevindedir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                İLE
+                            </strong>
+
+                            <p>
+                                Birliktelik veya araç
+                                anlamı verebilir.
+                            </p>
+
+                            <span>
+                                arkadaşlarıyla geldi
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                İÇİN
+                            </strong>
+
+                            <p>
+                                Amaç veya sebep anlamı
+                                verebilir.
+                            </p>
+
+                            <span>
+                                senin için
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                GİBİ
+                            </strong>
+
+                            <p>
+                                Benzerlik veya karşılaştırma
+                                anlamı verebilir.
+                            </p>
+
+                            <span>
+                                çocuk gibi
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>
+                            MİNİ SORU
+                        </span>
+
+                        <p>
+                            “Senin için geldim.”
+                            cümlesindeki “senin için”
+                            hangi ögedir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Özne
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Edat tümleci
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Belirtili nesne
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+        <!-- ÖZET -->
+
+        <div class="summary-card">
+
+            <div class="summary-title">
+                KPSS İÇİN KISA ÖZET
+            </div>
+
+            <ul>
+
+                <li>
+                    Cümlenin temel ögeleri özne ve yüklemdir.
+                </li>
+
+                <li>
+                    Yüklem cümledeki yargıyı bildirir.
+                </li>
+
+                <li>
+                    Özne işi yapan veya durumu yaşayandır.
+                </li>
+
+                <li>
+                    Nesne “neyi?”, “kimi?” veya “ne?”
+                    sorularıyla bulunabilir.
+                </li>
+
+                <li>
+                    Dolaylı tümleç “kime, neye, nerede,
+                    nereye, nereden?” sorularıyla bulunur.
+                </li>
+
+                <li>
+                    Zarf tümleci “nasıl, ne zaman, niçin,
+                    neden, ne kadar?” gibi sorularla bulunur.
+                </li>
+
+                <li>
+                    Edat tümleci edatlarla oluşturulan
+                    söz gruplarından meydana gelir.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DİKKAT -->
+
+        <div class="warning-card">
+
+            <div class="warning-title">
+                ⚠ SINAVDA DİKKAT
+            </div>
+
+            <p>
+                Cümlenin ögelerini bulurken önce yüklemi
+                belirle. Diğer ögeler yükleme sorulan
+                sorularla bulunur.
+            </p>
+
+            <p>
+                “Neyi?” ve “kimi?” soruları belirtili
+                nesneyi; “ne?” sorusu belirtisiz nesneyi
+                buldurabilir.
+            </p>
+
+            <p>
+                “Nereye?” sorusunun cevabı her zaman
+                zarf tümleci değildir. Yönelme bildiren
+                ögeler çoğunlukla dolaylı tümleçtir.
+            </p>
+
+        </div>
+
+
+        <!-- TEST BAŞLANGIÇ -->
+
+        <div
+            class="test-start"
+            id="testStart">
+
+            <div class="test-icon">
+                ?
+            </div>
+
+            <h2>
+                Hazır mısın?
+            </h2>
+
+            <p>
+                Konuyu tamamladıysan 5 soruluk
+                mini teste geçebilirsin.
+            </p>
+
+            <button
+                class="test-start-button"
+                onclick="startTest()">
+
+                TESTE BAŞLA
+
+            </button>
+
+        </div>
+
+
+        <!-- TEST -->
+
+        <div
+            class="test-area"
+            id="testArea">
+
+            <div class="test-top">
+
+                <div>
+
+                    <span>
+                        CÜMLENİN ÖGELERİ TESTİ
+                    </span>
+
+                    <strong id="questionNumber">
+                        Soru 1 / 5
+                    </strong>
+
+                </div>
+
+                <div
+                    class="score-display"
+                    id="scoreDisplay">
+
+                    Puan: 0
+
+                </div>
+
+            </div>
+
+
+            <div class="question-progress">
+
+                <div
+                    id="questionProgress">
+                </div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div
+                    class="difficulty"
+                    id="difficulty">
+
+                    KOLAY
+
+                </div>
+
+                <h2 id="questionText">
+                    Soru yükleniyor...
+                </h2>
+
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+
+                <div
+                    class="answer-feedback"
+                    id="answerFeedback">
+
+                    <strong
+                        id="feedbackTitle">
+                    </strong>
+
+                    <p
+                        id="feedbackText">
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="next-question-button"
+                    id="nextButton"
+                    onclick="nextQuestion()">
+
+                    SONRAKİ SORU →
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TEST SONUCU -->
+
+        <div
+            class="test-result"
+            id="testResult">
+
+            <div class="result-icon">
+                ✓
+            </div>
+
+            <div class="result-label">
+                TEST TAMAMLANDI
+            </div>
+
+            <h2 id="finalScore">
+                0 / 5
+            </h2>
+
+            <p id="resultMessage">
+                Test tamamlandı.
+            </p>
+
+            <button
+                class="retry-button"
+                onclick="restartTest()">
+
+                TEKRAR ÇÖZ
+
+            </button>
+
+        </div>
+
+
+        <!-- KONU BİTTİ -->
+
+        <div class="finish-area">
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+
+                ✓ KONU BİTTİ
+
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

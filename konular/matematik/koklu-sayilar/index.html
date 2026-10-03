@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köklü Sayılar | KPSS Genco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+    <div class="neon-light light-one"></div>
+    <div class="neon-light light-two"></div>
+</div>
+
+<main class="lesson-container">
+
+    <a href="../../../index.html?return=subjects" class="back-button">
+        ← Matematik Konularına Dön
+    </a>
+
+    <header class="lesson-header">
+        <span class="lesson-number">MATEMATİK / 10</span>
+        <h1>Köklü Sayılar</h1>
+        <div class="title-line"></div>
+        <p>Köklü sayıların temel kurallarını öğren, sadeleştirme işlemlerini kavra ve KPSS tarzı sorularla kendini test et.</p>
+    </header>
+
+    <div class="progress-area">
+        <div class="progress-info">
+            <span>Konu ilerlemesi</span>
+            <span id="progressText">%0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </div>
+
+    <!-- 01 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">01</span>
+            <span class="section-title">Köklü Sayı Nedir?</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Tanım</h3>
+
+                <p>
+                    Bir sayının hangi sayının karesi olduğunu bulmaya
+                    karekök alma denir.
+                </p>
+
+                <div class="formula">
+                    √a = b → b² = a
+                </div>
+
+                <p>
+                    Örneğin √25 = 5'tir çünkü 5² = 25.
+                </p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnekler</h3>
+
+                <p>√4 = 2</p>
+                <p>√9 = 3</p>
+                <p>√16 = 4</p>
+                <p>√25 = 5</p>
+                <p>√100 = 10</p>
+            </div>
+
+            <div class="mini-question">
+                <h3>Mini Soru</h3>
+
+                <p>√81 kaçtır?</p>
+
+                <div class="answers">
+                    <button class="answer-button" data-correct="false">7</button>
+                    <button class="answer-button" data-correct="false">8</button>
+                    <button class="answer-button" data-correct="true">9</button>
+                    <button class="answer-button" data-correct="false">10</button>
+                </div>
+
+                <p class="mini-result"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">02</span>
+            <span class="section-title">Tam Kare Sayılar</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Bilmen gereken tam kareler</h3>
+
+                <p>1² = 1</p>
+                <p>2² = 4</p>
+                <p>3² = 9</p>
+                <p>4² = 16</p>
+                <p>5² = 25</p>
+                <p>6² = 36</p>
+                <p>7² = 49</p>
+                <p>8² = 64</p>
+                <p>9² = 81</p>
+                <p>10² = 100</p>
+                <p>11² = 121</p>
+                <p>12² = 144</p>
+                <p>13² = 169</p>
+                <p>14² = 196</p>
+                <p>15² = 225</p>
+            </div>
+
+            <div class="warning-card">
+                <strong>KPSS taktiği</strong>
+
+                <p>
+                    Köklü sayılarda işlem hızını artırmak için
+                    özellikle 1'den 15'e kadar olan sayıların
+                    karelerini bilmek büyük kolaylık sağlar.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 03 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">03</span>
+            <span class="section-title">Köklü Sayıyı Sadeleştirme</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Temel yöntem</h3>
+
+                <p>
+                    Kök içindeki sayı tam kare çarpanlarına ayrılır.
+                    Tam kare olan sayı kök dışına çıkarılır.
+                </p>
+
+                <div class="formula">
+                    √(a² · b) = a√b
+                </div>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 1</h3>
+
+                <p>√12</p>
+                <p>= √(4 · 3)</p>
+                <p>= √4 · √3</p>
+                <p>= <strong>2√3</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 2</h3>
+
+                <p>√72</p>
+                <p>= √(36 · 2)</p>
+                <p>= 6√2</p>
+
+                <p><strong>Cevap: 6√2</strong></p>
+            </div>
+
+            <div class="mini-question">
+                <h3>Mini Soru</h3>
+
+                <p>√50 aşağıdakilerden hangisine eşittir?</p>
+
+                <div class="answers">
+                    <button class="answer-button" data-correct="false">2√5</button>
+                    <button class="answer-button" data-correct="true">5√2</button>
+                    <button class="answer-button" data-correct="false">10√2</button>
+                    <button class="answer-button" data-correct="false">25√2</button>
+                </div>
+
+                <p class="mini-result"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 04 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">04</span>
+            <span class="section-title">Köklü Sayılarda Çarpma</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <div class="formula">
+                    √a · √b = √(a · b)
+                </div>
+
+                <p>
+                    Aynı dereceden köklü ifadeler çarpılırken
+                    kök içleri çarpılabilir.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 1</h3>
+
+                <p>√3 · √12</p>
+                <p>= √36</p>
+                <p>= <strong>6</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 2</h3>
+
+                <p>2√3 · 4√5</p>
+                <p>= 8√15</p>
+
+                <p><strong>Cevap: 8√15</strong></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 05 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">05</span>
+            <span class="section-title">Köklü Sayılarda Bölme</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <div class="formula">
+                    √a / √b = √(a / b)
+                </div>
+
+                <p>
+                    Pay ve paydada aynı dereceden kökler varsa
+                    kök içleri oranlanabilir.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 1</h3>
+
+                <p>√18 / √2</p>
+                <p>= √9</p>
+                <p>= <strong>3</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 2</h3>
+
+                <p>6√10 / 2√5</p>
+                <p>= 3 · √2</p>
+
+                <p><strong>Cevap: 3√2</strong></p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 06 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">06</span>
+            <span class="section-title">Köklü Sayılarda Toplama ve Çıkarma</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <p>
+                    Köklü ifadelerde yalnızca benzer köklü terimler
+                    toplanabilir veya çıkarılabilir.
+                </p>
+
+                <div class="formula">
+                    a√x + b√x = (a + b)√x
+                </div>
+
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 1</h3>
+
+                <p>3√5 + 2√5</p>
+                <p>= <strong>5√5</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 2</h3>
+
+                <p>7√3 − 2√3</p>
+                <p>= <strong>5√3</strong></p>
+            </div>
+
+            <div class="warning-card">
+
+                <strong>Dikkat!</strong>
+
+                <p>
+                    √2 + √3 ifadesinde kök içleri farklı olduğu için
+                    doğrudan toplama yapılamaz.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 07 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">07</span>
+            <span class="section-title">Paydadan Kök Kurtarma</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <p>
+                    Paydada köklü ifade varsa pay ve payda,
+                    uygun köklü ifadeyle çarpılarak payda
+                    rasyonel hâle getirilebilir.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 1</h3>
+
+                <p>1 / √2</p>
+
+                <p>
+                    = √2 / 2
+                </p>
+
+                <p>
+                    Çünkü pay ve payda √2 ile çarpılır.
+                </p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 2</h3>
+
+                <p>3 / √5</p>
+
+                <p>
+                    = 3√5 / 5
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 08 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">08</span>
+            <span class="section-title">Köklü Sayıları Karşılaştırma</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <p>
+                    Pozitif sayıların kareköklerini karşılaştırırken
+                    kök içlerini karşılaştırabiliriz.
+                </p>
+
+                <div class="formula">
+                    a &gt; b ≥ 0 → √a &gt; √b
+                </div>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <p>
+                    √20 ve √15'i karşılaştıralım.
+                </p>
+
+                <p>
+                    20 &gt; 15 olduğundan:
+                </p>
+
+                <p>
+                    <strong>√20 &gt; √15</strong>
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 09 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">09</span>
+            <span class="section-title">Köklü Sayıların Kuvvetleri</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="info-card">
+
+                <div class="formula">
+                    (√a)² = a
+                </div>
+
+                <p>
+                    Karekökün karesi alındığında kök ortadan kalkar.
+                </p>
+
+                <div class="formula">
+                    √(a²) = |a|
+                </div>
+
+                <p>
+                    Burada sonuç her zaman negatif olmayan değerdir.
+                </p>
+
+            </div>
+
+            <div class="example-card">
+
+                <h3>Örnek</h3>
+
+                <p>(√7)² = <strong>7</strong></p>
+
+                <p>√(9²) = <strong>9</strong></p>
+
+                <p>√((-5)²) = <strong>5</strong></p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 10 -->
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">10</span>
+            <span class="section-title">KPSS İçin Hızlı Tekrar</span>
+            <span class="section-arrow">+</span>
+        </button>
+
+        <div class="section-content">
+
+            <div class="summary-card">
+
+                <h3>Temel kurallar</h3>
+
+                <p>
+                    <strong>Kök tanımı:</strong>
+                    √a = b → b² = a
+                </p>
+
+                <p>
+                    <strong>Sadeleştirme:</strong>
+                    √(a² · b) = a√b
+                </p>
+
+                <p>
+                    <strong>Çarpma:</strong>
+                    √a · √b = √(ab)
+                </p>
+
+                <p>
+                    <strong>Bölme:</strong>
+                    √a / √b = √(a/b)
+                </p>
+
+                <p>
+                    <strong>Toplama:</strong>
+                    Yalnızca benzer köklü ifadeler toplanabilir.
+                </p>
+
+                <p>
+                    <strong>Kuvvet:</strong>
+                    (√a)² = a
+                </p>
+
+                <p>
+                    <strong>Önemli:</strong>
+                    √(a²) = |a|
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TEST -->
+    <section class="test-start" id="testStart">
+
+        <h2>Bilgini Test Et</h2>
+
+        <p>
+            Köklü Sayılar konusunu ne kadar öğrendiğini görmek için
+            5 soruluk mini testi çöz.
+        </p>
+
+        <button class="primary-button" id="startTest">
+            Teste Başla →
+        </button>
+
+    </section>
+
+    <section class="test-area" id="testArea" hidden>
+
+        <div class="test-top">
+            <span id="questionCounter">Soru 1 / 5</span>
+            <span id="testScore">Doğru: 0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="testProgress"></div>
+        </div>
+
+        <div class="question-card">
+
+            <h2 id="questionText"></h2>
+
+            <div class="test-answers" id="testAnswers"></div>
+
+            <p class="answer-feedback" id="answerFeedback"></p>
+
+            <button
+                class="primary-button"
+                id="nextQuestion"
+                hidden>
+                Sonraki Soru →
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="test-result" id="testResult" hidden>
+
+        <h2>Test Tamamlandı!</h2>
+
+        <p id="resultText"></p>
+
+        <button class="primary-button" id="retryTest">
+            Tekrar Çöz
+        </button>
+
+    </section>
+
+    <section class="finish-area">
+
+        <p>
+            Konu anlatımını bitirdiğinde ana ders ekranına dönebilirsin.
+        </p>
+
+        <button class="primary-button" id="finishLesson">
+            ✓ KONU BİTTİ
+        </button>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

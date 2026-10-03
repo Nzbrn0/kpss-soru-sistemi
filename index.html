@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Genco</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ARKA PLAN -->
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+
+    <!-- =========================
+         ANA SAYFA
+    ========================== -->
+
+    <section id="home" class="page active">
+
+        <div class="home-content">
+
+            <h1>
+                Hoş Geldin
+                <span>Genco</span>
+            </h1>
+
+            <p>
+                KPSS çalışmalarına başlamaya hazır mısın?
+            </p>
+
+            <button class="start-button" onclick="startApp()">
+                Başla
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ANA MENÜ
+    ========================== -->
+
+    <section id="menu" class="page">
+
+        <div class="menu-content">
+
+            <h2>
+                Ne yapmak istiyorsun?
+            </h2>
+
+            <div class="menu-line"></div>
+
+
+            <div class="choice-container">
+
+                <button
+                    class="choice-button"
+                    onclick="showSubjects('topic')">
+
+                    <span>KONU ANLATIMI</span>
+
+                    <small>
+                        Konuları öğren
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+
+                <button
+                    class="choice-button"
+                    onclick="showSubjects('question')">
+
+                    <span>SORU ÇÖZÜMÜ</span>
+
+                    <small>
+                        Bilgini test et
+                    </small>
+
+                    <b>→</b>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DERSLER
+    ========================== -->
+
+    <section id="subjects" class="page">
+
+        <div class="subjects-content">
+
+            <button
+                class="back-button"
+                onclick="goBack()">
+
+                ← Geri
+
+            </button>
+
+
+            <h2 id="subjectTitle">
+                Dersini Seç
+            </h2>
+
+
+            <div class="title-line"></div>
+
+
+            <div class="subjects" id="subjectList">
+
+                <!-- Dersler JavaScript tarafından oluşturulacak -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         KONULAR
+    ========================== -->
+
+    <section id="topics" class="page">
+
+        <div class="subjects-content">
+
+            <button
+                class="back-button"
+                onclick="goBackToSubjects()">
+
+                ← Geri
+
+            </button>
+
+
+            <h2 id="topicTitle">
+                Konular
+            </h2>
+
+
+            <div class="title-line"></div>
+
+
+            <div class="subjects" id="topicList">
+
+                <!-- Konular JavaScript tarafından oluşturulacak -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SCRIPT
+    ========================== -->
+
+    <script src="data/subjects.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPSS | Veri - İstatistik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+    <div class="neon-light light-one"></div>
+    <div class="neon-light light-two"></div>
+</div>
+
+<div class="lesson-container">
+
+    <a href="../../../index.html?return=subjects" class="back-button">
+        ← Matematik Konularına Dön
+    </a>
+
+    <header class="lesson-header">
+        <div class="lesson-number">MATEMATİK / 19</div>
+        <h1>Veri - İstatistik</h1>
+        <div class="title-line"></div>
+        <p>
+            Verileri düzenleme, tablo ve grafik yorumlama,
+            aritmetik ortalama, medyan, mod ve açıklık gibi
+            temel istatistik konularını öğren.
+        </p>
+    </header>
+
+    <div class="progress-area">
+        <div class="progress-text">
+            <span>Konu İlerlemesi</span>
+            <span id="progressText">%0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </div>
+
+    <!-- 1 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">01</div>
+            <div class="section-title">Veri Nedir?</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Veri</h3>
+
+                <p>
+                    Bir olay veya durum hakkında elde edilen
+                    sayısal ya da sözel bilgilere <strong>veri</strong> denir.
+                </p>
+
+                <p>
+                    Örneğin bir sınıftaki öğrencilerin yaşları,
+                    boyları veya sınav puanları birer veridir.
+                </p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek</h3>
+
+                <p>
+                    Bir öğrencinin 5 sınavdan aldığı puanlar:
+                </p>
+
+                <div class="formula">
+                    60, 70, 80, 75, 90
+                </div>
+
+                <p>
+                    Bu sayılar öğrencinin sınav puanlarını gösteren
+                    bir veri grubudur.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">02</div>
+            <div class="section-title">Veri Gruplarını Düzenleme</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Küçükten Büyüğe Sıralama</h3>
+
+                <p>
+                    İstatistik sorularında verileri sıralamak özellikle
+                    <strong>medyan</strong> ve <strong>mod</strong> bulurken önemlidir.
+                </p>
+
+                <div class="formula">
+                    8, 3, 12, 5, 7
+                    <br><br>
+                    ↓
+                    <br><br>
+                    3, 5, 7, 8, 12
+                </div>
+            </div>
+
+            <div class="warning-card">
+                <strong>⚠️ Dikkat:</strong>
+
+                <p>
+                    Medyan hesaplanırken veriler mutlaka
+                    küçükten büyüğe sıralanmalıdır.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">03</div>
+            <div class="section-title">Aritmetik Ortalama</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Tanım</h3>
+
+                <p>
+                    Veri grubundaki sayıların toplamının,
+                    veri sayısına bölünmesiyle bulunur.
+                </p>
+
+                <div class="formula">
+                    Aritmetik Ortalama =
+                    Toplam / Veri Sayısı
+                </div>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek</h3>
+
+                <p>
+                    4, 6, 8, 12 sayılarının ortalaması:
+                </p>
+
+                <div class="formula">
+                    (4 + 6 + 8 + 12) / 4
+                    <br>
+                    = 30 / 4
+                    <br>
+                    = 7,5
+                </div>
+            </div>
+
+            <div class="mini-question">
+                <h3>Mini Soru</h3>
+
+                <p>
+                    10, 20 ve 30 sayılarının aritmetik ortalaması kaçtır?
+                </p>
+
+                <button class="answer-button" data-correct="false">
+                    15
+                </button>
+
+                <button class="answer-button" data-correct="true">
+                    20
+                </button>
+
+                <button class="answer-button" data-correct="false">
+                    25
+                </button>
+
+                <div class="mini-result"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">04</div>
+            <div class="section-title">Medyan (Ortanca)</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Medyan Nedir?</h3>
+
+                <p>
+                    Veriler küçükten büyüğe sıralandığında
+                    ortada kalan değere <strong>medyan</strong> denir.
+                </p>
+            </div>
+
+            <div class="example-card">
+                <h3>Tek Sayıda Veri</h3>
+
+                <div class="formula">
+                    2, 5, 7, 9, 12
+                </div>
+
+                <p>
+                    Ortadaki sayı 7 olduğundan:
+                </p>
+
+                <div class="formula">
+                    Medyan = 7
+                </div>
+            </div>
+
+            <div class="example-card">
+                <h3>Çift Sayıda Veri</h3>
+
+                <div class="formula">
+                    2, 4, 6, 10
+                </div>
+
+                <p>
+                    Ortadaki iki sayı 4 ve 6'dır.
+                </p>
+
+                <div class="formula">
+                    Medyan = (4 + 6) / 2 = 5
+                </div>
+            </div>
+
+            <div class="warning-card">
+                <strong>⚠️ Önemli:</strong>
+
+                <p>
+                    Veri sayısı çiftse ortadaki iki sayının
+                    aritmetik ortalaması alınır.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">05</div>
+            <div class="section-title">Mod (Tepe Değer)</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Mod Nedir?</h3>
+
+                <p>
+                    Bir veri grubunda en fazla tekrar eden değere
+                    <strong>mod</strong> veya <strong>tepe değer</strong> denir.
+                </p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek</h3>
+
+                <div class="formula">
+                    2, 4, 4, 5, 7, 4, 9
+                </div>
+
+                <p>
+                    4 sayısı üç kez tekrar ettiği için:
+                </p>
+
+                <div class="formula">
+                    Mod = 4
+                </div>
+            </div>
+
+            <div class="warning-card">
+                <strong>⚠️ Dikkat:</strong>
+
+                <p>
+                    Bir veri grubunda birden fazla mod bulunabilir.
+                    Hiçbir değer tekrar etmiyorsa mod bulunmayabilir.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">06</div>
+            <div class="section-title">Açıklık</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Açıklık Nedir?</h3>
+
+                <p>
+                    Bir veri grubundaki en büyük değer ile
+                    en küçük değer arasındaki farka
+                    <strong>açıklık</strong> denir.
+                </p>
+
+                <div class="formula">
+                    Açıklık = En Büyük Değer − En Küçük Değer
+                </div>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek</h3>
+
+                <div class="formula">
+                    5, 8, 12, 15, 20
+                </div>
+
+                <div class="formula">
+                    Açıklık = 20 − 5 = 15
+                </div>
+            </div>
+
+            <div class="mini-question">
+                <h3>Mini Soru</h3>
+
+                <p>
+                    7, 12, 18, 25, 30 veri grubunun açıklığı kaçtır?
+                </p>
+
+                <button class="answer-button" data-correct="false">
+                    20
+                </button>
+
+                <button class="answer-button" data-correct="false">
+                    22
+                </button>
+
+                <button class="answer-button" data-correct="true">
+                    23
+                </button>
+
+                <div class="mini-result"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">07</div>
+            <div class="section-title">Frekans</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Frekans Nedir?</h3>
+
+                <p>
+                    Bir değerin veri grubunda kaç kez tekrar ettiğini
+                    gösteren sayıya <strong>frekans</strong> denir.
+                </p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek</h3>
+
+                <div class="formula">
+                    2, 3, 3, 4, 4, 4, 5
+                </div>
+
+                <p>Frekanslar:</p>
+
+                <div class="formula">
+                    2 → 1
+                    <br>
+                    3 → 2
+                    <br>
+                    4 → 3
+                    <br>
+                    5 → 1
+                </div>
+            </div>
+
+            <div class="warning-card">
+                <strong>💡 Bilgi:</strong>
+
+                <p>
+                    Frekansların toplamı, veri grubundaki toplam
+                    veri sayısını verir.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">08</div>
+            <div class="section-title">Grafikler</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Sütun Grafiği</h3>
+
+                <p>
+                    Farklı kategorilerin miktarlarını karşılaştırmak
+                    için kullanılır.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Çizgi Grafiği</h3>
+
+                <p>
+                    Bir değerin zamana göre değişimini göstermek
+                    için sık kullanılır.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Daire Grafiği</h3>
+
+                <p>
+                    Bir bütünün parçalarını ve bu parçaların
+                    bütün içindeki oranlarını göstermek için kullanılır.
+                </p>
+
+                <div class="formula">
+                    Tam Daire = 360°
+                </div>
+            </div>
+
+            <div class="example-card">
+                <h3>Grafik Sorularında</h3>
+
+                <p>
+                    Önce grafikte verilen eksenleri, birimleri,
+                    toplamları ve oranları kontrol et.
+                </p>
+
+                <p>
+                    Özellikle yüzde ve açı ilişkilerine dikkat et.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 9 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">09</div>
+            <div class="section-title">Ortalama ile İlgili Sorular</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Temel Bağıntı</h3>
+
+                <div class="formula">
+                    Toplam = Ortalama × Veri Sayısı
+                </div>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek</h3>
+
+                <p>
+                    8 sayının ortalaması 15 ise sayıların toplamı:
+                </p>
+
+                <div class="formula">
+                    15 × 8 = 120
+                </div>
+            </div>
+
+            <div class="example-card">
+                <h3>Yeni Veri Eklenirse</h3>
+
+                <p>
+                    Yeni bir sayı eklendiğinde toplam ve veri sayısı
+                    birlikte değişir.
+                </p>
+
+                <div class="formula">
+                    Yeni Ortalama =
+                    Yeni Toplam / Yeni Veri Sayısı
+                </div>
+            </div>
+
+            <div class="mini-question">
+                <h3>Mini Soru</h3>
+
+                <p>
+                    6 sayının ortalaması 12 ise bu sayıların toplamı kaçtır?
+                </p>
+
+                <button class="answer-button" data-correct="false">
+                    60
+                </button>
+
+                <button class="answer-button" data-correct="true">
+                    72
+                </button>
+
+                <button class="answer-button" data-correct="false">
+                    84
+                </button>
+
+                <div class="mini-result"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 10 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">10</div>
+            <div class="section-title">KPSS İçin İstatistik Taktikleri</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="info-card">
+                <h3>Hızlı Çözüm Mantığı</h3>
+
+                <p>✓ Ortalama sorularında:</p>
+                <div class="formula">
+                    Toplam = Ortalama × Veri Sayısı
+                </div>
+
+                <p>✓ Medyan sorularında:</p>
+                <p>
+                    Önce verileri küçükten büyüğe sırala.
+                </p>
+
+                <p>✓ Mod sorularında:</p>
+                <p>
+                    En fazla tekrar eden değeri bul.
+                </p>
+
+                <p>✓ Açıklık sorularında:</p>
+                <div class="formula">
+                    En Büyük − En Küçük
+                </div>
+
+                <p>✓ Grafik sorularında:</p>
+                <p>
+                    Eksenleri, birimleri ve toplam değerleri dikkatlice kontrol et.
+                </p>
+            </div>
+
+            <div class="warning-card">
+                <strong>⚠️ KPSS İpucu:</strong>
+
+                <p>
+                    İstatistik sorularında çoğu zaman işlemden önce
+                    verilen bilgileri doğru okumak daha önemlidir.
+                    Özellikle ortalama, toplam ve veri sayısı arasındaki
+                    ilişkiyi hızlı kurmaya çalış.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 11 -->
+    <section class="lesson-section">
+        <div class="section-header">
+            <div class="section-icon">11</div>
+            <div class="section-title">Hızlı Tekrar</div>
+            <div class="section-arrow">+</div>
+        </div>
+
+        <div class="section-content">
+
+            <div class="summary-card">
+
+                <h3>📌 Ezberlenmesi Gerekenler</h3>
+
+                <div class="formula">
+                    Ortalama = Toplam / Veri Sayısı
+                    <br><br>
+                    Toplam = Ortalama × Veri Sayısı
+                    <br><br>
+                    Açıklık = En Büyük − En Küçük
+                    <br><br>
+                    Medyan = Ortanca Değer
+                    <br><br>
+                    Mod = En Çok Tekrar Eden Değer
+                    <br><br>
+                    Tam Daire = 360°
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TEST -->
+
+    <div class="test-start" id="testStart">
+
+        <h2>🎯 5 Soruluk Mini Test</h2>
+
+        <p>
+            Konuyu ne kadar öğrendiğini test et.
+        </p>
+
+        <button id="startTest">
+            Teste Başla
+        </button>
+
+    </div>
+
+
+    <div class="test-area" id="testArea">
+
+        <div class="question-card">
+
+            <div class="question-number" id="questionNumber">
+                Soru 1 / 5
+            </div>
+
+            <h2 id="questionText"></h2>
+
+            <div id="answers"></div>
+
+            <div class="answer-feedback" id="answerFeedback"></div>
+
+            <button
+                class="next-question-button"
+                id="nextQuestion">
+                Sonraki Soru →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="test-result" id="testResult">
+
+        <h2>Test Tamamlandı 🎉</h2>
+
+        <div class="score" id="score"></div>
+
+        <p id="resultMessage"></p>
+
+        <button id="restartTest">
+            Testi Tekrar Çöz
+        </button>
+
+    </div>
+
+
+    <div class="finish-area">
+
+        <button id="finishButton">
+            ✓ KONU BİTTİ
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

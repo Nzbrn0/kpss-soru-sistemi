@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutlak Değer | KPSS Genco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+    <div class="neon-light light-one"></div>
+    <div class="neon-light light-two"></div>
+</div>
+
+<main class="lesson-container">
+
+    <a href="../../../index.html?return=subjects" class="back-button">
+        ← Matematik Konularına Dön
+    </a>
+
+    <header class="lesson-header">
+        <span class="lesson-number">MATEMATİK / 08</span>
+        <h1>Mutlak Değer</h1>
+        <div class="title-line"></div>
+        <p>Mutlak değer kavramını öğren, kuralları kavra ve KPSS tarzı sorularla kendini test et.</p>
+    </header>
+
+    <div class="progress-area">
+        <div class="progress-info">
+            <span>Konu ilerlemesi</span>
+            <span id="progressText">%0</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </div>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">01</span>
+            <span class="section-title">Mutlak Değer Nedir?</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>Mutlak değer tanımı</h3>
+                <p>Bir gerçek sayının sayı doğrusunda sıfıra olan uzaklığına mutlak değer denir. Uzaklık negatif olamayacağı için mutlak değer her zaman sıfır veya pozitiftir.</p>
+                <div class="formula">|x| ≥ 0</div>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnekler</h3>
+                <p>|5| = 5</p>
+                <p>|−5| = 5</p>
+                <p>|0| = 0</p>
+                <p>|−12| = 12</p>
+                <p class="note">Dikkat: Mutlak değer içindeki sayının işareti ne olursa olsun sonuç negatif çıkmaz.</p>
+            </div>
+
+            <div class="mini-question">
+                <h3>Mini Soru</h3>
+                <p>|−17| kaçtır?</p>
+                <div class="answers">
+                    <button class="answer-button" data-correct="false">−17</button>
+                    <button class="answer-button" data-correct="true">17</button>
+                    <button class="answer-button" data-correct="false">0</button>
+                    <button class="answer-button" data-correct="false">1</button>
+                </div>
+                <p class="mini-result"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">02</span>
+            <span class="section-title">Mutlak Değerin Matematiksel Tanımı</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <p>Mutlak değer, içindeki sayının işaretine göre hesaplanır:</p>
+                <div class="formula">
+                    |x| = x, x ≥ 0<br><br>
+                    |x| = −x, x &lt; 0
+                </div>
+                <p>Yani sayı sıfır veya pozitifse olduğu gibi kalır. Negatifse işareti değiştirilir.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek</h3>
+                <p>|−8| + |3|</p>
+                <p>= 8 + 3</p>
+                <p>= <strong>11</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">03</span>
+            <span class="section-title">Mutlak Değerin Temel Özellikleri</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>Bilmen gereken kurallar</h3>
+                <ul>
+                    <li>|x| ≥ 0: Mutlak değer negatif olamaz.</li>
+                    <li>|x| = 0 ise x = 0'dır.</li>
+                    <li>|−x| = |x|: Zıt sayıların mutlak değerleri eşittir.</li>
+                    <li>|x · y| = |x| · |y|</li>
+                    <li>|x / y| = |x| / |y|, y ≠ 0 olmak üzere.</li>
+                    <li>|x|² = x²</li>
+                </ul>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek</h3>
+                <p>|−4| · |−3| = 4 · 3 = <strong>12</strong></p>
+                <p>|−6|² = 6² = <strong>36</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">04</span>
+            <span class="section-title">Mutlak Değerli Denklemler</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <p>Mutlak değerli denklemlerde, mutlak değer içindeki ifade pozitif veya negatif olabilir.</p>
+                <div class="formula">|x| = a</div>
+                <p>a pozitifse iki çözüm vardır:</p>
+                <div class="formula">x = a veya x = −a</div>
+                <p>a = 0 ise tek çözüm x = 0'dır. a negatifse gerçek sayılarda çözüm yoktur.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 1</h3>
+                <p>|x| = 6</p>
+                <p>x = 6 veya x = −6</p>
+                <p><strong>Çözüm kümesi: {−6, 6}</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 2</h3>
+                <p>|x − 3| = 5</p>
+                <p>x − 3 = 5 → x = 8</p>
+                <p>x − 3 = −5 → x = −2</p>
+                <p><strong>Çözüm kümesi: {−2, 8}</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">05</span>
+            <span class="section-title">Mutlak Değerli Eşitsizlikler</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>1. Küçüktür kuralı</h3>
+                <div class="formula">|x| &lt; a → −a &lt; x &lt; a</div>
+                <p>a pozitif olmak üzere, x sıfıra a'dan daha yakın olmalıdır.</p>
+                <h3>2. Büyüktür kuralı</h3>
+                <div class="formula">|x| &gt; a → x &lt; −a veya x &gt; a</div>
+                <p>x, sıfıra uzaklığı a'dan büyük olan bölgelerde bulunur.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 1</h3>
+                <p>|x| &lt; 4</p>
+                <p>−4 &lt; x &lt; 4</p>
+                <p><strong>Çözüm aralığı: (−4, 4)</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 2</h3>
+                <p>|x| ≥ 3</p>
+                <p>x ≤ −3 veya x ≥ 3</p>
+                <p><strong>Çözüm: (−∞, −3] ∪ [3, ∞)</strong></p>
+            </div>
+
+            <div class="warning-card">
+                <strong>Dikkat!</strong>
+                <p>Mutlak değerli eşitsizliklerde eşitlik varsa sınır değerleri de çözüme dahil edilir. Ayrıca a negatifse eşitsizliğin türüne göre özel değerlendirme gerekir.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">06</span>
+            <span class="section-title">|x − a| İfadesinin Yorumu</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <p>|x − a|, x sayısının a sayısına olan uzaklığını gösterir.</p>
+                <div class="formula">|x − a| = |a − x|</div>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek</h3>
+                <p>|x − 5| = 2</p>
+                <p>x, 5'e 2 birim uzaklıktadır.</p>
+                <p>x = 5 − 2 = 3</p>
+                <p>x = 5 + 2 = 7</p>
+                <p><strong>Cevap: 3 ve 7</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">07</span>
+            <span class="section-title">Mutlak Değer İçeren İşlemler</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="example-card">
+                <h3>Örnek 1</h3>
+                <p>|−7| − |−2|</p>
+                <p>= 7 − 2</p>
+                <p><strong>= 5</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 2</h3>
+                <p>|−3| + |−8| − |4|</p>
+                <p>= 3 + 8 − 4</p>
+                <p><strong>= 7</strong></p>
+            </div>
+
+            <div class="warning-card">
+                <strong>KPSS taktiği</strong>
+                <p>İşlem sırasına dikkat et. Önce mutlak değerleri hesapla, ardından çarpma ve bölme, son olarak toplama ve çıkarma işlemlerini yap.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">08</span>
+            <span class="section-title">KPSS İçin Önemli Taktikler</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <ul>
+                    <li>|x| = −3 denkleminin gerçek sayılarda çözümü yoktur.</li>
+                    <li>|x| = 3 denkleminin iki çözümü vardır: −3 ve 3.</li>
+                    <li>|x| &lt; 3, −3 &lt; x &lt; 3 anlamına gelir.</li>
+                    <li>|x| &gt; 3, x &lt; −3 veya x &gt; 3 anlamına gelir.</li>
+                    <li>|x − 4| ifadesi, x'in 4'e uzaklığını belirtir.</li>
+                    <li>Bir mutlak değerin sonucu sıfır olabilir ama negatif olamaz.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">09</span>
+            <span class="section-title">Genel Konu Özeti</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="summary-card">
+                <h3>Son tekrar</h3>
+                <p><strong>Mutlak değer:</strong> Sayının sıfıra uzaklığıdır.</p>
+                <p><strong>|x| = a:</strong> a pozitifse x = ±a.</p>
+                <p><strong>|x| &lt; a:</strong> −a &lt; x &lt; a.</p>
+                <p><strong>|x| &gt; a:</strong> x &lt; −a veya x &gt; a.</p>
+                <p><strong>|x − a|:</strong> x ile a arasındaki uzaklıktır.</p>
+                <p><strong>Temel kural:</strong> Mutlak değer negatif olamaz.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="test-start" id="testStart">
+        <h2>Bilgini Test Et</h2>
+        <p>Mutlak Değer konusunu ne kadar öğrendiğini görmek için 5 soruluk mini testi çöz.</p>
+        <button class="primary-button" id="startTest">Teste Başla →</button>
+    </section>
+
+    <section class="test-area" id="testArea" hidden>
+        <div class="test-top">
+            <span id="questionCounter">Soru 1 / 5</span>
+            <span id="testScore">Doğru: 0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="testProgress"></div>
+        </div>
+
+        <div class="question-card">
+            <h2 id="questionText"></h2>
+            <div class="test-answers" id="testAnswers"></div>
+            <p class="answer-feedback" id="answerFeedback"></p>
+            <button class="primary-button" id="nextQuestion" hidden>Sonraki Soru →</button>
+        </div>
+    </section>
+
+    <section class="test-result" id="testResult" hidden>
+        <h2>Test Tamamlandı!</h2>
+        <p id="resultText"></p>
+        <button class="primary-button" id="retryTest">Tekrar Çöz</button>
+    </section>
+
+    <section class="finish-area">
+        <p>Konu anlatımını bitirdiğinde ana ders ekranına dönebilirsin.</p>
+        <button class="primary-button" id="finishLesson">✓ KONU BİTTİ</button>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

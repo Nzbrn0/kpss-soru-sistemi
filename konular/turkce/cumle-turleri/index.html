@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Cümle Türleri</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a
+            href="../../../index.html?return=subjects"
+            class="back-button">
+            ← Türkçe Konularına Dön
+        </a>
+
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                TÜRKÇE / 10
+            </div>
+
+            <h1>
+                Cümle Türleri
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Cümleleri yüklemin türüne, yüklemin yerine,
+                anlamına ve yapısına göre sınıflandırmayı öğren.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-text">
+
+                <span>KONU İLERLEMESİ</span>
+
+                <strong id="progressPercent">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="lesson-sections">
+
+
+            <!-- 1 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        01
+                    </span>
+
+                    <span class="section-title">
+
+                        Yüklemin Türüne Göre
+
+                        <small>
+                            Fiil ve isim cümlesi
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Cümleler yüklemin türüne göre
+                        <strong>fiil cümlesi</strong> ve
+                        <strong>isim cümlesi</strong> olmak üzere
+                        ikiye ayrılır.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                FİİL CÜMLESİ
+                            </strong>
+
+                            <p>
+                                Yüklemi çekimli bir fiil olan
+                                cümlelerdir.
+                            </p>
+
+                            <span>
+                                Ali eve geldi.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                İSİM CÜMLESİ
+                            </strong>
+
+                            <p>
+                                Yüklemi isim veya isim soylu
+                                bir sözcük olan cümlelerdir.
+                            </p>
+
+                            <span>
+                                Hava çok güzel.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            “Çocuklar bahçede oynuyor.”
+                        </p>
+
+                        <span>
+                            “Oynuyor” fiil olduğu için
+                            bu bir fiil cümlesidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            “Bu kitap çok güzel.”
+                        </p>
+
+                        <span>
+                            “Güzel” isim soylu olduğu için
+                            bu bir isim cümlesidir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Bugün hava çok soğuk.”
+                            cümlesi yüklemin türüne göre
+                            hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Fiil cümlesi
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) İsim cümlesi
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Devrik cümle
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 2 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        02
+                    </span>
+
+                    <span class="section-title">
+
+                        Yüklemin Yerine Göre
+
+                        <small>
+                            Kurallı ve devrik cümle
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Yüklemin cümledeki yerine göre
+                        cümleler <strong>kurallı</strong>,
+                        <strong>devrik</strong> ve
+                        <strong>eksiltili</strong> olabilir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                KURALLI CÜMLE
+                            </strong>
+
+                            <p>
+                                Yüklemi cümlenin sonunda
+                                bulunan cümledir.
+                            </p>
+
+                            <span>
+                                Eve erken geldim.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                DEVRİK CÜMLE
+                            </strong>
+
+                            <p>
+                                Yüklemi cümlenin sonunda
+                                bulunmayan cümledir.
+                            </p>
+
+                            <span>
+                                Erken geldim eve.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                EKSİLTİLİ CÜMLE
+                            </strong>
+
+                            <p>
+                                Yüklemi söylenmemiş ancak
+                                anlamı tamamlanabilen cümledir.
+                            </p>
+
+                            <span>
+                                Bir de bana sorsan...
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            KURALLI
+                        </div>
+
+                        <p>
+                            “Bugün arkadaşlarımla sinemaya gittim.”
+                        </p>
+
+                        <span>
+                            Yüklem “gittim” cümlenin
+                            sonundadır.
+                        </span>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            DEVRİK
+                        </div>
+
+                        <p>
+                            “Sinemaya gittim bugün.”
+                        </p>
+
+                        <span>
+                            Yüklem cümlenin sonunda
+                            olmadığı için devriktir.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Geldi sonunda beklediğimiz gün.”
+                            cümlesi yüklemin yerine göre
+                            hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Kurallı
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Devrik
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Eksiltili
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 3 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        03
+                    </span>
+
+                    <span class="section-title">
+
+                        Anlamına Göre Cümleler
+
+                        <small>
+                            Olumlu, olumsuz ve soru
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Cümleler anlam bakımından
+                        olumlu, olumsuz, soru ve ünlem
+                        gibi farklı türlerde olabilir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                OLUMLU
+                            </strong>
+
+                            <p>
+                                Yargının gerçekleştiğini
+                                bildiren cümledir.
+                            </p>
+
+                            <span>
+                                Bugün okula gittim.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                OLUMSUZ
+                            </strong>
+
+                            <p>
+                                Yargının gerçekleşmediğini
+                                bildiren cümledir.
+                            </p>
+
+                            <span>
+                                Bugün okula gitmedim.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                SORU
+                            </strong>
+
+                            <p>
+                                Bir şeyi öğrenme amacı
+                                taşıyan cümledir.
+                            </p>
+
+                            <span>
+                                Bugün okula gittin mi?
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            DİKKAT
+                        </strong>
+
+                        <p>
+                            Olumsuzluk eki veya kelimesi
+                            bulunması her zaman cümlenin
+                            olumsuz anlam taşıdığı anlamına
+                            gelmez.
+                        </p>
+
+                    </div>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            “Bu işi yapamaz değilim.”
+                        </p>
+
+                        <span>
+                            Cümlede olumsuzluk eki bulunmasına
+                            rağmen anlam olumludur.
+                        </span>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Bugün okula gitmedim.”
+                            cümlesi anlamına göre
+                            hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Olumlu
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            B) Olumsuz
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Soru
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 4 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        04
+                    </span>
+
+                    <span class="section-title">
+
+                        Yapısına Göre Cümleler
+
+                        <small>
+                            Basit, birleşik, sıralı ve bağlı
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Yapısına göre cümleler;
+                        <strong>basit</strong>,
+                        <strong>birleşik</strong>,
+                        <strong>sıralı</strong> ve
+                        <strong>bağlı</strong> cümlelerdir.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                BASİT CÜMLE
+                            </strong>
+
+                            <p>
+                                Tek yargı bildiren,
+                                tek yüklemli cümledir.
+                            </p>
+
+                            <span>
+                                Eve gittim.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                BİRLEŞİK CÜMLE
+                            </strong>
+
+                            <p>
+                                Temel cümlenin yanında
+                                yan cümlecik bulunan cümledir.
+                            </p>
+
+                            <span>
+                                Eve gelince seni ararım.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                SIRALI CÜMLE
+                            </strong>
+
+                            <p>
+                                Birden fazla cümlenin
+                                virgül veya noktalı virgülle
+                                bağlanmasıdır.
+                            </p>
+
+                            <span>
+                                Geldi, oturdu.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                BAĞLI CÜMLE
+                            </strong>
+
+                            <p>
+                                Birden fazla cümlenin
+                                bağlaçla bağlanmasıdır.
+                            </p>
+
+                            <span>
+                                Geldi ve oturdu.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Kitabımı aldım ve odama çıktım.”
+                            cümlesi yapısına göre hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            A) Basit
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Sıralı
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            C) Bağlı
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 5 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        05
+                    </span>
+
+                    <span class="section-title">
+
+                        Birleşik Cümle
+
+                        <small>
+                            Temel cümle ve yan cümlecik
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Birleşik cümlelerde bir temel cümle
+                        ve ona bağlı en az bir yan cümlecik
+                        bulunur.
+                    </p>
+
+
+                    <div class="relation-grid">
+
+                        <div class="relation-card">
+
+                            <strong>
+                                GİRİŞİK BİRLEŞİK
+                            </strong>
+
+                            <p>
+                                Fiilimsi bulunan cümlelerdir.
+                            </p>
+
+                            <span>
+                                Seni görünce sevindim.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                ŞARTLI BİRLEŞİK
+                            </strong>
+
+                            <p>
+                                Şart ekiyle oluşturulur.
+                            </p>
+
+                            <span>
+                                Çalışırsan kazanırsın.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                İÇ İÇE BİRLEŞİK
+                            </strong>
+
+                            <p>
+                                Bir cümlenin başka bir
+                                cümlenin içinde yer almasıdır.
+                            </p>
+
+                            <span>
+                                “Geliyorum.” dedi.
+                            </span>
+
+                        </div>
+
+
+                        <div class="relation-card">
+
+                            <strong>
+                                Kİ'Lİ BİRLEŞİK
+                            </strong>
+
+                            <p>
+                                “Ki” bağlacıyla kurulan
+                                birleşik cümlelerdir.
+                            </p>
+
+                            <span>
+                                Biliyorum ki gelecek.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <strong>
+                            KPSS İPUCU
+                        </strong>
+
+                        <p>
+                            Cümlede fiilimsi görürsen
+                            yapısına göre birleşik cümle
+                            olma ihtimalini kontrol et.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Seni görünce çok sevindim.”
+                            cümlesi aşağıdakilerden hangisidir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Girişik birleşik
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Basit
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Sıralı
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- 6 -->
+
+            <section class="lesson-section">
+
+                <button
+                    class="section-header"
+                    onclick="toggleSection(this)">
+
+                    <span class="section-icon">
+                        06
+                    </span>
+
+                    <span class="section-title">
+
+                        Cümle Türlerini Birlikte Bulma
+
+                        <small>
+                            KPSS soru çözüm yöntemi
+                        </small>
+
+                    </span>
+
+                    <span class="section-arrow">
+                        +
+                    </span>
+
+                </button>
+
+
+                <div class="section-content">
+
+                    <p>
+                        Bir cümle aynı anda birden fazla
+                        özelliğe sahip olabilir.
+                    </p>
+
+
+                    <div class="example-card">
+
+                        <div class="example-label">
+                            ÖRNEK
+                        </div>
+
+                        <p>
+                            “Ali bugün okula gitmedi.”
+                        </p>
+
+                        <span>
+                            Yüklemin türü → Fiil cümlesi
+                            <br>
+                            Yüklemin yeri → Kurallı cümle
+                            <br>
+                            Anlamı → Olumsuz cümle
+                            <br>
+                            Yapısı → Basit cümle
+                        </span>
+
+                    </div>
+
+
+                    <div class="warning-card">
+
+                        <div class="warning-title">
+                            ⚠ SIRAYI KARIŞTIRMA
+                        </div>
+
+                        <p>
+                            Soruda “yüklemin türüne göre”
+                            deniyorsa fiil/isim ayrımına bak.
+                        </p>
+
+                        <p>
+                            “Yapısına göre” deniyorsa
+                            basit, birleşik, sıralı ve bağlı
+                            ayrımına bak.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mini-question">
+
+                        <span>MİNİ SORU</span>
+
+                        <p>
+                            “Çocuklar bahçede oynuyor.”
+                            cümlesi aşağıdakilerden hangisine
+                            göre incelenirse “fiil cümlesi”
+                            denir?
+                        </p>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, true)">
+                            A) Yüklemin türüne göre
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            B) Yüklemin yerine göre
+                        </button>
+
+                        <button
+                            class="answer-button"
+                            onclick="checkMini(this, false)">
+                            C) Yapısına göre
+                        </button>
+
+                        <div class="mini-result"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ÖZET -->
+
+        <div class="summary-card">
+
+            <div class="summary-title">
+                KPSS İÇİN KISA ÖZET
+            </div>
+
+            <ul>
+
+                <li>
+                    Yüklemin türüne göre:
+                    fiil cümlesi / isim cümlesi.
+                </li>
+
+                <li>
+                    Yüklemin yerine göre:
+                    kurallı / devrik / eksiltili.
+                </li>
+
+                <li>
+                    Anlamına göre:
+                    olumlu / olumsuz / soru / ünlem.
+                </li>
+
+                <li>
+                    Yapısına göre:
+                    basit / birleşik / sıralı / bağlı.
+                </li>
+
+                <li>
+                    Fiilimsi bulunan cümleler,
+                    girişik birleşik cümle olabilir.
+                </li>
+
+                <li>
+                    Bir cümle aynı anda birden fazla
+                    sınıflandırmaya sahip olabilir.
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DİKKAT -->
+
+        <div class="warning-card">
+
+            <div class="warning-title">
+                ⚠ SINAVDA DİKKAT
+            </div>
+
+            <p>
+                “Cümle türü” sorularında önce sorunun
+                hangi ölçüte göre sınıflandırma istediğini
+                belirle.
+            </p>
+
+            <p>
+                “Yüklemin türü” ile “yapısı” aynı şey değildir.
+                Fiil cümlesi demek basit cümle demek değildir.
+            </p>
+
+        </div>
+
+
+        <!-- TEST BAŞLANGIÇ -->
+
+        <div
+            class="test-start"
+            id="testStart">
+
+            <div class="test-icon">
+                ?
+            </div>
+
+            <h2>
+                Hazır mısın?
+            </h2>
+
+            <p>
+                Konuyu tamamladıysan 5 soruluk
+                mini teste geçebilirsin.
+            </p>
+
+            <button
+                class="test-start-button"
+                onclick="startTest()">
+
+                TESTE BAŞLA
+
+            </button>
+
+        </div>
+
+
+        <!-- TEST -->
+
+        <div
+            class="test-area"
+            id="testArea">
+
+            <div class="test-top">
+
+                <div>
+
+                    <span>
+                        CÜMLE TÜRLERİ TESTİ
+                    </span>
+
+                    <strong id="questionNumber">
+                        Soru 1 / 5
+                    </strong>
+
+                </div>
+
+                <div
+                    class="score-display"
+                    id="scoreDisplay">
+
+                    Puan: 0
+
+                </div>
+
+            </div>
+
+
+            <div class="question-progress">
+
+                <div id="questionProgress"></div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div
+                    class="difficulty"
+                    id="difficulty">
+
+                    KOLAY
+
+                </div>
+
+                <h2 id="questionText">
+                    Soru yükleniyor...
+                </h2>
+
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+
+                <div
+                    class="answer-feedback"
+                    id="answerFeedback">
+
+                    <strong id="feedbackTitle"></strong>
+
+                    <p id="feedbackText"></p>
+
+                </div>
+
+
+                <button
+                    class="next-question-button"
+                    id="nextButton"
+                    onclick="nextQuestion()">
+
+                    SONRAKİ SORU →
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SONUÇ -->
+
+        <div
+            class="test-result"
+            id="testResult">
+
+            <div class="result-icon">
+                ✓
+            </div>
+
+            <div class="result-label">
+                TEST TAMAMLANDI
+            </div>
+
+            <h2 id="finalScore">
+                0 / 5
+            </h2>
+
+            <p id="resultMessage">
+                Test tamamlandı.
+            </p>
+
+            <button
+                class="retry-button"
+                onclick="restartTest()">
+
+                TEKRAR ÇÖZ
+
+            </button>
+
+        </div>
+
+
+        <!-- KONU BİTTİ -->
+
+        <div class="finish-area">
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+
+                ✓ KONU BİTTİ
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

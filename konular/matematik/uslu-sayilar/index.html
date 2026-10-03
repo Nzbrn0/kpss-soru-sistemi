@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üslü Sayılar | KPSS Genco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background">
+    <div class="neon-light light-one"></div>
+    <div class="neon-light light-two"></div>
+</div>
+
+<main class="lesson-container">
+
+    <a href="../../../index.html?return=subjects" class="back-button">
+        ← Matematik Konularına Dön
+    </a>
+
+    <header class="lesson-header">
+        <span class="lesson-number">MATEMATİK / 09</span>
+        <h1>Üslü Sayılar</h1>
+        <div class="title-line"></div>
+        <p>Üslü sayıların temel kurallarını öğren, örnekleri incele ve KPSS tarzı sorularla kendini test et.</p>
+    </header>
+
+    <div class="progress-area">
+        <div class="progress-info">
+            <span>Konu ilerlemesi</span>
+            <span id="progressText">%0</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </div>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">01</span>
+            <span class="section-title">Üslü Sayı Nedir?</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>Tanım</h3>
+                <p>Bir sayının kendisiyle tekrarlı çarpımını kısa şekilde göstermeye üslü ifade denir.</p>
+                <div class="formula">aⁿ = a · a · a · ... · a</div>
+                <p><strong>a:</strong> Taban, <strong>n:</strong> Üs.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnekler</h3>
+                <p>2³ = 2 · 2 · 2 = 8</p>
+                <p>5² = 5 · 5 = 25</p>
+                <p>(−3)² = (−3) · (−3) = 9</p>
+                <p>(−2)³ = (−2) · (−2) · (−2) = −8</p>
+            </div>
+
+            <div class="mini-question">
+                <h3>Mini Soru</h3>
+                <p>4³ kaçtır?</p>
+                <div class="answers">
+                    <button class="answer-button" data-correct="false">12</button>
+                    <button class="answer-button" data-correct="true">64</button>
+                    <button class="answer-button" data-correct="false">16</button>
+                    <button class="answer-button" data-correct="false">81</button>
+                </div>
+                <p class="mini-result"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">02</span>
+            <span class="section-title">Üslerin Çarpımı ve Bölümü</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>Tabanlar aynıysa çarpma</h3>
+                <div class="formula">aᵐ · aⁿ = aᵐ⁺ⁿ</div>
+                <p>Tabanlar aynı olduğunda üsler toplanır.</p>
+                <h3>Tabanlar aynıysa bölme</h3>
+                <div class="formula">aᵐ / aⁿ = aᵐ⁻ⁿ</div>
+                <p>a ≠ 0 olmak üzere üsler çıkarılır.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 1</h3>
+                <p>2³ · 2⁴ = 2⁷ = <strong>128</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 2</h3>
+                <p>5⁶ / 5² = 5⁴ = <strong>625</strong></p>
+            </div>
+
+            <div class="warning-card">
+                <strong>Dikkat!</strong>
+                <p>Üsler yalnızca tabanlar aynı olduğunda bu kurallarla birleştirilebilir.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">03</span>
+            <span class="section-title">Üssün Üssü ve Çarpımın Üssü</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>Üssün üssü</h3>
+                <div class="formula">(aᵐ)ⁿ = aᵐ·ⁿ</div>
+                <p>Üsler çarpılır.</p>
+                <h3>Çarpımın üssü</h3>
+                <div class="formula">(a · b)ⁿ = aⁿ · bⁿ</div>
+                <h3>Bölümün üssü</h3>
+                <div class="formula">(a / b)ⁿ = aⁿ / bⁿ</div>
+                <p>b ≠ 0 olmalıdır.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 1</h3>
+                <p>(2³)² = 2⁶ = <strong>64</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 2</h3>
+                <p>(2 · 3)² = 2² · 3²</p>
+                <p>= 4 · 9 = <strong>36</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">04</span>
+            <span class="section-title">Sıfırıncı ve Birinci Kuvvet</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <div class="formula">a⁰ = 1 (a ≠ 0)</div>
+                <p>Sıfırdan farklı bir sayının sıfırıncı kuvveti 1'dir.</p>
+                <div class="formula">a¹ = a</div>
+                <p>Birinci kuvvette sayı değişmez.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnekler</h3>
+                <p>7⁰ = 1</p>
+                <p>(−12)⁰ = 1</p>
+                <p>9¹ = 9</p>
+            </div>
+
+            <div class="warning-card">
+                <strong>Önemli!</strong>
+                <p>0⁰ ifadesi bu temel kurala göre tanımlanmış kabul edilmez. KPSS sorularında sıfırıncı kuvvet kuralını uygularken tabanın sıfır olmadığını kontrol et.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">05</span>
+            <span class="section-title">Negatif Üsler</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>Temel kural</h3>
+                <div class="formula">a⁻ⁿ = 1 / aⁿ</div>
+                <p>a ≠ 0 olmak üzere negatif üs, sayının çarpmaya göre tersini ifade eder.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 1</h3>
+                <p>2⁻³ = 1 / 2³ = <strong>1/8</strong></p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek 2</h3>
+                <p>5⁻² = 1 / 5² = <strong>1/25</strong></p>
+            </div>
+
+            <div class="warning-card">
+                <strong>Dikkat!</strong>
+                <p>Negatif üs, sonucun mutlaka negatif olduğu anlamına gelmez. Örneğin 2⁻² = 1/4'tür.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">06</span>
+            <span class="section-title">Negatif Taban ve Parantez</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <p>Negatif bir tabanın çift kuvveti pozitif, tek kuvveti negatiftir.</p>
+                <div class="formula">(−a)ᵐ → m çiftse sonuç pozitif</div>
+                <div class="formula">(−a)ᵐ → m tekse sonuç negatif</div>
+            </div>
+
+            <div class="example-card">
+                <h3>Parantez farkı</h3>
+                <p>(−2)⁴ = 16</p>
+                <p>−2⁴ = −(2⁴) = −16</p>
+                <p><strong>Parantez, sonucun işaretini değiştirebilir.</strong></p>
+            </div>
+
+            <div class="mini-question">
+                <h3>Mini Soru</h3>
+                <p>(−3)³ kaçtır?</p>
+                <div class="answers">
+                    <button class="answer-button" data-correct="false">27</button>
+                    <button class="answer-button" data-correct="true">−27</button>
+                    <button class="answer-button" data-correct="false">−9</button>
+                    <button class="answer-button" data-correct="false">9</button>
+                </div>
+                <p class="mini-result"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">07</span>
+            <span class="section-title">Üslü Sayılarda Toplama ve Çıkarma</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <p>Toplama ve çıkarma işlemlerinde üsler doğrudan toplanmaz. Önce kuvvetleri hesaplamak veya ortak çarpan almak gerekir.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 1</h3>
+                <p>2³ + 2⁴ = 8 + 16 = <strong>24</strong></p>
+                <p>2³ + 2⁴, 2⁷ değildir.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Örnek 2</h3>
+                <p>3² + 3² = 9 + 9 = <strong>18</strong></p>
+                <p>İstenirse 2 · 3² şeklinde yazılabilir.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">08</span>
+            <span class="section-title">Üslü Sayıları Karşılaştırma</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <p>Aynı pozitif taban 1'den büyükse üs büyüdükçe değer de büyür.</p>
+                <p>Örneğin 2³ &lt; 2⁵ çünkü 8 &lt; 32.</p>
+                <p>Taban 0 ile 1 arasındaysa pozitif üs büyüdükçe değer küçülür.</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Çözümlü örnek</h3>
+                <p>3⁴ mü büyüktür, 3² mi?</p>
+                <p>3⁴ = 81, 3² = 9</p>
+                <p><strong>3⁴ &gt; 3²</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">09</span>
+            <span class="section-title">10'un Kuvvetleri ve Bilimsel Gösterim</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="info-card">
+                <h3>10'un kuvvetleri</h3>
+                <p>10¹ = 10</p>
+                <p>10² = 100</p>
+                <p>10³ = 1000</p>
+                <p>10⁻¹ = 0,1</p>
+                <p>10⁻² = 0,01</p>
+            </div>
+
+            <div class="example-card">
+                <h3>Bilimsel gösterim</h3>
+                <p>Bilimsel gösterim, sayıları a × 10ⁿ biçiminde ifade etmektir. Burada 1 ≤ |a| &lt; 10 olmalıdır.</p>
+                <p>450000 = <strong>4,5 × 10⁵</strong></p>
+                <p>0,0032 = <strong>3,2 × 10⁻³</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <button class="section-header">
+            <span class="section-icon">10</span>
+            <span class="section-title">KPSS İçin Hızlı Tekrar</span>
+            <span class="section-arrow">+</span>
+        </button>
+        <div class="section-content">
+            <div class="summary-card">
+                <h3>Temel kurallar</h3>
+                <p><strong>Çarpma:</strong> aᵐ · aⁿ = aᵐ⁺ⁿ</p>
+                <p><strong>Bölme:</strong> aᵐ / aⁿ = aᵐ⁻ⁿ (a ≠ 0)</p>
+                <p><strong>Üssün üssü:</strong> (aᵐ)ⁿ = aᵐⁿ</p>
+                <p><strong>Sıfırıncı kuvvet:</strong> a⁰ = 1 (a ≠ 0)</p>
+                <p><strong>Negatif üs:</strong> a⁻ⁿ = 1/aⁿ (a ≠ 0)</p>
+                <p><strong>Negatif taban:</strong> Çift üs pozitif, tek üs negatif sonuç verir.</p>
+                <p><strong>Toplama:</strong> Üsler doğrudan toplanmaz.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="test-start" id="testStart">
+        <h2>Bilgini Test Et</h2>
+        <p>Üslü Sayılar konusunu pekiştirmek için 5 soruluk mini testi çöz.</p>
+        <button class="primary-button" id="startTest">Teste Başla →</button>
+    </section>
+
+    <section class="test-area" id="testArea" hidden>
+        <div class="test-top">
+            <span id="questionCounter">Soru 1 / 5</span>
+            <span id="testScore">Doğru: 0</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="testProgress"></div>
+        </div>
+        <div class="question-card">
+            <h2 id="questionText"></h2>
+            <div class="test-answers" id="testAnswers"></div>
+            <p class="answer-feedback" id="answerFeedback"></p>
+            <button class="primary-button" id="nextQuestion" hidden>Sonraki Soru →</button>
+        </div>
+    </section>
+
+    <section class="test-result" id="testResult" hidden>
+        <h2>Test Tamamlandı!</h2>
+        <p id="resultText"></p>
+        <button class="primary-button" id="retryTest">Tekrar Çöz</button>
+    </section>
+
+    <section class="finish-area">
+        <p>Konu anlatımını bitirdiğinde ana ders ekranına dönebilirsin.</p>
+        <button class="primary-button" id="finishLesson">✓ KONU BİTTİ</button>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

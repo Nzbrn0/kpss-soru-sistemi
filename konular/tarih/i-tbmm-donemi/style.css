@@ -1,0 +1,493 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #020303;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.neon-light {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    filter: blur(130px);
+    opacity: 0.16;
+}
+
+.light-one {
+    background: #00eaff;
+    top: -180px;
+    left: -150px;
+}
+
+.light-two {
+    background: #0066ff;
+    right: -180px;
+    bottom: -180px;
+}
+
+.lesson-container {
+    width: min(850px, 92%);
+    margin: 0 auto;
+    padding: 35px 0 80px;
+}
+
+.back-button {
+    display: inline-block;
+    color: #00eaff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 35px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    color: white;
+    text-shadow:
+        0 0 8px #00eaff,
+        0 0 18px #00eaff;
+}
+
+.lesson-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.lesson-number {
+    color: #00eaff;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.lesson-header h1 {
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.25;
+}
+
+.lesson-header h1 span {
+    display: block;
+    color: #00eaff;
+    text-shadow: 0 0 10px rgba(0, 234, 255, 0.7);
+}
+
+.title-line {
+    width: 100px;
+    height: 2px;
+    background: #00eaff;
+    margin: 20px auto;
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 20px #00eaff;
+}
+
+.lesson-header p {
+    color: #aaa;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.progress-area {
+    margin-bottom: 35px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background: #111;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #00eaff;
+    box-shadow: 0 0 10px #00eaff;
+    transition: width 0.4s ease;
+}
+
+.lesson-section {
+    margin-bottom: 14px;
+    border: 1px solid rgba(0, 234, 255, 0.16);
+    border-radius: 12px;
+    background: rgba(5, 10, 12, 0.65);
+    overflow: hidden;
+}
+
+.section-header {
+    display: grid;
+    grid-template-columns: 50px 1fr 35px;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section-header:hover {
+    background: rgba(0, 234, 255, 0.05);
+}
+
+.section-icon {
+    color: #00eaff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.section-arrow {
+    color: #00eaff;
+    font-size: 24px;
+    text-align: right;
+}
+
+.section-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 25px;
+    transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease,
+        padding 0.35s ease;
+}
+
+.section-content.open {
+    max-height: 5000px;
+    opacity: 1;
+    padding: 5px 25px 28px;
+}
+
+.info-card,
+.example-card,
+.summary-card,
+.warning-card {
+    margin-top: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    line-height: 1.7;
+}
+
+.info-card h3,
+.example-card h3,
+.summary-card h3,
+.warning-card h3 {
+    margin-top: 0;
+    color: #00eaff;
+}
+
+.warning-card {
+    border-color: rgba(255, 180, 0, 0.2);
+}
+
+.warning-card h3 {
+    color: #ffc400;
+}
+
+.important-list {
+    padding-left: 20px;
+}
+
+.important-list li {
+    margin-bottom: 10px;
+}
+
+.timeline {
+    display: grid;
+    gap: 10px;
+}
+
+.timeline div {
+    padding: 12px 15px;
+    border-left: 2px solid #00eaff;
+    background: rgba(0, 234, 255, 0.025);
+    color: #ddd;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+}
+
+.compare-table th,
+.compare-table td {
+    padding: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
+    line-height: 1.5;
+}
+
+.compare-table th {
+    color: #00eaff;
+    background: rgba(0, 234, 255, 0.05);
+}
+
+.compare-table td:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+.mini-question {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mini-question h3 {
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.answer-button {
+    display: block;
+    width: 100%;
+    padding: 13px 15px;
+    margin-top: 10px;
+    background: #080d0f;
+    border: 1px solid rgba(0, 234, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.25s;
+}
+
+.answer-button:hover {
+    border-color: #00eaff;
+    background: rgba(0, 234, 255, 0.05);
+}
+
+.answer-button.correct {
+    background: rgba(0, 220, 120, 0.12);
+    border-color: #00dc78;
+    color: #00dc78;
+}
+
+.answer-button.wrong {
+    background: rgba(255, 50, 70, 0.12);
+    border-color: #ff3246;
+    color: #ff6070;
+}
+
+.mini-result {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.test-start {
+    text-align: center;
+    padding: 20px;
+}
+
+.start-test-button {
+    margin-top: 15px;
+    padding: 13px 25px;
+    border: 1px solid #00eaff;
+    border-radius: 8px;
+    background: transparent;
+    color: #00eaff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.start-test-button:hover {
+    background: #00eaff;
+    color: #020303;
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.5);
+}
+
+.test-area {
+    display: none;
+    margin-top: 20px;
+}
+
+.question-card {
+    padding: 22px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.question-number {
+    color: #00eaff;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.question-card h3 {
+    line-height: 1.6;
+}
+
+.test-answer {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px 15px;
+    background: #080d0f;
+    border: 1px solid rgba(0, 234, 255, 0.2);
+    color: white;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.test-answer:hover {
+    border-color: #00eaff;
+}
+
+.test-answer.correct {
+    border-color: #00dc78;
+    background: rgba(0, 220, 120, 0.1);
+    color: #00dc78;
+}
+
+.test-answer.wrong {
+    border-color: #ff3246;
+    background: rgba(255, 50, 70, 0.1);
+    color: #ff6070;
+}
+
+.answer-feedback {
+    margin-top: 15px;
+    line-height: 1.6;
+    display: none;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.next-question-button {
+    display: none;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: 1px solid #00eaff;
+    border-radius: 8px;
+    background: transparent;
+    color: #00eaff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.next-question-button:hover {
+    background: #00eaff;
+    color: #020303;
+}
+
+.test-result {
+    display: none;
+    text-align: center;
+    padding: 25px;
+}
+
+.test-result h3 {
+    color: #00eaff;
+}
+
+.score {
+    font-size: 42px;
+    font-weight: bold;
+    color: #00eaff;
+    margin: 15px 0;
+}
+
+.finish-area {
+    text-align: center;
+    margin-top: 45px;
+    padding: 30px;
+    border-top: 1px solid rgba(0, 234, 255, 0.1);
+}
+
+.finish-area h3 {
+    color: #aaa;
+    font-weight: normal;
+}
+
+.finish-area button {
+    padding: 14px 28px;
+    border: 1px solid #00eaff;
+    border-radius: 8px;
+    background: transparent;
+    color: #00eaff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.finish-area button:hover {
+    background: #00eaff;
+    color: #020303;
+    box-shadow: 0 0 18px rgba(0, 234, 255, 0.55);
+}
+
+@media (max-width: 600px) {
+
+    .lesson-container {
+        width: 94%;
+        padding-top: 25px;
+    }
+
+    .lesson-header h1 {
+        font-size: 28px;
+    }
+
+    .section-header {
+        grid-template-columns: 40px 1fr 30px;
+        padding: 0 15px;
+    }
+
+    .section-title {
+        font-size: 15px;
+    }
+
+    .section-content.open {
+        padding: 5px 15px 22px;
+    }
+
+    .compare-table {
+        font-size: 13px;
+    }
+
+    .compare-table th,
+    .compare-table td {
+        padding: 9px;
+    }
+}

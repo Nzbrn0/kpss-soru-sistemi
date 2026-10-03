@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KPSS | Bölme ve Bölünebilme</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="neon-light light-one"></div>
+        <div class="neon-light light-two"></div>
+    </div>
+
+    <main class="lesson-container">
+
+        <a href="../../../index.html?return=subjects"
+           class="back-button">
+            ← Matematik Konularına Dön
+        </a>
+
+        <header class="lesson-header">
+
+            <div class="lesson-number">
+                MATEMATİK / 03
+            </div>
+
+            <h1>
+                Bölme ve Bölünebilme
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Bir sayının başka bir sayıya bölünmesi, bölüm ve
+                kalan kavramları ile 2, 3, 4, 5, 6, 8, 9, 10 ve
+                11 ile bölünebilme kurallarını öğren.
+            </p>
+
+        </header>
+
+
+        <!-- İLERLEME -->
+
+        <div class="progress-area">
+
+            <div class="progress-info">
+                <span>Konu İlerlemesi</span>
+                <span id="progressPercent">0%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div
+                    class="progress-fill"
+                    id="progressFill">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 1 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    01
+                </span>
+
+                <span class="section-title">
+                    Bölme İşlemi ve Temel Kavramlar
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir sayının başka bir sayıya bölünmesi sırasında
+                    bölünen, bölen, bölüm ve kalan olmak üzere dört
+                    temel kavram kullanılır.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        47 sayısını 5'e bölelim:
+                    </p>
+
+                    <strong>
+                        47 = 5 × 9 + 2
+                    </strong>
+
+                    <p>
+                        Burada:
+                    </p>
+
+                    <p>
+                        Bölünen = 47
+                    </p>
+
+                    <p>
+                        Bölen = 5
+                    </p>
+
+                    <p>
+                        Bölüm = 9
+                    </p>
+
+                    <p>
+                        Kalan = 2
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Çok önemli:</strong>
+
+                    <p>
+                        Bir bölme işleminde kalan, bölen sayıdan
+                        küçük olmak zorundadır.
+                    </p>
+
+                    <strong>
+                        Kalan &lt; Bölen
+                    </strong>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        38 sayısının 7'ye bölümünden kalan kaçtır?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        2
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        3
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        3
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        4
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    02
+                </span>
+
+                <span class="section-title">
+                    Bölme Algoritması
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bölme işleminin temel bağıntısı aşağıdaki gibidir:
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Temel Bağıntı</h3>
+
+                    <strong>
+                        Bölünen = Bölen × Bölüm + Kalan
+                    </strong>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir bölme işleminde bölen 8, bölüm 6 ve
+                        kalan 3 ise bölünen:
+                    </p>
+
+                    <strong>
+                        8 × 6 + 3 = 51
+                    </strong>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Dikkat:</strong>
+
+                    <p>
+                        Kalan 0 ise sayı bölen sayıya tam bölünür.
+                    </p>
+
+                    <strong>
+                        40 = 8 × 5 + 0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    03
+                </span>
+
+                <span class="section-title">
+                    2 ile Bölünebilme
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir doğal sayının son basamağı çift ise sayı
+                    2 ile tam bölünür.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>Çift Rakamlar</h3>
+
+                    <strong>
+                        0, 2, 4, 6, 8
+                    </strong>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnekler</h3>
+
+                    <p>
+                        428 → 2 ile bölünür.
+                    </p>
+
+                    <p>
+                        736 → 2 ile bölünür.
+                    </p>
+
+                    <p>
+                        415 → 2 ile bölünmez.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        Aşağıdakilerden hangisi 2 ile tam bölünür?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        137
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        246
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        351
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        473
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    04
+                </span>
+
+                <span class="section-title">
+                    3 ve 9 ile Bölünebilme
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>3 ile Bölünebilme</h3>
+
+                    <p>
+                        Bir sayının rakamları toplamı 3'ün katıysa
+                        sayı 3 ile tam bölünür.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        372 sayısını inceleyelim:
+                    </p>
+
+                    <strong>
+                        3 + 7 + 2 = 12
+                    </strong>
+
+                    <p>
+                        12, 3'ün katı olduğu için 372 sayısı
+                        3'e tam bölünür.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>9 ile Bölünebilme</h3>
+
+                    <p>
+                        Rakamları toplamı 9'un katı olan sayılar
+                        9 ile tam bölünür.
+                    </p>
+
+                    <strong>
+                        729 → 7 + 2 + 9 = 18
+                    </strong>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Pratik Bilgi:</strong>
+
+                    <p>
+                        9'a bölünebilen her sayı 3'e de bölünür.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    05
+                </span>
+
+                <span class="section-title">
+                    4 ve 8 ile Bölünebilme
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>4 ile Bölünebilme</h3>
+
+                    <p>
+                        Bir sayının son iki basamağının oluşturduğu
+                        sayı 4'e bölünüyorsa sayı 4 ile tam bölünür.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        2316 sayısının son iki basamağı 16'dır.
+                    </p>
+
+                    <strong>
+                        16 ÷ 4 = 4
+                    </strong>
+
+                    <p>
+                        Bu nedenle 2316 sayısı 4'e tam bölünür.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>8 ile Bölünebilme</h3>
+
+                    <p>
+                        Bir sayının son üç basamağının oluşturduğu
+                        sayı 8'e bölünüyorsa sayı 8 ile tam bölünür.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        5312 sayısının son üç basamağı 312'dir.
+                    </p>
+
+                    <strong>
+                        312 ÷ 8 = 39
+                    </strong>
+
+                    <p>
+                        Dolayısıyla 5312 sayısı 8'e tam bölünür.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    06
+                </span>
+
+                <span class="section-title">
+                    5 ve 10 ile Bölünebilme
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <div class="relation-grid">
+
+                    <div class="relation-card">
+
+                        <h3>5 ile Bölünebilme</h3>
+
+                        <p>
+                            Son basamak 0 veya 5 olmalıdır.
+                        </p>
+
+                        <strong>
+                            0, 5
+                        </strong>
+
+                    </div>
+
+                    <div class="relation-card">
+
+                        <h3>10 ile Bölünebilme</h3>
+
+                        <p>
+                            Son basamak mutlaka 0 olmalıdır.
+                        </p>
+
+                        <strong>
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        1245 → 5 ile bölünür.
+                    </p>
+
+                    <p>
+                        1240 → 5 ve 10 ile bölünür.
+                    </p>
+
+                    <p>
+                        1242 → 5 ile bölünmez.
+                    </p>
+
+                </div>
+
+                <div class="mini-question">
+
+                    <h3>
+                        Mini Soru
+                    </h3>
+
+                    <p>
+                        Aşağıdakilerden hangisi hem 5'e hem 10'a
+                        tam bölünür?
+                    </p>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        125
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        235
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, true)">
+                        450
+                    </button>
+
+                    <button
+                        class="answer-button"
+                        onclick="checkMini(this, false)">
+                        615
+                    </button>
+
+                    <div class="mini-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    07
+                </span>
+
+                <span class="section-title">
+                    6 ile Bölünebilme
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir sayının 6 ile tam bölünebilmesi için hem
+                    2'ye hem de 3'e tam bölünmesi gerekir.
+                </p>
+
+                <div class="info-card">
+
+                    <h3>İki Şart</h3>
+
+                    <p>
+                        1. Son basamak çift olacak.
+                    </p>
+
+                    <p>
+                        2. Rakamları toplamı 3'ün katı olacak.
+                    </p>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek: 234</h3>
+
+                    <p>
+                        Son basamak 4 → çift.
+                    </p>
+
+                    <p>
+                        Rakamlar toplamı:
+                    </p>
+
+                    <strong>
+                        2 + 3 + 4 = 9
+                    </strong>
+
+                    <p>
+                        9, 3'ün katıdır.
+                    </p>
+
+                    <p>
+                        O hâlde 234 sayısı 6'ya tam bölünür.
+                    </p>
+
+                </div>
+
+                <div class="warning-card">
+
+                    <strong>Unutma:</strong>
+
+                    <p>
+                        Sadece çift olması bir sayının 6'ya
+                        bölünebilmesi için yeterli değildir.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    08
+                </span>
+
+                <span class="section-title">
+                    11 ile Bölünebilme
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir sayının 11 ile bölünebilmesi için sağdan
+                    başlayarak birer atlayarak oluşturulan rakam
+                    gruplarının toplamları arasındaki farkın 0 veya
+                    11'in katı olması gerekir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek: 121</h3>
+
+                    <p>
+                        Birinci grup:
+                    </p>
+
+                    <strong>
+                        1 + 1 = 2
+                    </strong>
+
+                    <p>
+                        Diğer grup:
+                    </p>
+
+                    <strong>
+                        2
+                    </strong>
+
+                    <p>
+                        Fark:
+                    </p>
+
+                    <strong>
+                        2 - 2 = 0
+                    </strong>
+
+                    <p>
+                        Bu nedenle 121 sayısı 11'e tam bölünür.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Başka Bir Örnek</h3>
+
+                    <p>
+                        2728 sayısını inceleyelim:
+                    </p>
+
+                    <strong>
+                        (2 + 2) - (7 + 8) = 4 - 15 = -11
+                    </strong>
+
+                    <p>
+                        Sonuç 11'in katı olduğu için sayı 11'e
+                        tam bölünür.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    09
+                </span>
+
+                <span class="section-title">
+                    Kalan Bulma
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <p>
+                    Bir sayının bir sayıya bölümünden kalan,
+                    bölme işlemindeki tam bölünmeyen kısmı gösterir.
+                </p>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        53 sayısının 7 ile bölümünden kalan:
+                    </p>
+
+                    <strong>
+                        53 = 7 × 7 + 4
+                    </strong>
+
+                    <p>
+                        Kalan = 4
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>Önemli Kural</h3>
+
+                    <p>
+                        Bölen sayı n ise kalan:
+                    </p>
+
+                    <strong>
+                        0 ≤ Kalan &lt; n
+                    </strong>
+
+                </div>
+
+                <div class="example-card">
+
+                    <h3>Örnek</h3>
+
+                    <p>
+                        Bir sayı 5'e bölündüğünde alabileceği
+                        kalanlar:
+                    </p>
+
+                    <strong>
+                        0, 1, 2, 3, 4
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section class="lesson-section">
+
+            <button
+                class="section-header"
+                onclick="toggleSection(this)">
+
+                <span class="section-icon">
+                    10
+                </span>
+
+                <span class="section-title">
+                    Bölünebilme Sorularında Taktikler
+                </span>
+
+                <span class="section-arrow">
+                    +
+                </span>
+
+            </button>
+
+            <div class="section-content">
+
+                <div class="info-card">
+
+                    <h3>1. Son Basamağa Bak</h3>
+
+                    <p>
+                        2, 5 ve 10 ile bölünebilme sorularında
+                        öncelikle son basamağı kontrol et.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>2. Rakamları Topla</h3>
+
+                    <p>
+                        3 ve 9 ile bölünebilme sorularında
+                        rakamlar toplamını kullan.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>3. Son İki veya Üç Basamağı Kontrol Et</h3>
+
+                    <p>
+                        4 için son iki, 8 için son üç basamağa
+                        bakılır.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>4. 6 İçin İki Şartı Birden Kontrol Et</h3>
+
+                    <p>
+                        Sayı hem 2'ye hem 3'e bölünmelidir.
+                    </p>
+
+                </div>
+
+                <div class="info-card">
+
+                    <h3>5. Kalanın Böleni Geçemeyeceğini Unutma</h3>
+
+                    <p>
+                        Bölen 7 ise kalan hiçbir zaman 7 veya daha
+                        büyük olamaz.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÖZET -->
+
+        <div class="summary-card">
+
+            <h2>
+                Bölünebilme Kuralları
+            </h2>
+
+            <p>
+                • 2 → Son basamak 0, 2, 4, 6, 8.
+            </p>
+
+            <p>
+                • 3 → Rakamlar toplamı 3'ün katı.
+            </p>
+
+            <p>
+                • 4 → Son iki basamak 4'ün katı.
+            </p>
+
+            <p>
+                • 5 → Son basamak 0 veya 5.
+            </p>
+
+            <p>
+                • 6 → Hem 2'ye hem 3'e bölünecek.
+            </p>
+
+            <p>
+                • 8 → Son üç basamak 8'in katı.
+            </p>
+
+            <p>
+                • 9 → Rakamlar toplamı 9'un katı.
+            </p>
+
+            <p>
+                • 10 → Son basamak 0.
+            </p>
+
+            <p>
+                • 11 → Tek ve çift sıradaki rakam toplamlarının
+                farkı 0 veya 11'in katı.
+            </p>
+
+        </div>
+
+
+        <!-- UYARI -->
+
+        <div class="warning-card">
+
+            <h3>
+                KPSS İçin Önemli
+            </h3>
+
+            <p>
+                Bölünebilme sorularında bütün sayıyı uzun uzun
+                bölmek çoğu zaman gereksizdir. Önce sayının son
+                basamağına, son iki veya üç basamağına ya da
+                rakamları toplamına bakarak uygun bölünebilme
+                kuralını kullan.
+            </p>
+
+        </div>
+
+
+        <!-- TEST BAŞLANGIÇ -->
+
+        <section class="test-start" id="testStart">
+
+            <h2>
+                5 Soruluk Mini Test
+            </h2>
+
+            <p>
+                Bölme ve bölünebilme konusunu ne kadar öğrendiğini
+                test et.
+            </p>
+
+            <button
+                class="start-button"
+                onclick="startTest()">
+                TESTE BAŞLA
+            </button>
+
+        </section>
+
+
+        <!-- TEST -->
+
+        <section class="test-area" id="testArea">
+
+            <div class="test-top">
+
+                <span id="questionNumber">
+                    Soru 1 / 5
+                </span>
+
+                <span id="scoreDisplay">
+                    Puan: 0
+                </span>
+
+            </div>
+
+            <div class="question-progress">
+
+                <div id="questionProgress"></div>
+
+            </div>
+
+            <div class="question-card">
+
+                <span
+                    class="difficulty"
+                    id="difficulty">
+                    KOLAY
+                </span>
+
+                <h2 id="questionText"></h2>
+
+                <div
+                    class="answers"
+                    id="answers">
+                </div>
+
+            </div>
+
+            <div
+                class="answer-feedback"
+                id="answerFeedback">
+
+                <h3 id="feedbackTitle"></h3>
+
+                <p id="feedbackText"></p>
+
+            </div>
+
+            <button
+                class="next-question-button"
+                id="nextButton"
+                onclick="nextQuestion()">
+
+                SONRAKİ SORU →
+
+            </button>
+
+        </section>
+
+
+        <!-- SONUÇ -->
+
+        <section
+            class="test-result"
+            id="testResult">
+
+            <h2>
+                Test Tamamlandı
+            </h2>
+
+            <div
+                class="final-score"
+                id="finalScore">
+                0 / 5
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <button
+                class="retry-button"
+                onclick="restartTest()">
+
+                TEKRAR ÇÖZ
+
+            </button>
+
+        </section>
+
+
+        <!-- BİTİR -->
+
+        <div class="finish-area">
+
+            <button
+                class="finish-button"
+                onclick="finishLesson()">
+
+                ✓ KONU BİTTİ
+
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

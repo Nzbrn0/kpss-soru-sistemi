@@ -1,0 +1,984 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-height: 100vh;
+    background: #020303;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   ARKA PLAN
+========================= */
+
+.background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+.neon-light {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.20;
+}
+
+
+.light-one {
+    width: 450px;
+    height: 450px;
+    background: #00eaff;
+    top: -200px;
+    left: -180px;
+}
+
+
+.light-two {
+    width: 500px;
+    height: 500px;
+    background: #0066ff;
+    right: -220px;
+    bottom: -220px;
+}
+
+
+/* =========================
+   ANA CONTAINER
+========================= */
+
+.lesson-container {
+    width: min(850px, calc(100% - 30px));
+    margin: 0 auto;
+    padding: 30px 0 80px;
+}
+
+
+/* =========================
+   GERİ BUTONU
+========================= */
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    padding: 10px 16px;
+
+    border: 1px solid rgba(0, 234, 255, 0.35);
+    border-radius: 10px;
+
+    background: rgba(0, 234, 255, 0.05);
+
+    transition: 0.25s;
+}
+
+
+.back-button:hover {
+    color: #00eaff;
+
+    border-color: #00eaff;
+
+    box-shadow:
+        0 0 15px rgba(0, 234, 255, 0.25);
+
+    transform: translateX(-3px);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.lesson-header {
+    text-align: center;
+    margin-top: 45px;
+}
+
+
+.lesson-number {
+    color: #00eaff;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 14px;
+}
+
+
+.lesson-header h1 {
+    font-size: clamp(32px, 6vw, 52px);
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+
+    text-shadow:
+        0 0 12px rgba(0, 234, 255, 0.4);
+}
+
+
+.title-line {
+    width: 90px;
+    height: 2px;
+
+    margin: 0 auto 20px;
+
+    background: #00eaff;
+
+    box-shadow:
+        0 0 12px #00eaff;
+}
+
+
+.lesson-header p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #a9b3b7;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-area {
+    margin: 40px 0 25px;
+}
+
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+
+    color: #aeb8bc;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+.progress-text span:last-child {
+    color: #00eaff;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+
+    background: #111719;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+
+    background: #00eaff;
+
+    box-shadow:
+        0 0 12px #00eaff;
+
+    transition: width 0.4s ease;
+}
+
+
+/* =========================
+   KONU KUTULARI
+========================= */
+
+.lesson-section {
+    width: 100%;
+
+    margin-bottom: 14px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 14px;
+
+    background: rgba(7, 11, 12, 0.88);
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.25s,
+        box-shadow 0.25s;
+}
+
+
+.lesson-section:hover {
+    border-color: rgba(0, 234, 255, 0.28);
+}
+
+
+.section-header {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 50px 1fr 35px;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 70px;
+
+    padding: 14px 20px;
+
+    border: 0;
+
+    color: #ffffff;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    font-family: inherit;
+}
+
+
+.section-header:hover {
+    background: rgba(0, 234, 255, 0.035);
+}
+
+
+.section-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(0, 234, 255, 0.35);
+
+    border-radius: 9px;
+
+    color: #00eaff;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    background: rgba(0, 234, 255, 0.04);
+}
+
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+
+    line-height: 1.4;
+}
+
+
+.section-arrow {
+    color: #00eaff;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    transition: transform 0.3s;
+}
+
+
+/* =========================
+   AÇILAN İÇERİK
+========================= */
+
+.section-content {
+    max-height: 0;
+
+    opacity: 0;
+
+    overflow: hidden;
+
+    padding: 0 25px;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease,
+        padding 0.35s ease;
+}
+
+
+.section-content.open {
+    max-height: 3000px;
+
+    opacity: 1;
+
+    padding: 5px 25px 28px;
+}
+
+
+.section-content > p {
+    color: #c3cccf;
+
+    line-height: 1.8;
+
+    margin: 12px 0 20px;
+}
+
+
+.section-content strong {
+    color: #ffffff;
+}
+
+
+/* =========================
+   BİLGİ KARTI
+========================= */
+
+.info-card,
+.example-card,
+.summary-card,
+.warning-card {
+    margin: 16px 0;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    line-height: 1.7;
+}
+
+
+.info-card {
+    background: rgba(0, 234, 255, 0.045);
+
+    border: 1px solid rgba(0, 234, 255, 0.16);
+}
+
+
+.example-card {
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+
+.summary-card {
+    background: rgba(0, 234, 255, 0.035);
+
+    border: 1px solid rgba(0, 234, 255, 0.13);
+}
+
+
+.warning-card {
+    background: rgba(255, 180, 0, 0.04);
+
+    border: 1px solid rgba(255, 180, 0, 0.18);
+}
+
+
+.info-card h3,
+.example-card h3,
+.summary-card h3 {
+    color: #00eaff;
+
+    margin-bottom: 12px;
+
+    font-size: 17px;
+}
+
+
+.warning-card strong {
+    color: #ffc14d;
+
+    display: block;
+
+    margin-bottom: 8px;
+}
+
+
+.info-card p,
+.example-card p,
+.summary-card p,
+.warning-card p {
+    color: #b9c2c5;
+
+    margin: 8px 0;
+}
+
+
+/* =========================
+   FORMÜL
+========================= */
+
+.formula {
+    width: 100%;
+
+    margin: 12px 0;
+
+    padding: 13px 15px;
+
+    text-align: center;
+
+    color: #00eaff;
+
+    background: rgba(0, 234, 255, 0.045);
+
+    border: 1px solid rgba(0, 234, 255, 0.15);
+
+    border-radius: 9px;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   İLİŞKİ GRID
+========================= */
+
+.relation-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px;
+
+    margin: 18px 0;
+}
+
+
+.relation-card {
+    padding: 22px;
+
+    border: 1px solid rgba(0, 234, 255, 0.14);
+
+    border-radius: 12px;
+
+    background: rgba(0, 234, 255, 0.035);
+
+    text-align: center;
+}
+
+
+.relation-card h3 {
+    color: #00eaff;
+
+    margin-bottom: 10px;
+}
+
+
+.relation-card p {
+    color: #aeb8bc;
+
+    margin-bottom: 10px;
+}
+
+
+.relation-card strong {
+    color: #ffffff;
+}
+
+
+/* =========================
+   MİNİ SORU
+========================= */
+
+.mini-question {
+    margin-top: 22px;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    background: #080d0e;
+
+    border: 1px solid rgba(0, 234, 255, 0.13);
+}
+
+
+.mini-question h3 {
+    color: #00eaff;
+
+    margin-bottom: 10px;
+}
+
+
+.mini-question > p {
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   CEVAPLAR
+========================= */
+
+.answers {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+.answer-button,
+.answer-option {
+    min-height: 48px;
+
+    padding: 10px 15px;
+
+    border-radius: 9px;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    background: #0c1213;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition: 0.2s;
+}
+
+
+.answer-button:hover,
+.answer-option:hover {
+    border-color: #00eaff;
+
+    color: #00eaff;
+
+    background: rgba(0, 234, 255, 0.05);
+}
+
+
+.answer-button:disabled,
+.answer-option:disabled {
+    cursor: default;
+}
+
+
+/* DOĞRU */
+
+.answer-button.correct,
+.answer-option.correct {
+    color: #4dff9a;
+
+    border-color: #4dff9a;
+
+    background: rgba(77, 255, 154, 0.08);
+
+    box-shadow:
+        0 0 12px rgba(77, 255, 154, 0.18);
+}
+
+
+/* YANLIŞ */
+
+.answer-button.wrong,
+.answer-option.wrong {
+    color: #ff5c6c;
+
+    border-color: #ff5c6c;
+
+    background: rgba(255, 92, 108, 0.08);
+
+    box-shadow:
+        0 0 12px rgba(255, 92, 108, 0.15);
+}
+
+
+/* =========================
+   MİNİ SONUÇ
+========================= */
+
+.mini-result {
+    min-height: 24px;
+
+    margin-top: 12px;
+
+    font-weight: bold;
+}
+
+
+.correct-result {
+    color: #4dff9a;
+}
+
+
+.wrong-result {
+    color: #ff5c6c;
+}
+
+
+/* =========================
+   TEST BAŞLANGIÇ
+========================= */
+
+.test-start {
+    margin-top: 35px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(0, 234, 255, 0.18);
+
+    background: rgba(0, 234, 255, 0.035);
+}
+
+
+.test-start h2 {
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+
+.test-start p {
+    color: #9ea9ad;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   BUTON
+========================= */
+
+.start-button,
+.finish-button,
+.retry-button {
+    border: 1px solid #00eaff;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #00eaff;
+
+    padding: 13px 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    font-family: inherit;
+}
+
+
+.start-button:hover,
+.finish-button:hover,
+.retry-button:hover {
+    color: #020303;
+
+    background: #00eaff;
+
+    box-shadow:
+        0 0 22px rgba(0, 234, 255, 0.35);
+}
+
+
+/* =========================
+   TEST ALANI
+========================= */
+
+.test-area {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(0, 234, 255, 0.15);
+
+    background: rgba(7, 11, 12, 0.92);
+}
+
+
+.question-card {
+    padding: 5px 0 20px;
+}
+
+
+.question-card span {
+    color: #00eaff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.question-card h3 {
+    margin-top: 12px;
+
+    color: #ffffff;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+}
+
+
+.answer-feedback {
+    min-height: 45px;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    border-radius: 9px;
+
+    line-height: 1.6;
+}
+
+
+.feedback-correct {
+    color: #4dff9a;
+
+    background: rgba(77, 255, 154, 0.06);
+
+    border: 1px solid rgba(77, 255, 154, 0.15);
+}
+
+
+.feedback-wrong {
+    color: #ff5c6c;
+
+    background: rgba(255, 92, 108, 0.06);
+
+    border: 1px solid rgba(255, 92, 108, 0.15);
+}
+
+
+.next-question-button {
+    display: none;
+
+    margin-top: 18px;
+
+    padding: 12px 20px;
+
+    border: 1px solid #00eaff;
+
+    border-radius: 9px;
+
+    background: transparent;
+
+    color: #00eaff;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.next-question-button:hover {
+    background: #00eaff;
+
+    color: #020303;
+}
+
+
+/* =========================
+   TEST SONUCU
+========================= */
+
+.test-result {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(0, 234, 255, 0.18);
+
+    background: rgba(0, 234, 255, 0.035);
+}
+
+
+.test-result h2 {
+    margin-bottom: 10px;
+}
+
+
+.test-result p {
+    color: #9ea9ad;
+
+    margin-bottom: 8px;
+}
+
+
+.test-result strong {
+    display: block;
+
+    margin: 10px 0 25px;
+
+    color: #00eaff;
+
+    font-size: 38px;
+}
+
+
+/* =========================
+   BİTİR
+========================= */
+
+.finish-area {
+    margin-top: 35px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(0, 234, 255, 0.13);
+
+    background: rgba(255, 255, 255, 0.025);
+}
+
+
+.finish-area h2 {
+    margin-bottom: 10px;
+
+    font-size: 21px;
+}
+
+
+.finish-area p {
+    color: #9ea9ad;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   MOBİL
+========================= */
+
+@media (max-width: 600px) {
+
+    .lesson-container {
+        width: calc(100% - 20px);
+
+        padding-top: 20px;
+    }
+
+
+    .lesson-header {
+        margin-top: 35px;
+    }
+
+
+    .lesson-header h1 {
+        font-size: 31px;
+    }
+
+
+    .section-header {
+        grid-template-columns: 42px 1fr 25px;
+
+        padding: 12px 13px;
+
+        min-height: 64px;
+    }
+
+
+    .section-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+
+    .section-title {
+        font-size: 14px;
+    }
+
+
+    .section-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .section-content.open {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 22px;
+    }
+
+
+    .relation-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .answers {
+        grid-template-columns: 1fr;
+    }
+
+
+    .info-card,
+    .example-card,
+    .summary-card,
+    .warning-card,
+    .mini-question {
+        padding: 16px;
+    }
+
+
+    .formula {
+        font-size: 14px;
+
+        overflow-x: auto;
+    }
+
+
+    .test-area {
+        padding: 18px;
+    }
+
+}
