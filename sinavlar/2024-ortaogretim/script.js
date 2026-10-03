@@ -1,5 +1,28 @@
 const TOTAL_PDF_PAGES = 28;
 
+const PDF_FILE = "2024-kpss.pdf";
+let pdfDocument = null, pdfRenderTask = null, pdfLoadPromise = null;
+if (window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+function ensurePdfLoaded() {
+ if (pdfDocument) return Promise.resolve(pdfDocument);
+ if (!pdfLoadPromise) pdfLoadPromise = pdfjsLib.getDocument(PDF_FILE).promise.then(pdf => (pdfDocument=pdf));
+ return pdfLoadPromise;
+}
+async function renderPdfPage() {
+ const loading=document.getElementById("pdfLoading"), canvas=document.getElementById("pdfCanvas"), container=document.getElementById("pdfContainer");
+ try {
+  if(loading){loading.style.display="block";loading.textContent="PDF yükleniyor...";}
+  const pdf=await ensurePdfLoaded(), page=await pdf.getPage(currentPdfPage);
+  if(pdfRenderTask){try{pdfRenderTask.cancel();}catch(_){}}
+  const base=page.getViewport({scale:1}), available=Math.max(280,container.clientWidth-20), cssScale=available/base.width, ratio=Math.min(window.devicePixelRatio||1,2);
+  const viewport=page.getViewport({scale:cssScale*ratio});
+  canvas.width=Math.floor(viewport.width);canvas.height=Math.floor(viewport.height);canvas.style.width=Math.floor(viewport.width/ratio)+"px";canvas.style.height=Math.floor(viewport.height/ratio)+"px";
+  const ctx=canvas.getContext("2d",{alpha:false});ctx.fillStyle="white";ctx.fillRect(0,0,canvas.width,canvas.height);
+  pdfRenderTask=page.render({canvasContext:ctx,viewport});await pdfRenderTask.promise;if(loading)loading.style.display="none";container.scrollTop=0;
+ } catch(err) {if(err&&err.name==="RenderingCancelledException")return;console.error(err);if(loading)loading.textContent="PDF açılamadı. Sayfayı yenileyip tekrar dene.";}
+}
+
+
 const answerKeys = {
     gy: ["B","C","E","E","B","A","E","B","D","B","B","D","A","A","C","A","D","E","A","C","B","E","E","D","B","D","E","A","C","B","E","A","C","B","B","C","E","E","B","A","E","B","D","A","E","C","D","D","B","B","A","D","B","D","E","C","C","A","D","D"],
     gk: ["E","A","B","D","D","A","D","D","C","C","A","A","B","C","A","B","E","C","D","C","B","E","B","C","E","A","A","E","B","B","A","C","C","D","A","D","C","D","A","E","E","D","B","C","E","B","C","A","E","C","B","E","D","A","B","D","E","C","E","A"]
@@ -51,7 +74,13 @@ function changeQuestion(d){const s=getSubject(),n=currentQuestion+d;if(n>=s.star
 
 function renderQuestionGrid(){const s=getSubject(),g=document.getElementById("questionGrid");g.innerHTML="";for(let q=s.start;q<=s.end;q++){const b=document.createElement("button"),sel=answers[answerId(s.test,q)];b.textContent=q;if(q===currentQuestion)b.classList.add("current");if(sel)b.classList.add("answered");if(mode==="study"&&sel)b.classList.add(sel===getCorrectAnswer(s,q)?"correct":"wrong");b.onclick=()=>selectQuestion(q);g.appendChild(b)}}
 
-function loadPdfPage(){currentPdfPage=Math.max(1,Math.min(TOTAL_PDF_PAGES,currentPdfPage));const frame=document.getElementById("pdfFrame");frame.src="about:blank";const p=currentPdfPage;setTimeout(()=>{frame.src=`2024-kpss.pdf#page=${p}&zoom=page-width`},40);document.getElementById("pdfPageInput").value=currentPdfPage;document.getElementById("pdfPageInfo").textContent=`Sayfa ${currentPdfPage} / ${TOTAL_PDF_PAGES}`}
+function loadPdfPage() {
+ currentPdfPage=Math.max(1,Math.min(TOTAL_PDF_PAGES,currentPdfPage));
+ const input=document.getElementById("pdfPageInput"), info=document.getElementById("pdfPageInfo");
+ if(input) input.value=currentPdfPage;
+ if(info) info.textContent=`Sayfa ${currentPdfPage} / ${TOTAL_PDF_PAGES}`;
+ renderPdfPage();
+}
 function changePdfPage(d){currentPdfPage+=d;loadPdfPage()}
 function goToPdfPage(v){currentPdfPage=Number(v)||1;loadPdfPage()}
 function togglePdfFullscreen(){const e=document.getElementById("pdfContainer");if(!document.fullscreenElement)e.requestFullscreen?.();else document.exitFullscreen?.()}
@@ -67,3 +96,5 @@ function finishExam(){let html="",c=0,w=0,e=0,n=0;subjects.forEach(s=>{const x=g
 function closeResult(){document.getElementById("resultModal").classList.remove("show")}
 function resetExam(){if(!confirm("2024 sınavındaki bütün işaretlemeler silinsin mi?"))return;answers={};localStorage.removeItem("kpss2024Answers");renderCurrentAnswer();renderQuestionGrid();updateAllStats()}
 init();
+
+let pdfResizeTimer;window.addEventListener("resize",()=>{clearTimeout(pdfResizeTimer);pdfResizeTimer=setTimeout(renderPdfPage,180);});

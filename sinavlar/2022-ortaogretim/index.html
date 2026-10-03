@@ -46,7 +46,8 @@
         </div>
 
         <div class="pdf-container" id="pdfContainer">
-            <iframe id="pdfFrame" title="2022 KPSS PDF"></iframe>
+            <div id="pdfLoading" class="pdf-loading">PDF yükleniyor...</div>
+            <canvas id="pdfCanvas"></canvas>
         </div>
     </main>
 
@@ -107,6 +108,7 @@
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

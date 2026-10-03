@@ -76,3 +76,9 @@ button,input{font:inherit}button{color:inherit}
 .result-close-button{width:100%;margin-top:18px;padding:11px;border:1px solid rgba(0,234,255,.35);background:rgba(0,234,255,.04);color:var(--cyan);border-radius:8px;cursor:pointer}
 @media(max-width:1050px){body{overflow:auto}.exam-app{height:auto;min-height:100vh;grid-template-columns:190px minmax(450px,1fr)}.answer-sidebar{grid-column:1/-1;height:auto;border-left:0;border-top:1px solid var(--line)}.subject-sidebar,.pdf-section{height:75vh}.sidebar-result{margin-top:25px}}
 @media(max-width:700px){.exam-app{display:block}.subject-sidebar{height:auto}.pdf-section{height:70vh}.answer-sidebar{height:auto}.question-grid{grid-template-columns:repeat(5,1fr)}}
+
+/* Mobil uyumlu PDF.js */
+.pdf-container{overflow:auto!important;-webkit-overflow-scrolling:touch;position:relative;text-align:center;background:#1a1d1f!important}
+#pdfCanvas{display:block;margin:0 auto;background:#fff;max-width:none;box-shadow:0 0 24px rgba(0,0,0,.35)}
+.pdf-loading{position:absolute;z-index:2;left:50%;top:18px;transform:translateX(-50%);padding:9px 13px;border-radius:8px;background:rgba(2,4,5,.88);color:#00eaff;font-size:11px;white-space:nowrap}
+@media(max-width:700px){.pdf-toolbar{height:auto!important;min-height:76px!important;padding:9px 10px!important;gap:8px;flex-wrap:wrap}.pdf-controls{max-width:100%;flex-wrap:wrap}.pdf-container{min-height:58vh}.page-input-wrap span{padding:0 6px!important}.pdf-section{height:72vh!important}}

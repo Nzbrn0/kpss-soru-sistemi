@@ -1,5 +1,28 @@
 const TOTAL_PDF_PAGES = 29;
 
+const PDF_FILE = "2016-kpss.pdf";
+let pdfDocument = null, pdfRenderTask = null, pdfLoadPromise = null;
+if (window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+function ensurePdfLoaded() {
+ if (pdfDocument) return Promise.resolve(pdfDocument);
+ if (!pdfLoadPromise) pdfLoadPromise = pdfjsLib.getDocument(PDF_FILE).promise.then(pdf => (pdfDocument=pdf));
+ return pdfLoadPromise;
+}
+async function renderPdfPage() {
+ const loading=document.getElementById("pdfLoading"), canvas=document.getElementById("pdfCanvas"), container=document.getElementById("pdfContainer");
+ try {
+  if(loading){loading.style.display="block";loading.textContent="PDF yükleniyor...";}
+  const pdf=await ensurePdfLoaded(), page=await pdf.getPage(currentPdfPage);
+  if(pdfRenderTask){try{pdfRenderTask.cancel();}catch(_){}}
+  const base=page.getViewport({scale:1}), available=Math.max(280,container.clientWidth-20), cssScale=available/base.width, ratio=Math.min(window.devicePixelRatio||1,2);
+  const viewport=page.getViewport({scale:cssScale*ratio});
+  canvas.width=Math.floor(viewport.width);canvas.height=Math.floor(viewport.height);canvas.style.width=Math.floor(viewport.width/ratio)+"px";canvas.style.height=Math.floor(viewport.height/ratio)+"px";
+  const ctx=canvas.getContext("2d",{alpha:false});ctx.fillStyle="white";ctx.fillRect(0,0,canvas.width,canvas.height);
+  pdfRenderTask=page.render({canvasContext:ctx,viewport});await pdfRenderTask.promise;if(loading)loading.style.display="none";container.scrollTop=0;
+ } catch(err) {if(err&&err.name==="RenderingCancelledException")return;console.error(err);if(loading)loading.textContent="PDF açılamadı. Sayfayı yenileyip tekrar dene.";}
+}
+
+
 let currentPdfPage = 3;
 let currentSubject = "turkce";
 let currentQuestion = 1;
@@ -1257,61 +1280,11 @@ function getPdfPageForQuestion(
 // ======================================================
 
 function loadPdfPage() {
-
-    currentPdfPage =
-        Math.max(
-            1,
-            Math.min(
-                TOTAL_PDF_PAGES,
-                currentPdfPage
-            )
-        );
-
-
-    const frame =
-        document.getElementById(
-            "pdfFrame"
-        );
-
-
-    /*
-        Chrome PDF görüntüleyicide aynı dosyanın
-        #page değerini değiştirmek bazen çalışmıyor.
-
-        Bu yüzden önce about:blank veriyoruz,
-        sonra PDF'yi tekrar yüklüyoruz.
-    */
-
-    frame.src =
-        "about:blank";
-
-
-    const targetPage =
-        currentPdfPage;
-
-
-    setTimeout(
-        function () {
-
-            frame.src =
-                `2016-kpss.pdf#page=${targetPage}&zoom=page-width`;
-
-        },
-        40
-    );
-
-
-    document.getElementById(
-        "pdfPageInput"
-    ).value =
-        currentPdfPage;
-
-
-    document.getElementById(
-        "pdfPageInfo"
-    ).textContent =
-        `/ ${TOTAL_PDF_PAGES}`;
-
+ currentPdfPage=Math.max(1,Math.min(TOTAL_PDF_PAGES,currentPdfPage));
+ const input=document.getElementById("pdfPageInput"), info=document.getElementById("pdfPageInfo");
+ if(input) input.value=currentPdfPage;
+ if(info) info.textContent=`Sayfa ${currentPdfPage} / ${TOTAL_PDF_PAGES}`;
+ renderPdfPage();
 }
 
 
@@ -1496,3 +1469,4 @@ function initializeApp() {
 
 
 initializeApp();
+let pdfResizeTimer;window.addEventListener("resize",()=>{clearTimeout(pdfResizeTimer);pdfResizeTimer=setTimeout(renderPdfPage,180);});
